@@ -19,7 +19,6 @@ book:
   repo-url: "https://github.com/sdca-latam/curso-registros-esp"
   # TODO: Fill in the URL
   site-url: ""
-  body-header: "{{< text_snippet wip >}}"
   chapters:
     - index.qmd
     - part: "Overview"
@@ -43,7 +42,7 @@ book:
   appendices:
     - appendix/for-teachers.qmd
     - appendix/references.qmd
-    
+
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
@@ -55,7 +54,7 @@ book:
 
 format:
   html
-  
+
 
 metadata-files:
   - _metadata.yml

@@ -44,23 +44,23 @@ to fill out before the workshop starts.
 
 This website and its content are targeted to three groups:
 
-1. For the **learners** to use during the workshop, both to follow
-   along and also to use as a reference after the workshop ends. A more
-   detailed description of who the learner is can be found in [Is this
-   for you?](/overview/is-this-for-you.qmd)
-2. For the **teachers** to use as a guide for when they do the
-   type-along sessions.
-3. For those who are **interested in teaching**, who may not have much
-   experience or may not know where to start, to use this website as a
-   guide to running and teaching their own workshops.
+1.  For the **learners** to use during the workshop, both to follow
+    along and also to use as a reference after the workshop ends. A more
+    detailed description of who the learner is can be found in [Is this
+    for you?](/overview/is-this-for-you.qmd)
+2.  For the **teachers** to use as a guide for when they do the
+    type-along sessions.
+3.  For those who are **interested in teaching**, who may not have much
+    experience or may not know where to start, to use this website as a
+    guide to running and teaching their own workshops.
 
 ## Re-use and licensing
 
-The workshop material is licensed under the
-[Creative Commons Attribution 4.0 License](LICENSE.md), so the material
-can be used, re-used, and modified, as long as there is attribution to
-this source. Check out the [For teachers](/appendix/for-teachers.qmd)
-section for more details and tips on using this material for teaching.
+The workshop material is licensed under the [Creative Commons
+Attribution 4.0 License](LICENSE.md), so the material can be used,
+re-used, and modified, as long as there is attribution to this source.
+Check out the [For teachers](/appendix/for-teachers.qmd) section for
+more details and tips on using this material for teaching.
 
 ## Contributing
 
@@ -72,8 +72,6 @@ to get started.
 
 ::: content-hidden
 ### Contributors
-
-{{< include /includes/_contributors.qmd >}}
 :::
 
 ## How the website is made
@@ -81,9 +79,8 @@ to get started.
 The workshop material is created using [Quarto](https://quarto.org) to
 write the material and create the book format,
 [GitHub](https://github.com/) to host the [Git](https://git-scm.com/)
-repository of the material, and
-[GitHub Actions](https://github.com/features/actions) with
+repository of the material, and [GitHub
+Actions](https://github.com/features/actions) with
 [Netlify](https://www.netlify.com/) to build and host the website. The
 original source material for this workshop is found on the
-[`{{< meta gh.repo >}}`]({{< meta links.github >}})
-GitHub repository.
+[`{{< meta gh.repo >}}`]({{< meta links.github >}}) GitHub repository.
