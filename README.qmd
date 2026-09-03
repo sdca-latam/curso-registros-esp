@@ -6,15 +6,16 @@ format: gfm
 
 {{< include /includes/_badges.qmd >}}
 
-## Description
+# Introducción al uso de registros nacionales de salud para investigación 2026
 
-<!-- TODO: Very brief intro, motivation, and overview of workshop. -->
+## Descripción general
 
-This repository contains the lesson, lecture, and assignment material
-for the workshop, including the website source files and other
-associated workshop administration and development files. For more
-detail on the workshop, check out the [welcome
-page]({{< meta links.site >}}).
+Este repositorio contiene los materiales para el curso "Introducción al
+uso de registros nacionales de salud para investigación", que se llevará
+a cabo el jueves 10 de septiembre 2026 en Lima, Perú.
+
+Para mayor detalle, vea la [página de
+bienvenida]({{< meta links.site >}}).
 
 ::: callout-tip
 This workshop repository was generated from the
@@ -101,3 +102,4 @@ Or as BibTeX:
 
 TODO: Update when the workshop is published.
 :::
+

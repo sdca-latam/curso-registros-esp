@@ -1,4 +1,4 @@
-# Welcome {.unnumbered}
+# Página de Bienvenida {.unnumbered}
 
 {{< include /includes/_badges.qmd >}}
 

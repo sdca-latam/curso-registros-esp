@@ -1,0 +1,34 @@
+---
+title: "datos-crudos"
+format: html
+---
+
+## De datos crudos a datos analysables
+
+En esta sesión vamos a investigar la estructura de las bases de datos
+del registro de diabetes de Dinamarca, basándonos en datos simulados.
+Esto quiere decir que todos los datos que veremos son generados
+aleatóreamente y no pertenecen a ninguna persona real.
+
+Usaremos el paquete "osdc" (Open Source Diabetes Classifier). Antes de
+iniciar esta sesión debes haber completado las tareas.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that
+includes both content and the output of embedded code. You can embed
+code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is
+displayed).
