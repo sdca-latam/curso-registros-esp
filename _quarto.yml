@@ -11,14 +11,13 @@ book:
   title: ""
   # TODO: Add more authors if needed.
   author:
-    - name: ""
-      affiliation: ""
-      orcid: ""
+    - name: "Daniel Witte"
+      affiliation: "Steno Diabetes Center Aarhus"
+      # orcid: ""
   date: last-modified
   repo-url: "https://github.com/sdca-latam/curso-registros-esp"
   # TODO: Fill in the URL
   site-url: ""
-
   downloads: [pdf]
   chapters:
     - index.qmd

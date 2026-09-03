@@ -2,3 +2,7 @@ Package: curso-registros-esp
 Title: "TODO: Fill in"
 Type: Website
 Version: 0.1.0
+Imports: 
+    downlit,
+    knitr,
+    rmarkdown
