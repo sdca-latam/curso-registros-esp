@@ -18,10 +18,11 @@
   "[r]": {
     "editor.defaultFormatter": "Posit.air-vscode"
   },
-  "[quarto]": {
-    "editor.defaultFormatter": "rvben.rumdl"
+  "[quarto][qmd][md]": {
+    "editor.defaultFormatter": "jolars.panache"
   },
   "files.insertFinalNewline": true,
+  "typos.config": ".config/typos.toml",
   "conventionalCommits.emojiFormat": "emoji",
   "conventionalCommits.promptScopes": false
 }
