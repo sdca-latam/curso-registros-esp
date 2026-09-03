@@ -1,0 +1,84 @@
+---
+title: "Preparación"
+format: html
+editor: visual
+---
+
+# Tareas preparatorias antes del taller {#sec-pre-workshop}
+
+Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:
+
+::: callout-note
+1.  Instalar la última versión del programa R, RStudio y los paquetes necesarios.
+:::
+
+## Instalación de los programas {#sec-intall-r-packages}
+
+1️⃣ Instala la última version de R, dependiendo del sistema operativo de tu computadora:
+
+<https://cran.r-project.org/>
+
+2️⃣ Instala la última version de RStudio: Éste es un programa separado que ofrece un interfaz intuitivo con R. Visita la página de download de RStudio: <https://posit.co/products/open-source/rstudio/> Haz click en "Download RStudio" y sigue las indicaciones.
+
+3️⃣ Si ya tenías R instalado, verifica que tangas la versión mas reciente para que puedan funcionar todos los paquetes, dando éste comando en R:
+
+```{r}
+#| echo: true
+#| eval: false
+#| results: asis
+R.Version()
+```
+
+Si tienes la versión de R 4.6.0 o posterior, ya estás actualizado. Si no, vuelve al paso 1.
+
+4️⃣ Instala los paquetes de R necesarios dando éste comando en R:
+
+```{r}
+#| echo: true
+#| eval: false
+install.packages("pak")
+pak::pkg_install("tidyverse")
+pak::pkg_install("DiagrammeR")
+pak::pkg_install("downlit")
+pak::pkg_install("osdc")
+pak::pkg_install("furrr")
+pak::pkg_install("here")
+pak::pkg_install("knitr")
+pak::pkg_install("mediation")
+pak::pkg_install("NetCoupler")
+pak::pkg_install("rmarkdown")
+pak::pkg_install("xml2")
+pak::pkg_install("here")
+pak::pkg_install("BS1125/CMAverse")
+pak::pkg_install("ggdag")
+pak::pkg_install("ggplot2")
+pak::pkg_install("survival")
+
+```
+
+Si surge algún problema con la instalación de algún paquete usando el comando "pak", también puedes usar el siguente formato:
+
+```{r}
+#| echo: true
+#| eval: false
+#| results: asis
+
+install.packages("nombre-del-paquete")
+```
+
+Si hay algún problema con la instalación del paquete CMA también puedes probar ésto:
+
+```{r}
+#| echo: true
+#| eval: false
+#| results: asis
+
+install.packages("devtools")
+devtools::install_github("BS1125/CMAverse")
+```
+
+::: callout-tip
+## ¡Nos vemos en el taller!
+
+Nos vemos en el taller en Lima el 10 de septiembre.
+:::
