@@ -23,6 +23,12 @@ El curso se organiza por primera vez en 2026 en colaboración entre el
 Lab](https://ncdpolicylab.org/) y [Steno Diabetes Center
 Aarhus](https://www.stenoaarhus.dk/english/).
 
+Esta página web contiene todo el material del taller, incluyendo
+presentaciones y ejercicios. Está estructurado como un libro, con un
+"capítulo" para cada sesión. Haremos uso intensivo del internet durante
+el taller, donde las sesiones interactivas de programación en vivo
+siguen siguen casi idénticamente los pasos en ésta página.
+
 ### Datos clave
 
 🗓 10 de septiembre 2026
@@ -50,82 +56,29 @@ conocer metodologías de análisis con registros nacionales de salud.
 
 ## Preparación
 
-Para agilizar
+Para agilizar las sesiones el día del taller, les pedimos que completen
+las [tareas preparatorias](/pre-workshop/overview.qmd) antes de llegar a
+la clase.
 
-### Como se construyó este taller
+{{< include /includes/_star-us.qmd >}}
 
-Los materiales de este taller fueron creados usando el formato
-[Quarto](https://quarto.org), [Git](https://git-scm.com/) y
-[GitHub](https://github.com/) para la gestión del repositorio y Github
-Pages para crear y alojar la página web.
-
-### Re-utilización y licensia
+## Re-utilización y licensia
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
 
-El taller tiene una licencia [Licencia Internacional Pública de
+El taller se publica con una licencia [Licencia Internacional Pública de
 Atribución/Reconocimiento 4.0 de Creative
 Commons](https://creativecommons.org/licenses/by/4.0/legalcode.es).
 Quiere decir que los materiales pueden ser utilizados, re-utilizados y
 adaptados, contal que cualquier nueva versión o reproducción parcial o
 total contenga reconocimiento y atribución a éste material como fuente.
 
-<!-- TODO: Add a short description and motivation of the workshop here. -->
+## Como se construyó este taller
 
-<!-- TODO: Update the text below to match things -->
-
-This ((TODO: length)) workshop is a ((TODO: Short description of the
-workshop.)) It is designed for doing participatory live-typing, where
-the teacher demonstrates the tasks on their computer connected to a
-projector while learners type along on their own computer. The workshop
-also includes reading tasks, discussion activities, and hands-on
-exercises.
-
-This website contains all of the material for the workshop, including
-readings, exercises, presentations, live-typing material, and images. It
-is structured as a book, with "chapters" as sessions, in order of
-appearance. We make heavy use of the website throughout the workshop
-where "type-along" sessions almost identically follow the material on
-the website (with slight modifications for time or more detailed
-explanations).
-
-Check out the overview section of the workshop, starting with the
-[Syllabus](/overview/syllabus.qmd).
-
-If you plan on attending the workshop, please make sure to complete the
-[Pre-workshop tasks](/pre-workshop/overview.qmd) to get set up and ready
-for the workshop. The pre-workshop tasks include a survey that you need
-to fill out before the workshop starts.
-
-{{< include /includes/_star-us.qmd >}}
-
-## Target audiences
-
-This website and its content are targeted to three groups:
-
-1.  For the **learners** to use during the workshop, both to follow
-    along and also to use as a reference after the workshop ends. A more
-    detailed description of who the learner is can be found in [Is this
-    for you?](/overview/is-this-for-you.qmd)
-2.  For the **teachers** to use as a guide for when they do the
-    type-along sessions.
-3.  For those who are **interested in teaching**, who may not have much
-    experience or may not know where to start, to use this website as a
-    guide to running and teaching their own workshops.
-
-## Re-use and licensing
-
-The workshop material is licensed under the [Creative Commons
-Attribution 4.0 License](LICENSE.md), so the material can be used,
-re-used, and modified, as long as there is attribution to this source.
-Check out the [For teachers](/appendix/for-teachers.qmd) section for
-more details and tips on using this material for teaching.
-
-## Contributing
-
-Want to contribute to this workshop? Look through our
-[CONTRIBUTING](CONTRIBUTING.md) page for contribution guidelines on how
-to get started.
+Los materiales de este taller fueron creados usando el formato
+[Quarto](https://quarto.org), [Git](https://git-scm.com/) y
+[GitHub](https://github.com/) para la gestión del repositorio y Github
+Pages para crear y alojar la página web.
 
 <!-- TODO: Unhide after having contributors -->
 
@@ -133,13 +86,4 @@ to get started.
 ### Contributors
 :::
 
-## How the website is made
-
-The workshop material is created using [Quarto](https://quarto.org) to
-write the material and create the book format,
-[GitHub](https://github.com/) to host the [Git](https://git-scm.com/)
-repository of the material, and [GitHub
-Actions](https://github.com/features/actions) with
-[Netlify](https://www.netlify.com/) to build and host the website. The
-original source material for this workshop is found on the
-[`{{< meta gh.repo >}}`]({{< meta links.github >}}) GitHub repository.
+## 

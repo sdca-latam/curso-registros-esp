@@ -6,21 +6,28 @@ editor: visual
 
 # Tareas preparatorias antes del taller {#sec-pre-workshop}
 
-Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:
+Para agilizar el taller es importante que todos los participantes
+completen las siguientes tareas preparatórias:
 
 ::: callout-note
-1.  Instalar la última versión del programa R, RStudio y los paquetes necesarios.
+1.  Instalar la última versión del programa R, RStudio y los paquetes
+    necesarios.
 :::
 
 ## Instalación de los programas {#sec-intall-r-packages}
 
-1️⃣ Instala la última version de R, dependiendo del sistema operativo de tu computadora:
+1️⃣ Instala la última version de R, dependiendo del sistema operativo de
+tu computadora:
 
 <https://cran.r-project.org/>
 
-2️⃣ Instala la última version de RStudio: Éste es un programa separado que ofrece un interfaz intuitivo con R. Visita la página de download de RStudio: <https://posit.co/products/open-source/rstudio/> Haz click en "Download RStudio" y sigue las indicaciones.
+2️⃣ Instala la última version de RStudio: Éste es un programa separado
+que ofrece un interfaz intuitivo con R. Visita la página de download de
+RStudio: <https://posit.co/products/open-source/rstudio/> Haz click en
+"Download RStudio" y sigue las indicaciones.
 
-3️⃣ Si ya tenías R instalado, verifica que tangas la versión mas reciente para que puedan funcionar todos los paquetes, dando éste comando en R:
+3️⃣ Si ya tenías R instalado, verifica que tangas la versión mas reciente
+para que puedan funcionar todos los paquetes, dando éste comando en R:
 
 ```{r}
 #| echo: true
@@ -29,7 +36,8 @@ Para agilizar el taller es importante que todos los participantes completen las 
 R.Version()
 ```
 
-Si tienes la versión de R 4.6.0 o posterior, ya estás actualizado. Si no, vuelve al paso 1.
+Si tienes la versión de R 4.6.0 o posterior, ya estás actualizado. Si
+no, vuelve al paso 1.
 
 4️⃣ Instala los paquetes de R necesarios dando éste comando en R:
 
@@ -56,7 +64,8 @@ pak::pkg_install("survival")
 
 ```
 
-Si surge algún problema con la instalación de algún paquete usando el comando "pak", también puedes usar el siguente formato:
+Si surge algún problema con la instalación de algún paquete usando el
+comando "pak", también puedes usar el siguente formato:
 
 ```{r}
 #| echo: true
@@ -66,7 +75,8 @@ Si surge algún problema con la instalación de algún paquete usando el comando
 install.packages("nombre-del-paquete")
 ```
 
-Si hay algún problema con la instalación del paquete CMA también puedes probar ésto:
+Si hay algún problema con la instalación del paquete CMA también puedes
+probar ésto:
 
 ```{r}
 #| echo: true
