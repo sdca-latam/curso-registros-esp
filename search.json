@@ -2,51 +2,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "Bienvenidas / Bienvenidos",
     "section": "",
-    "text": "Welcome\nThis ((TODO: length)) workshop is a ((TODO: Short description of the workshop.)) It is designed for doing participatory live-typing, where the teacher demonstrates the tasks on their computer connected to a projector while learners type along on their own computer. The workshop also includes reading tasks, discussion activities, and hands-on exercises.\nThis website contains all of the material for the workshop, including readings, exercises, presentations, live-typing material, and images. It is structured as a book, with “chapters” as sessions, in order of appearance. We make heavy use of the website throughout the workshop where “type-along” sessions almost identically follow the material on the website (with slight modifications for time or more detailed explanations).\nCheck out the overview section of the workshop, starting with the Syllabus.\nIf you plan on attending the workshop, please make sure to complete the Pre-workshop tasks to get set up and ready for the workshop. The pre-workshop tasks include a survey that you need to fill out before the workshop starts.",
+    "text": "Bienvenidas / Bienvenidos\nBienvenidos al curso “Introducción al uso de registros nacionales de salud para investigación”. Este curso breve tiene como objetivo introducir los conceptos centrales del uso de registros de salud para investigación epidemiológica. El curso está enfocado en las enfermedades crónicas, especialmente en la diabetes pero los principios generales pueden aplicarse en otros contextos.\nEl curso se organiza por primera vez en 2026 en colaboración entre el Grupo Crónicas, el NCD Policy Lab y Steno Diabetes Center Aarhus.\nEsta página web contiene todo el material del taller, incluyendo presentaciones y ejercicios. Está estructurado como un libro, con un “capítulo” para cada sesión. Haremos uso intensivo del internet durante el taller, donde las sesiones interactivas de programación en vivo siguen siguen casi idénticamente los pasos en ésta página.",
     "crumbs": [
-      "Welcome"
+      "Bienvenidas / Bienvenidos"
     ]
   },
   {
-    "objectID": "index.html#target-audiences",
-    "href": "index.html#target-audiences",
-    "title": "Welcome",
-    "section": "Target audiences",
-    "text": "Target audiences\nThis website and its content are targeted to three groups:\n\nFor the learners to use during the workshop, both to follow along and also to use as a reference after the workshop ends. A more detailed description of who the learner is can be found in Is this for you?\nFor the teachers to use as a guide for when they do the type-along sessions.\nFor those who are interested in teaching, who may not have much experience or may not know where to start, to use this website as a guide to running and teaching their own workshops.",
+    "objectID": "index.html#programa",
+    "href": "index.html#programa",
+    "title": "Bienvenidas / Bienvenidos",
+    "section": "Programa",
+    "text": "Programa\n\n\n\n\n\n\n\n\n\nHorario\nMódulo\nDetalle\nExpositor\n\n\n\n\n09:00 - 09:10\nBienvenida\nPresentación del docente y de las instituciones organizadoras.\n\n\n\n09:10 - 10:00\nEl potencial de los registros\nQué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano.\nDW\n\n\n10:00 - 10:15\nBreak\n\n\n\n\n10:15 - 11:00\nDe los datos crudos a una pregunta de investigación\nCómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo.\nDW\n\n\n11:00 - 11:50\nManos a la obra: un análisis sencillo\nUn ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico.\nDW\n\n\n11:50 - 12:00\nCierre. Ideas y discusión\nQué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas.\nTodos",
     "crumbs": [
-      "Welcome"
+      "Bienvenidas / Bienvenidos"
     ]
   },
   {
-    "objectID": "index.html#re-use-and-licensing",
-    "href": "index.html#re-use-and-licensing",
-    "title": "Welcome",
-    "section": "Re-use and licensing",
-    "text": "Re-use and licensing\nThe workshop material is licensed under the Creative Commons Attribution 4.0 License, so the material can be used, re-used, and modified, as long as there is attribution to this source. Check out the For teachers section for more details and tips on using this material for teaching.",
+    "objectID": "index.html#preparación",
+    "href": "index.html#preparación",
+    "title": "Bienvenidas / Bienvenidos",
+    "section": "Preparación",
+    "text": "Preparación\nPara agilizar las sesiones el día del taller, les pedimos que completen las tareas preparatorias antes de llegar a la clase.\n\n\n\n\n\n\nTipDo you find this workshop material useful?\n\n\n\nIf yes, please consider “starring” our GitHub repository. Starring the repository will save it to your list of saved repositories, so it’s easy for you to find again later. As a plus, it helps give our project more visibility :star2:",
     "crumbs": [
-      "Welcome"
+      "Bienvenidas / Bienvenidos"
     ]
   },
   {
-    "objectID": "index.html#contributing",
-    "href": "index.html#contributing",
-    "title": "Welcome",
-    "section": "Contributing",
-    "text": "Contributing\nWant to contribute to this workshop? Look through our CONTRIBUTING page for contribution guidelines on how to get started.",
+    "objectID": "index.html#re-utilización-y-licensia",
+    "href": "index.html#re-utilización-y-licensia",
+    "title": "Bienvenidas / Bienvenidos",
+    "section": "Re-utilización y licensia",
+    "text": "Re-utilización y licensia\n\nEl taller se publica con una licencia Licencia Internacional Pública de Atribución/Reconocimiento 4.0 de Creative Commons. Quiere decir que los materiales pueden ser utilizados, re-utilizados y adaptados, contal que cualquier nueva versión o reproducción parcial o total contenga reconocimiento y atribución a éste material como fuente.",
     "crumbs": [
-      "Welcome"
+      "Bienvenidas / Bienvenidos"
     ]
   },
   {
-    "objectID": "index.html#how-the-website-is-made",
-    "href": "index.html#how-the-website-is-made",
-    "title": "Welcome",
-    "section": "How the website is made",
-    "text": "How the website is made\nThe workshop material is created using Quarto to write the material and create the book format, GitHub to host the Git repository of the material, and GitHub Actions with Netlify to build and host the website. The original source material for this workshop is found on the curso-registros-esp GitHub repository.",
+    "objectID": "index.html#como-se-construyó-este-taller",
+    "href": "index.html#como-se-construyó-este-taller",
+    "title": "Bienvenidas / Bienvenidos",
+    "section": "Como se construyó este taller",
+    "text": "Como se construyó este taller\nLos materiales de este taller fueron creados usando el formato Quarto, Git y GitHub para la gestión del repositorio y Github Pages para crear y alojar la página web.",
     "crumbs": [
-      "Welcome"
+      "Bienvenidas / Bienvenidos"
     ]
   },
   {
@@ -65,7 +65,7 @@
     "href": "overview/syllabus.html#learning-outcome-and-objectives",
     "title": "1  Syllabus",
     "section": "",
-    "text": "TODO: List concrete tasks and steps",
+    "text": "Aim one\n\n\n\n\nObjective one\n\n\n\nTODO: List concrete tasks and steps",
     "crumbs": [
       "Overview",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
@@ -87,7 +87,7 @@
     "href": "overview/schedule.html",
     "title": "3  Schedule",
     "section": "",
-    "text": "The workshop is structured as a series of participatory live-coding sessions interspersed with hands-on exercises and group work, using either a practice dataset or some other real-world dataset. There are some lectures given, mainly at the start and end of the workshop. The general schedule outline is shown in the below table. This is not a fixed schedule of the timings of each session—some may be shorter and others may be longer. Instead, it is meant to be an approximate guide and overview.\n\nDay 1",
+    "text": "The workshop is structured as a series of participatory live-coding sessions interspersed with hands-on exercises and group work, using either a practice dataset or some other real-world dataset. There are some lectures given, mainly at the start and end of the workshop. The general schedule outline is shown in the below table. This is not a fixed schedule of the timings of each session—some may be shorter and others may be longer. Instead, it is meant to be an approximate guide and overview.\n\nDay 1\n\n\n\n\n\nTime\nSession topic",
     "crumbs": [
       "Overview",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Schedule</span>"
@@ -206,45 +206,23 @@
   {
     "objectID": "pre-workshop/overview.html",
     "href": "pre-workshop/overview.html",
-    "title": "5  Overview",
+    "title": "5  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "5.1 How to read this website\nIn order to participate in this workshop, you must complete everything in this section and finish with completing the survey (Chapter 9) at the end. These tasks are meant to provide everyone with the necessary setup and a shared foundation for the workshop.\nDepending on your prior knowledge and skills, these tasks could take between TIME hrs to finish, so we suggest planning some time to complete them. While many of the tasks are mostly readings, they are important in making sure you get the most out of the workshop.\nWe try to be consistent with the way to present certain information in this website. Specifically, we follow some conventions that you should be aware of:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, and Git that is as updated as possible in Chapter 6. For some people, depending on their institution, this task can take the longest amount of time because you have to contact your IT to install these packages.\nInstall necessary R packages.\nTODO: Add more tasks\nRead the syllabus (Chapter 1).\nRead the Code of Conduct (Chapter 8).\nComplete the pre-workshop survey (Chapter 9): This survey is pretty quick, maybe ~10 minutes. There will be some bits from the tasks that you will need to paste into this survey.\n\nCheck each section for exact details on completing these tasks.\n\n\n\n\n\n\nTip\n\n\n\nYou will be taken through the pre-workshop tasks in order by clicking the arrow at the bottom of each page :arrow_right:",
     "crumbs": [
       "Pre-workshop",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Overview</span>"
-    ]
-  },
-  {
-    "objectID": "pre-workshop/overview.html#how-to-read-this-website",
-    "href": "pre-workshop/overview.html#how-to-read-this-website",
-    "title": "5  Overview",
-    "section": "",
-    "text": "Folder names always end with /, for example data/ means the data folder.\nFile names always end with their file extension, for example content.md means the file is a Markdown file.\nR variables are always shown as is. For instance, for the code x &lt;- 10, x is a variable because it was assigned with 10.\nFunctions always end with (), for instance mean() or read_csv().\nSometimes functions have their package name appended with :: so that you run the code from the specific package, since we likely haven’t loaded the package with library(). For instance, to install packages from GitHub using the {pak} package we use pak::pak(\"user/package_name\"). You’ll learn about this more later.",
-    "crumbs": [
-      "Pre-workshop",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Overview</span>"
-    ]
-  },
-  {
-    "objectID": "pre-workshop/overview.html#summary-of-tasks",
-    "href": "pre-workshop/overview.html#summary-of-tasks",
-    "title": "5  Overview",
-    "section": "5.2 Summary of tasks",
-    "text": "5.2 Summary of tasks\nHere’s a quick overview of the tasks you need to do. Specific details about them are found as you work through the tasks.\nIf you haven’t already, go through the workshop overview section, including the Syllabus, Is this for you?, and Learning design to get an overview of what this workshop contains and the learning design behind the workshop material.\nAfter that, please go through the the pre-workshop tasks designed to establish a shared foundation for the start of the workshop. This includes:\n\nInstall a version of R, RStudio, Quarto, and Git that is as updated as possible in Chapter 6. For some people, depending on their institution, this task can take the longest amount of time because you have to contact your IT to install these packages.\nInstall necessary R packages.\nTODO: Add more tasks\nRead the syllabus (Chapter 1).\nRead the Code of Conduct (Chapter 8).\nComplete the pre-workshop survey (Chapter 9): This survey is pretty quick, maybe ~10 minutes. There will be some bits from the tasks that you will need to paste into this survey.\n\nCheck each section for exact details on completing these tasks.\n\n\n\n\n\n\nTip\n\n\n\nYou will be taken through the pre-workshop tasks in order by clicking the arrow at the bottom of each page :arrow_right:",
-    "crumbs": [
-      "Pre-workshop",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Overview</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
     ]
   },
   {
     "objectID": "pre-workshop/installing-programs-r.html",
     "href": "pre-workshop/installing-programs-r.html",
-    "title": "6  Installing the programs",
+    "title": "6  Instalación de los programas",
     "section": "",
-    "text": "In order to participate in the workshop, you’ll need to install these programs. You may already have some of them installed and if you did, please make sure that they are at least the minimum versions listed below. If not, you will need to update them.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console.\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Select the “Click here to download” link. Git is used throughout many sessions in the workshop. When installing, it will ask for a selecting a “Text Editor” and while we won’t be using this in the workshop, Git needs to know this information so choose Notepad.\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console. If you use Homebrew (which we strongly recommend installing and using), installing R is as easy as opening a Terminal and running:\nbrew install --cask r\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”. With Homebrew:\nbrew install --cask rstudio\nGit: Git is used throughout many sessions in the workshop. With Homebrew:\nbrew install git\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console.\nsudo apt -y install r-base\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Git is used throughout many sessions in the workshop.\nsudo apt install git\n\n\n\n\nAll these programs are required for the workshop, even Git. Git, which is a software program to formally manage versions of files, is used because of it’s popularity and the amount of documentation available for it. Check out the online book Happy Git with R, especially the “Why Git” section, for an understanding on why we are teaching Git. Windows users tend to have more trouble with installing Git than macOS or Linux users. See the section on Installing Git for Windows for help.\n\n\n\n\n\n\nNote\n\n\n\nSome pictures may show a Git pane in RStudio, but you may not see it. If you haven’t created or opened an RStudio R Project (which is taught in the introductory workshop), the Git pane does not show up. It only shows up in R Projects that use Git to track file changes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA note to those who have or use work laptops with restrictive administrative privileges: You may encounter problems installing software due to administrative reasons (e.g. you don’t have permission to install things). Even if you have issues installing or updating the latest version of R or RStudio, you will likely be able to continue with the workshop as long as you have the minimum version listed above for R and for RStudio. If you have versions of R and RStudio that are older than that, you may need to ask your IT department to update your software if you can’t do this yourself. Unfortunately, Git is not a commonly used software for some organizations, so you may not have it installed and you will need to ask IT to install it. We require it for the workshop, so please make sure to give IT enough time to be able to install it for you prior to the workshop.\n\n\nOnce R, RStudio, and Git have been installed, open RStudio. If you encounter any troubles during these pre-workshop tasks, try as best as you can to complete the task and then let us know about the issues in the pre-workshop survey. If you continue having problems, indicate on the survey that you need help and we can try to book a quick video call to fix the problem. Otherwise, you can come to the workshop 15-20 minutes earlier to get help.\nIf you’re unable to complete the setup procedure due to unfixable technical issues, you can use Posit Cloud (to use RStudio on the cloud) as a final solution in order to participate in the workshop. For help setting up Posit Cloud for this workshop, refer to the Posit Cloud setup guide.",
+    "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instructivas. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console.\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Select the “Click here to download” link. Git is used throughout many sessions in the workshop. When installing, it will ask for a selecting a “Text Editor” and while we won’t be using this in the workshop, Git needs to know this information so choose Notepad.\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console. If you use Homebrew (which we strongly recommend installing and using), installing R is as easy as opening a Terminal and running:\nbrew install --cask r\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”. With Homebrew:\nbrew install --cask rstudio\nGit: Git is used throughout many sessions in the workshop. With Homebrew:\nbrew install git\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console.\nsudo apt -y install r-base\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Git is used throughout many sessions in the workshop.\nsudo apt install git\n\n\n\n\nAll these programs are required for the workshop, even Git. Git, which is a software program to formally manage versions of files, is used because of it’s popularity and the amount of documentation available for it. Check out the online book Happy Git with R, especially the “Why Git” section, for an understanding on why we are teaching Git. Windows users tend to have more trouble with installing Git than macOS or Linux users. See the section on Installing Git for Windows for help.\n\n\n\n\n\n\nNote\n\n\n\nSome pictures may show a Git pane in RStudio, but you may not see it. If you haven’t created or opened an RStudio R Project (which is taught in the introductory workshop), the Git pane does not show up. It only shows up in R Projects that use Git to track file changes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA note to those who have or use work laptops with restrictive administrative privileges: You may encounter problems installing software due to administrative reasons (e.g. you don’t have permission to install things). Even if you have issues installing or updating the latest version of R or RStudio, you will likely be able to continue with the workshop as long as you have the minimum version listed above for R and for RStudio. If you have versions of R and RStudio that are older than that, you may need to ask your IT department to update your software if you can’t do this yourself. Unfortunately, Git is not a commonly used software for some organizations, so you may not have it installed and you will need to ask IT to install it. We require it for the workshop, so please make sure to give IT enough time to be able to install it for you prior to the workshop.\n\n\nOnce R, RStudio, and Git have been installed, open RStudio. If you encounter any troubles during these pre-workshop tasks, try as best as you can to complete the task and then let us know about the issues in the pre-workshop survey. If you continue having problems, indicate on the survey that you need help and we can try to book a quick video call to fix the problem. Otherwise, you can come to the workshop 15-20 minutes earlier to get help.\nIf you’re unable to complete the setup procedure due to unfixable technical issues, you can use Posit Cloud (to use RStudio on the cloud) as a final solution in order to participate in the workshop. For help setting up Posit Cloud for this workshop, refer to the Posit Cloud setup guide.",
     "crumbs": [
       "Pre-workshop",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Installing the programs</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Instalación de los programas</span>"
     ]
   },
   {
@@ -330,6 +308,17 @@
     "title": "11  TODO: Lesson title here",
     "section": "",
     "text": "11.1 Learning objectives\nThe learning objectives for this session are:",
+    "crumbs": [
+      "Sessions",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sessions/session.html#learning-objectives",
+    "href": "sessions/session.html#learning-objectives",
+    "title": "11  TODO: Lesson title here",
+    "section": "",
+    "text": "Objective one",
     "crumbs": [
       "Sessions",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
@@ -439,7 +428,7 @@
     "href": "CONTRIBUTING.html#pencil2-adding-or-modifying-content",
     "title": "Appendix B — Contributing",
     "section": "B.2 :pencil2: Adding or modifying content",
-    "text": "B.2 :pencil2: Adding or modifying content\nTo contribute to the workshop, you first need to install uv and justfile. We use uv and justfile to manage our project, such as to run checks and build the workshop website. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.\nIt’s easiest to install uv first and then install justfile using uv. Then, to install justfile, run:\nuv tool install rust-just\nWe keep all our development workflows in the justfile, so you can explore it to see what commands are available. To see a list of commands available, run:\njust\nAs you contribute, make sure your changes will pass our checks by opening a terminal so that the working directory is the root of this workshop’s parent/root folder and running:\njust run-all\nWhen committing changes, please try to follow Conventional Commits as Git messages. Using this convention allows us to be able to automatically create a release based on the commit message by using Commitizen. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format, as we use squash merges when merging pull requests. This way, the commits in the pull request will be squashed into one commit.",
+    "text": "B.2 :pencil2: Adding or modifying content\nTo contribute to the workshop, you first need to install uv and justfile. We use uv and justfile to manage our project, such as to run checks and build the workshop website. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.\nIt’s easiest to install uv first and then install justfile using uv. Then, to install justfile, run:\nuv tool install rust-just\nWe keep all our development workflows in the justfile, so you can explore it to see what commands are available. To see a list of commands available, run:\njust\nAs you contribute, make sure your changes will pass our checks by opening a terminal so that the working directory is the root of this workshop’s parent/root folder and running:\njust run-all\nWhen committing changes, please try to follow Conventional Commits as Git messages. Using this convention allows us to be able to automatically create a release based on the commit message by using Cocogitto. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format. That’s because we use squash merges when merging pull requests, so all other commits in the pull request will be squashed into one commit.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
@@ -450,7 +439,7 @@
     "href": "CONTRIBUTING.html#file_folder-support-and-infrastructure-files",
     "title": "Appendix B — Contributing",
     "section": "B.3 :file_folder: Support and infrastructure files",
-    "text": "B.3 :file_folder: Support and infrastructure files\n\n.copier-answers.yml: Contains the answers you gave when copying the project from the template. You should not modify this file directly.\n.pre-commit-config.yaml: Pre-commit configuration file for managing and running checks before each commit.\n.typos.toml: typos spell checker configuration file.\n.zenodo.json: Structured citation metadata for your project when archived on Zenodo. This is used to add the metadata to Zenodo when a GitHub release has been uploaded to Zenodo.\njustfile: just configuration file for scripting project tasks.\n.editorconfig: Editor configuration file for EditorConfig to maintain consistent coding styles across different editors and IDEs.\nCONTRIBUTING.md: Guidelines for contributing to the project.\n.github/: Contains GitHub-specific files, such as issue and pull request templates, workflows, dependabot configuration, pull request templates, and a CODEOWNERS file.\n.rumdl.toml: rumdl configuration file for formatting Markdown files.",
+    "text": "B.3 :file_folder: Support and infrastructure files\n\n.copier-answers.yml: Contains the answers you gave when copying the project from the template. You should not modify this file directly.\n.gitignore: This ignore file tells Git which files to not track. Unless you know what you are doing, it’s best to not touch this file.\n_quarto.yml: Quarto configuration file for the website, including settings for the website, such as the theme, navigation, and other options.\n_metadata.yml: Quarto metadata file for the website, including information about the project, such as the titles and GitHub names.\n.pre-commit-config.yaml: Pre-commit configuration file for managing and running checks before each commit.\n.config/: Contains configuration files for various tools used in the project, such as:\n\ntypos.toml: typos spell checker configuration file.\nrumdl.toml and panache.toml: rumdl and Panache configuration file for formatting Markdown files in the project.\n\n.zenodo.json: Structured citation metadata for your project when archived on Zenodo. This is used to add the metadata to Zenodo when a GitHub release has been uploaded to Zenodo.\njustfile: just configuration file for scripting project tasks.\n.editorconfig: Editor configuration file for EditorConfig to maintain consistent coding styles across different editors and IDEs.\nCONTRIBUTING.md: Guidelines for contributing to the project.\n.github/: Contains GitHub-specific files, such as issue and pull request templates, workflows, dependabot configuration, pull request templates, and a CODEOWNERS file.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
