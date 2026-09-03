@@ -1,4 +1,4 @@
-# Página de Bienvenida {.unnumbered}
+# Bienvenidas / Bienvenidos {.unnumbered}
 
 {{< include /includes/_badges.qmd >}}
 
@@ -10,6 +10,65 @@ knitr::write_bib(
   here::here("includes/packages.bib")
 )
 ```
+
+Bienvenidos al curso "Introducción al uso de registros nacionales de
+salud para investigación". Este curso breve tiene como objetivo
+introducir los conceptos centrales del uso de registros de salud para
+investigación epidemiológica. El curso está enfocado en las enfermedades
+crónicas, especialmente en la diabetes pero los principios generales
+pueden aplicarse en otros contextos.
+
+El curso se organiza por primera vez en 2026 en colaboración entre el
+[Grupo Crónicas](https://www.cronicas-upch.pe/en/), el [NCD Policy
+Lab](https://ncdpolicylab.org/) y [Steno Diabetes Center
+Aarhus](https://www.stenoaarhus.dk/english/).
+
+### Datos clave
+
+🗓 10 de septiembre 2026
+
+🕰️ 9:00 - 12:00
+
+🏨 Universidad Peruana Cayetano Heredia, sede Miraflores, Lima, Perú
+
+### Público
+
+El curso está diseñado como taller para ivestigadores jóvenes y
+estudiantes con conocimientos en análisis de datos interesados en
+conocer metodologías de análisis con registros nacionales de salud.
+
+## Programa
+
+| Horario | Módulo | Detalle | Expositor |
+|----|----|----|----|
+| 09:00 - 09:10 | Bienvenida | Presentación del docente y de las instituciones organizadoras. |  |
+| 09:10 - 10:00 | El potencial de los registros | Qué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano. | DW |
+| 10:00 - 10:15 | Break |  |  |
+| 10:15 - 11:00 | De los datos crudos a una pregunta de investigación | Cómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo. | DW |
+| 11:00 - 11:50 | Manos a la obra: un análisis sencillo | Un ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico. | DW |
+| 11:50 - 12:00 | Cierre. Ideas y discusión | Qué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas. | Todos |
+
+## Preparación
+
+Para agilizar
+
+### Como se construyó este taller
+
+Los materiales de este taller fueron creados usando el formato
+[Quarto](https://quarto.org), [Git](https://git-scm.com/) y
+[GitHub](https://github.com/) para la gestión del repositorio y Github
+Pages para crear y alojar la página web.
+
+### Re-utilización y licensia
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
+
+El taller tiene una licencia [Licencia Internacional Pública de
+Atribución/Reconocimiento 4.0 de Creative
+Commons](https://creativecommons.org/licenses/by/4.0/legalcode.es).
+Quiere decir que los materiales pueden ser utilizados, re-utilizados y
+adaptados, contal que cualquier nueva versión o reproducción parcial o
+total contenga reconocimiento y atribución a éste material como fuente.
 
 <!-- TODO: Add a short description and motivation of the workshop here. -->
 
