@@ -3,6 +3,9 @@ Title: "TODO: Fill in"
 Type: Website
 Version: 0.1.0
 Imports: 
+    desc,
     downlit,
+    here,
     knitr,
-    rmarkdown
+    rmarkdown,
+    stringr
