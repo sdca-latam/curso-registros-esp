@@ -1,0 +1,613 @@
+/*-- scss:defaults --*/
+
+// Palette lifted from the original PowerPoint deck
+$teal-dark:   #0A3B36;   // titles, dark slides
+$teal:        #12564F;   // icon circles, table header
+$teal-mid:    #2A6E66;
+$card-fill:   #EAF1EF;
+$card-border: #D6E3E0;
+$line-soft:   #9FB8B4;
+$gold:        #D99A2B;
+$gold-fill:   #FBF1DE;
+$gold-border: #EAD9B4;
+$rust:        #B24A3A;
+$rust-fill:   #F7E9E6;
+$rust-border: #E7CDC8;
+$ink:         #222222;
+$muted:       #6E6E6E;
+$pale-teal:   #BFD3CF;
+$pale-teal-2: #CFE0DD;
+
+// Carlito is metric-compatible with Calibri; Caladea with Cambria.
+$font-sans: Calibri, Carlito, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-serif: Cambria, Caladea, Georgia, "Times New Roman", serif;
+
+$font-family-sans-serif: $font-sans;
+$presentation-font-size-root: 16px;
+$body-color: $ink;
+$link-color: $teal;
+$backgroundColor: #ffffff;
+
+/*-- scss:rules --*/
+
+// The deck is authored on a 13.333in x 7.5in canvas. With reveal set to
+// 1280x720 one inch maps to exactly 96px, so all sizes below are the
+// original PowerPoint measurements converted at 96px/in and 1.3333px/pt.
+
+.reveal {
+  font-family: $font-sans;
+  color: $ink;
+}
+
+.reveal .slides { text-align: left; }
+
+.reveal .slides section {
+  padding: 30px 57.6px 0 57.6px;   // 0.6in side margins
+  height: 100%;
+  box-sizing: border-box;
+}
+
+// ---------------------------------------------------------------- headings
+
+.reveal h2 {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 37.3px;               // 28pt
+  color: $teal-dark;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0 0 0 0;
+  line-height: 1.15;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 59.5px;
+}
+
+// Round icon badge that sits to the left of every slide title.
+.reveal h2 img.tico,
+.reveal .tico {
+  width: 59.5px;                   // 0.62in
+  height: 59.5px;
+  flex: 0 0 59.5px;
+  background: $teal;
+  border-radius: 50%;
+  padding: 8.25px;                 // centres the 0.45in glyph
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: none;
+  border: none;
+}
+
+// Slide 3 has the badge with no glyph inside it.
+.reveal .tico.empty { padding: 0; }
+
+.subtitle {
+  font-size: 17.3px;               // 13pt italic
+  font-style: italic;
+  color: $muted;
+  margin: 6px 0 0 73.5px;          // aligns with the title text
+  line-height: 1.25;
+}
+
+// Space between the header block and the body of the slide.
+.reveal h2 + *,
+.subtitle + * { margin-top: 22px; }
+
+// ------------------------------------------------------------- title slide
+
+.slide-dark {
+  h1, h2, h3, p { color: #fff; }
+}
+
+.big-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 56px;                 // 42pt
+  line-height: 1.15;
+  color: #fff;
+  max-width: 1056px;               // 11in
+}
+
+.tagline {
+  font-size: 22.7px;               // 17pt
+  color: $gold;
+  margin-top: 34px;
+}
+
+.meta {
+  font-size: 17.3px;               // 13pt
+  color: $pale-teal;
+  line-height: 1.45;
+  margin-top: 34px;
+}
+
+.dots { margin-top: 40px; }
+.dots .d {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: $teal-mid;
+  margin-right: 22px;
+}
+.dots .d.gold { background: $gold; }
+
+.section-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 53.3px;               // 40pt
+  color: #fff;
+}
+
+// ------------------------------------------------------ numbered step cards
+
+.numlist { display: flex; flex-direction: column; gap: 26px; }
+
+.numcard {
+  box-sizing: border-box;
+  background: $card-fill;
+  border-radius: 10px;
+  padding: 29px 34px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+// Quarto lays slides out as column flex containers, so pin the card heights
+// rather than relying on min-height (flex items would otherwise be stretched).
+.numlist .numcard { flex: 0 0 auto; }
+.numlist.tall .numcard { height: 208px; }                            // slide 2
+.numlist.slim .numcard { height: 119px; padding: 22px 34px; }        // slide 4
+
+.numcard .num {
+  flex: 0 0 61.4px;
+  width: 61.4px;
+  height: 61.4px;
+  border-radius: 50%;
+  background: $teal;
+  color: #fff;
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 22.7px;               // 17pt
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numcard .ncontent { flex: 1 1 auto; padding-top: 2px; }
+
+.numcard .ncontent .nc-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 24px;                 // 18pt
+  color: $teal-dark;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.numcard .ncontent ul { margin: 0; padding-left: 22px; list-style-position: outside; }
+.numcard .ncontent li { margin: 0 0 1px 0; }
+.numcard .ncontent li,
+.numcard .ncontent p {
+  font-size: 16px;                 // 12pt
+  line-height: 1.55;
+  color: $ink;
+  margin: 0;
+}
+
+// ------------------------------------------------------------- icon cards
+
+.cardgrid {
+  display: grid;
+  gap: 9.6px 9.6px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cardgrid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.cardgrid.cols-5 { grid-template-columns: repeat(5, 1fr); }
+
+.icard {
+  background: $card-fill;
+  border: 1px solid $card-border;
+  border-radius: 9px;
+  padding: 28.8px;
+  box-sizing: border-box;
+}
+
+.icard .ic-head {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  min-height: 57.6px;
+}
+
+.icard img.ic-icon {
+  width: 57.6px;                   // 0.6in circle
+  height: 57.6px;
+  flex: 0 0 57.6px;
+  background: $teal;
+  border-radius: 50%;
+  padding: 7.2px;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.icard .ic-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 19.3px;               // 14.5pt
+  color: $teal-dark;
+  line-height: 1.2;
+}
+
+.icard .ic-body {
+  font-size: 15.3px;               // 11.5pt
+  line-height: 1.65;
+  color: $ink;
+  margin-top: 12px;
+  margin-left: 74.6px;             // aligned under the title
+}
+.icard .ic-body ul { margin: 0; padding-left: 20px; }
+.icard .ic-body p { margin: 0; }
+
+// Variant: body text runs the full card width instead of indenting.
+.icard.flush .ic-body { margin-left: 0; }
+
+// Variant: small badge and 13.5pt sans title (slides 12 and 16 grids).
+.icard.compact { padding: 21px; }
+.icard.compact img.ic-icon {
+  width: 42.2px; height: 42.2px; flex: 0 0 42.2px; padding: 5.3px;
+}
+.icard.compact .ic-head { gap: 10px; min-height: 42.2px; }
+.icard.compact .ic-title {
+  font-family: $font-sans;
+  font-size: 18px;                 // 13.5pt
+}
+.icard.compact .ic-body { font-size: 14px; margin-top: 11px; }
+
+// Variant: everything centred in a narrow column (slide 14).
+.icard.centred { text-align: center; padding: 19px; }
+.icard.centred .ic-head { justify-content: center; }
+.icard.centred img.ic-icon {
+  width: 42.2px; height: 42.2px; flex: 0 0 42.2px; padding: 5.3px;
+}
+.icard.centred .ic-title { font-family: $font-sans; font-size: 16px; margin-top: 10px; }
+.icard.centred .ic-body { margin-left: 0; font-size: 13.3px; line-height: 1.6; }
+.icard.centred .ic-head { flex-direction: column; gap: 8px; }
+
+// ------------------------------------------------------------- wide rows
+
+.rowcard {
+  box-sizing: border-box;
+  border-radius: 9px;
+  padding: 22px 34px;
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+}
+.rowstack { display: flex; flex-direction: column; gap: 15px; }
+
+.rowcard .rc-icon {
+  width: 74.9px;                   // 0.78in
+  height: 74.9px;
+  flex: 0 0 74.9px;
+  border-radius: 50%;
+  background: $teal;
+  padding: 10.6px;
+  box-sizing: border-box;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.rowcard .rc-title {
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 22.7px;               // 17pt
+  color: $teal-dark;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+.rowcard .rc-body {
+  font-size: 15.3px;
+  line-height: 1.65;
+  margin: 0;
+}
+.rowcard .rc-main { flex: 1 1 auto; }
+
+.rowcard .rc-cite {
+  flex: 0 0 197px;
+  font-size: 12.7px;               // 9.5pt
+  font-style: italic;
+  color: $rust;
+  line-height: 1.35;
+  align-self: center;
+}
+
+.rowcard.teal { background: $card-fill; }
+.rowcard.rust { background: $rust-fill; border: 1px solid $rust-border; }
+.rowcard.rust .rc-icon { background: $rust; }
+.rowcard.plain-rust { background: $rust-fill; }
+.rowcard.plain-rust .rc-icon { background: $rust; }
+.rowcard.gold { background: $gold-fill; }
+.rowcard.gold .rc-icon { background: $gold; }
+.rowcard.rc-mid { align-items: center; }
+
+// ---------------------------------------------------------------- callouts
+
+.callout-gold {
+  background: $gold-fill;
+  border: 1px solid $gold;
+  border-radius: 9px;
+  padding: 17px 34px;
+  font-size: 16.7px;               // 12.5pt
+  line-height: 1.55;
+  color: $ink;
+}
+.callout-gold strong { color: $teal-dark; }
+
+.callout-teal {
+  background: $card-fill;
+  border-radius: 9px;
+  padding: 17px 34px;
+  font-size: 16.7px;
+  line-height: 1.55;
+  color: $ink;
+}
+.callout-teal strong { color: $teal-dark; }
+
+.callout-bar {
+  background: $card-fill;
+  border-radius: 9px;
+  padding: 11px 34px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $teal-dark;
+}
+
+.source {
+  position: absolute;
+  left: 57.6px;
+  right: 57.6px;
+  bottom: 22px;
+  font-size: 12px;                 // 9pt italic
+  font-style: italic;
+  color: $muted;
+  line-height: 1.3;
+}
+
+// ----------------------------------------------------------------- tables
+
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.7px;               // 11pt
+  margin: 0;
+}
+.reveal table th {
+  background: $teal;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  padding: 13.3px 12px;
+  border: 1px solid $card-border;
+  font-size: 14.7px;
+}
+.reveal table td {
+  padding: 13.3px 12px;
+  border: 1px solid $card-border;
+  vertical-align: top;
+  background: #fff;
+  line-height: 1.35;
+  color: $ink;
+}
+.reveal table tbody tr:nth-child(even) td { background: $card-fill; }
+.reveal table td:first-child {
+  font-weight: 700;
+  color: $teal-dark;
+}
+.reveal table tbody tr:last-child td { border-bottom: 1px solid $card-border; }
+
+// Slide-specific column proportions, taken from the original tables.
+.t-usuarios  td:nth-child(1), .t-usuarios  th:nth-child(1) { width: 24.9%; }
+.t-usuarios  td:nth-child(2), .t-usuarios  th:nth-child(2) { width: 36.7%; }
+.t-niveles   td:nth-child(1), .t-niveles   th:nth-child(1) { width: 21.2%; }
+.t-niveles   td:nth-child(2), .t-niveles   th:nth-child(2) { width: 44.1%; }
+.t-comp      td:nth-child(1), .t-comp      th:nth-child(1) { width: 15.5%; }
+.t-comp      td:nth-child(2), .t-comp      th:nth-child(2) { width: 41.5%; }
+.t-exig      td:nth-child(1), .t-exig      th:nth-child(1) { width: 22%; }
+.t-hce       td:nth-child(1), .t-hce       th:nth-child(1) { width: 18.5%; }
+.t-hce       td:nth-child(2), .t-hce       th:nth-child(2) { width: 40.7%; }
+
+.t-comp, .t-exig, .t-hce, .t-usuarios, .t-niveles { font-size: 14.7px; }
+
+// Slide 13 carries eight rows of long text; tighten it so the last row clears
+// the source line at the foot of the slide.
+.reveal .t-comp table { font-size: 14px; }
+.reveal .t-comp table td, .reveal .t-comp table th { padding: 8.5px 12px; }
+
+// ------------------------------------------------- hub-and-spoke (slide 8)
+
+.hub {
+  position: relative;
+  width: 1164px;
+  height: 426px;
+  margin: 10px 0 0 0;
+}
+.hub svg { position: absolute; inset: 0; }
+.hub .node {
+  position: absolute;
+  background: $card-fill;
+  border: 1.7px solid $teal;
+  border-radius: 8px;
+  width: 278.4px;
+  height: 99.8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 10px;
+}
+.hub .node .n-title {
+  font-weight: 700;
+  font-size: 16px;                 // 12pt
+  color: $teal-dark;
+  line-height: 1.25;
+}
+.hub .node .n-sub {
+  font-size: 12.7px;               // 9.5pt
+  color: $muted;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.hub .core {
+  position: absolute;
+  left: 481.9px; top: 134.4px;
+  width: 201.6px; height: 138.2px;
+  border-radius: 50%;
+  background: $teal;
+  color: #fff;
+  font-family: $font-serif;
+  font-weight: 700;
+  font-size: 26.7px;               // 20pt
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// -------------------------------------------------- process strip (sl. 14)
+
+.chevrons { display: flex; align-items: center; margin-top: 14px; }
+.chevrons .step {
+  flex: 1 1 0;
+  background: $gold-fill;
+  border: 1px solid $gold-border;
+  border-radius: 7px;
+  height: 78.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 13.3px;               // 10pt
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.chevrons .step.last {
+  background: $teal;
+  border-color: $teal;
+  color: #fff;
+  font-weight: 700;
+}
+.chevrons .tick {
+  flex: 0 0 21px;
+  height: 23px;
+  background: $gold;
+  margin: 0 1px;
+}
+
+// ------------------------------------------------------ flow row (slide 20)
+
+.flowrow { display: flex; align-items: center; }
+.flowrow .fbox {
+  flex: 1 1 0;
+  background: $card-fill;
+  border: 1px solid $card-border;
+  border-radius: 9px;
+  height: 168px;
+  padding: 15px 17px;
+  box-sizing: border-box;
+}
+.flowrow .fbox.dark { background: $teal; border-color: $teal; }
+.flowrow .fbox.dark .f-title { color: #fff; }
+.flowrow .fbox.dark .f-body { color: $pale-teal-2; }
+.flowrow .f-title {
+  font-weight: 700;
+  font-size: 16.7px;               // 12.5pt
+  color: $teal-dark;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.flowrow .f-body { font-size: 14px; line-height: 1.55; }
+.flowrow .arrow {
+  flex: 0 0 28px;
+  text-align: center;
+  color: $gold;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.latency-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: $teal-dark;
+  margin: 26px 0 10px 0;
+}
+.latency { display: flex; gap: 14.4px; }
+.latency .seg { flex: 1 1 0; text-align: center; }
+.latency .seg .bar {
+  height: 57.6px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.latency .seg .who {
+  font-size: 14px;
+  color: $ink;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+// ---------------------------------------------------------------- misc
+
+.reveal .slides section img { box-shadow: none; border: none; }
+
+.figure-card {
+  background: $card-fill;
+  border-radius: 10px;
+  padding: 21px;
+  display: inline-block;
+}
+.figure-card img { display: block; width: 759px; height: auto; }
+
+.reveal .slide-number { display: none; }
+
+// An "empty" h2 is used to create untitled slides (title slide, section
+// dividers, full-bleed screenshots) — hide the heading box entirely.
+.reveal h2:empty { display: none; min-height: 0; margin: 0; }
+
+// Pandoc wraps every run of text inside a fenced div in a <p>. Strip those
+// margins so the components size to their real content, and let images inside
+// flex containers become flex items in their own right.
+.reveal .slides section {
+  .icard p, .rowcard p, .numcard p, .callout-gold p, .callout-teal p,
+  .callout-bar p, .source p, .big-title p, .tagline p, .meta p, .dots p,
+  .section-title p, .hub p, .figure-card p, .subtitle p, .nc-title p,
+  .ic-title p, .rc-title p, .rc-body p, .ic-body p, .rc-cite p { margin: 0; }
+
+  .ic-head > p, .rowcard > p, .figure-card > p { display: contents; }
+}
+
+// Vertical rhythm between the top-level blocks of a slide.
+.reveal .slides section > div + div { margin-top: 16px; }
+.reveal .slides section > div.source { margin-top: 0; }
+.reveal .slides section > .subtitle + div { margin-top: 22px; }
+
+// Untitled slides: position the block where the original placed it.
+// Specificity must beat the generic "div + div" spacing rule above.
+.reveal .slides section.slide-dark {
+  .big-title { margin-top: 133px; }       // title block starts at 1.7in
+  .tagline { margin-top: 78px; }          // tagline at 3.85in
+  .meta { margin-top: 42px; }             // date and author at 4.6in
+  .dots { margin-top: 70px; }             // dot row at 5.85in
+  .section-title { margin-top: 181px; margin-left: 240px; }
+}
