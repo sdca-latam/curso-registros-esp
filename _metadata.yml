@@ -2,12 +2,10 @@ gh:
   org: "sdca-latam"
   repo: "curso-registros-esp"
 
-# TODO: Fill in the project description
-tagline: ""
+tagline: "Introducción al uso de registros nacionales de salud para investigación 2026"
 
-# TODO: Confirm these URLs
 links:
-  site: ""
+  site: "https://sdca-latam.github.io/curso-registros-esp"
   github: "https://github.com/sdca-latam/curso-registros-esp"
 
 # TODO: Add the URLs to the surveys.
