@@ -4,20 +4,20 @@ Para poder participar en el taller, es importante que tengas los
 siguientes programas instalados en tu computadora. Es posible que ya
 hayas instalado algunos de ellos en el pasado. En ese caso por favor
 verifica que tengas instalada una versión mas reciente que la indicada
-en las instructivas. Si no tendrás que actualizar las instalaciones.
+en las instrucciones. Si no tendrás que actualizar las instalaciones.
 
 ::: panel-tabset
 ## Windows
 
-1.  [R](https://cloud.r-project.org/bin/windows/base/): Cualquier Any
-    version above {{< meta versions.r >}}. If you have used R before,
-    you can confirm the version by running `R.version.string` in the
-    Console.
+1.  [R](https://cloud.r-project.org/bin/windows/base/): Cualquier
+    versión mas reciente que {{< meta versions.r >}}. Si has utilizado R
+    anteriormente, puedes verificar tu versión actual dando éste comando
+    en la consola: `R.version.string`.
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above {{< meta versions.rstudio >}}. If you have
-    installed it before, check the current version by going to the menu
-    "Help -\> About RStudio".
+    Cualquier versión mas reciente que {{< meta versions.rstudio >}}. If
+    you have installed it before, check the current version by going to
+    the menu "Help -\> About RStudio".
 
 3.  [Git](https://git-scm.com/download/win): Select the "Click here to
     download" link. Git is used throughout many sessions in the

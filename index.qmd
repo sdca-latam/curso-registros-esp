@@ -62,7 +62,7 @@ la clase.
 
 {{< include /includes/_star-us.qmd >}}
 
-## Re-utilización y licensia
+## Re-utilización y licencia
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a>
 
