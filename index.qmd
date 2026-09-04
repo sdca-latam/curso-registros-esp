@@ -1,4 +1,4 @@
-# Bienvenidas / Bienvenidos {.unnumbered}
+# Bienvenida {.unnumbered}
 
 {{< include /includes/_badges.qmd >}}
 

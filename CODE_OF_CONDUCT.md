@@ -1,27 +1,33 @@
-# Contributor Code of Conduct
+# Código de Conducta para Contribuyentes
 
-As contributors and maintainers of this project, we pledge to respect all people
-who contribute through reporting issues, posting suggestions, updating any
-material, submitting pull requests, and other activities.
+Como contribuyentes y administradores de este proyecto, nos
+comprometemos a respetar a todas las personas que contribuyan reportando
+*issues*, publicando sugerencias, actualizando cualquier material,
+enviando *pull requests* y participando en otras actividades.
 
-We are committed to making participation in this project a harassment-free
-experience for everyone, regardless of level of experience, gender, gender
-identity and expression, sexual orientation, disability, personal appearance,
-body size, race, ethnicity, age, or religion.
+Nos comprometemos a asegurar que la participación en este proyecto sea
+una experiencia libre de acoso para todas las personas,
+independientemente de su nivel de experiencia, género, identidad o
+expresión de género, orientación sexual, discapacidad, apariencia
+personal, características físicas, raza, etnia, edad o religión.
 
-Examples of unacceptable behavior by participants include the use of sexual
-language or imagery, derogatory comments or personal attacks, trolling, public
-or private harassment, insults, or other unprofessional conduct.
+Ejemplos de comportamientos no permitidos por parte de quienes
+participan son el uso de lenguaje o imágenes de carácter sexual, los
+comentarios denigrantes o despectivos y los ataques personales, el
+*trolling*, el acoso público o privado, los insultos u otras conductas
+no profesionales.
 
-Project maintainers have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct. Project maintainers who do not follow the
-Code of Conduct may be removed from the project team.
+Los administradores del proyecto tienen el derecho y la responsabilidad
+de eliminar, editar o rechazar comentarios, *commits*, código, ediciones
+de la wiki, *issue* y otras contribuciones que no sigan este Código de
+Conducta. Los administradores del proyecto que no cumplan con el Código
+de Conducta pueden ser expulsados del equipo del proyecto.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by opening an issue or contacting one or more of the project
-maintainers.
+Los casos de comportamiento abusivo, de acoso o de comportamientos no
+permitidos de cualquier tipo pueden reportarse abriendo un *issue* o
+poniendose en contacto con los administradores del proyecto.
 
-This Code of Conduct is adapted from the Contributor Covenant
-(<https://www.contributor-covenant.org>), version 1.0.0, available at
-<https://www.contributor-covenant.org/version/1/0/0/>
+Este Código de Conducta es una adaptación del Contributor Covenant
+(<https://www.contributor-covenant.org>), versión 3.0.0, disponible en
+<https://www.contributor-covenant.org/es/version/3/0/code_of_conduct/>
+

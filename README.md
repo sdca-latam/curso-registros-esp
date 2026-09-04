@@ -27,18 +27,15 @@ bienvenida](https://sdca-latam.github.io/curso-registros-esp/).
 > [!TIP]
 >
 > Este repositorio de taller fue generado con la plantilla
-> [`template-workshop`](https://github.com/rostools/template-workshop)
-> del proyecto rostools.
+> [`template-workshop`](https://template-workshop.rostools.org/) del
+> proyecto rostools.
 
-## Contributing
+## Contribuir
 
-If you are interested in contributing to the workshop material, please
-refer to the [contributing guidelines](CONTRIBUTING.md). For guidelines
-on how to be a helper or teacher, check out the [For
-teachers](https://guides.rostools.org/instructors) page.
+Si te interesa contribuir al desarrollo de los materiales de este
+taller, por favor consulta la [guía de contribuidores](CONTRIBUTING.md).
 
-Please note that the project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By contributing to or being involved in
-this project, you agree to abide by its terms.
+Este proyecto tiene un [Código de conducta](CODE_OF_CONDUCT.md). Si
+contribuyes o participas en el proyecto, afirmas adherirte al código.
 
 <!-- TODO: Unhide after having contributors -->

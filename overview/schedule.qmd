@@ -4,20 +4,21 @@ format:
     tbl-colwidths: [30, 70]
 ---
 
-# Schedule {#sec-schedule}
+# Programa {#sec-schedule}
 
-The workshop is structured as a series of participatory live-coding sessions
-interspersed with hands-on exercises and group work, using either a practice
-dataset or some other real-world dataset. There are some lectures given, mainly
-at the start and end of the workshop. The general schedule outline is shown in
-the below table. This is not a fixed schedule of the timings of each
-session---some may be shorter and others may be longer. Instead, it is meant to
-be an approximate guide and overview.
+Este taller contiene presentaciones, ejercicios participatorios con
+programación en vivo utilizando datos simulados, discusiones y trabajo
+en grupos.
 
 ::: panel-tabset
-## Day 1 {.unnumbered}
+## 10 de septiembre 2026 {.unnumbered}
 
-| Time | Session topic |
-  | :--- | :------------ |
-  |      |               |
+| Horario | Módulo | Detalle | Expositor |
+|------------------|------------------|------------------|------------------|
+| 09:00 - 09:10 | Bienvenida | Presentación del docente y de las instituciones organizadoras. |  |
+| 09:10 - 10:00 | El potencial de los registros | Qué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano. | DW |
+| 10:00 - 10:15 | Break |  |  |
+| 10:15 - 11:00 | De los datos crudos a una pregunta de investigación | Cómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo. | DW |
+| 11:00 - 11:50 | Manos a la obra: un análisis sencillo | Un ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico. | DW |
+| 11:50 - 12:00 | Cierre. Ideas y discusión | Qué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas. | Todos |
 :::

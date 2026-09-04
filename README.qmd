@@ -8,29 +8,32 @@ format: gfm
 
 ## Descripción general
 
-Este repositorio contiene los materiales para el curso taller "Introducción al
-uso de registros nacionales de salud para investigación", que se llevará a cabo
-el jueves 10 de septiembre 2026 en Lima, Perú.
+Este repositorio contiene los materiales para el curso taller
+"Introducción al uso de registros nacionales de salud para
+investigación", que se llevará a cabo el jueves 10 de septiembre 2026 en
+Lima, Perú.
 
 Para mayor detalle, vea la [página de
 bienvenida](https://sdca-latam.github.io/curso-registros-esp/).
 
 ::: callout-tip
 Este repositorio de taller fue generado con la plantilla
-[`template-workshop`](https://github.com/rostools/template-workshop) del
+[`template-workshop`](https://template-workshop.rostools.org/) del
 proyecto rostools.
 :::
 
-## Contributing
+## Contribuir
 
-If you are interested in contributing to the workshop material, please refer to
-the [contributing guidelines](CONTRIBUTING.md). For guidelines on how to be a
-helper or teacher, check out the [For
+Si te interesa contribuir al desarrollo de los materiales de este
+taller, por favor consulta la [guía de contribuidores](CONTRIBUTING.md).
+
+::: content-hidden
+For guidelines on how to be a helper or teacher, check out the [For
 teachers](https://guides.rostools.org/instructors) page.
+:::
 
-Please note that the project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By contributing to or being involved in this
-project, you agree to abide by its terms.
+Este proyecto tiene un [Código de conducta](CODE_OF_CONDUCT.md). Si
+contribuyes o participas en el proyecto, afirmas adherirte al código.
 
 <!-- TODO: Unhide after having contributors -->
 
