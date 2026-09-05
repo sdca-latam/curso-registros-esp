@@ -1,11 +1,11 @@
 # Introducción al taller {#sec-introducción}
 
 > [**Diapositivas de la introducción general en
-> línea**](../diapositivas/introducción.html)
+> línea**](../slides/introducción.html)
 
 ::: {}
 ```{=html}
-<iframe class="slide-deck" src="../diapositivas/introducción.html"></iframe>
+<iframe class="slide-deck" src="../slides/introducción.html"></iframe>
 ```
 :::
 
