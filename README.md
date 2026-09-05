@@ -30,7 +30,7 @@ bienvenida](https://sdca-latam.github.io/curso-registros-esp/).
 > [`template-workshop`](https://template-workshop.rostools.org/) del
 > proyecto rostools.
 
-## Contribuir
+## Cómo contribuir
 
 Si te interesa contribuir al desarrollo de los materiales de este
 taller, por favor consulta la [guía de contribuidores](CONTRIBUTING.md).

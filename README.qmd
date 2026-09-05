@@ -22,7 +22,7 @@ Este repositorio de taller fue generado con la plantilla
 proyecto rostools.
 :::
 
-## Contribuir
+## Cómo contribuir
 
 Si te interesa contribuir al desarrollo de los materiales de este
 taller, por favor consulta la [guía de contribuidores](CONTRIBUTING.md).

@@ -33,14 +33,14 @@ book:
         - pre-taller/instalación-programas-r.qmd
         - pre-taller/instalación-paquetes-r.qmd
         - pre-taller/código-de-conducta.qmd
-    - part: "Sessions"
+    - part: "Sesiones"
       chapters:
-        - sessions/introducción.qmd
-        - sessions/sessión.qmd
-        - sessions/conclusión.qmd
-  apendices:
-    - apendice/para-enseñantes.qmd
-    - apendice/referencias.qmd
+        - sesiones/introducción.qmd
+        - sesiones/sessión.qmd
+        - sesiones/conclusión.qmd
+  appendices:
+    - apendices/para-enseñantes.qmd
+    - apendices/referencias.qmd
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
