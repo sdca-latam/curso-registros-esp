@@ -10,21 +10,11 @@
     ]
   },
   {
-    "objectID": "index.html#programa",
-    "href": "index.html#programa",
-    "title": "Introducción al uso de registros nacionales de salud para investigación",
-    "section": "Programa",
-    "text": "Programa\n\n\n\n\n\n\n\n\n\nHorario\nMódulo\nDetalle\nExpositor\n\n\n\n\n09:00 - 09:10\nBienvenida\nPresentación del docente y de las instituciones organizadoras.\n\n\n\n09:10 - 10:00\nEl potencial de los registros\nQué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano.\nDW\n\n\n10:00 - 10:15\nBreak\n\n\n\n\n10:15 - 11:00\nDe los datos crudos a una pregunta de investigación\nCómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo.\nDW\n\n\n11:00 - 11:50\nManos a la obra: un análisis sencillo\nUn ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico.\nDW\n\n\n11:50 - 12:00\nCierre. Ideas y discusión\nQué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas.\nTodos",
-    "crumbs": [
-      "Bienvenida"
-    ]
-  },
-  {
     "objectID": "index.html#preparación",
     "href": "index.html#preparación",
     "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "Preparación",
-    "text": "Preparación\nPara agilizar las sesiones el día del taller, les pedimos que completen las tareas preparatorias antes de llegar a la clase.\n\n\n\n\n\n\nTipDo you find this workshop material useful?\n\n\n\nIf yes, please consider “starring” our GitHub repository. Starring the repository will save it to your list of saved repositories, so it’s easy for you to find again later. As a plus, it helps give our project more visibility :star2:",
+    "text": "Preparación\nPara agilizar las sesiones el día del taller, les pedimos que completen las tareas preparatorias antes de llegar a la clase.",
     "crumbs": [
       "Bienvenida"
     ]
@@ -54,7 +44,7 @@
     "href": "resumen/temario.html",
     "title": "1  Temario",
     "section": "",
-    "text": "1.1 Learning outcome and objectives\nTODO: Include description and overall introduction of workshop\nThis workshop lasts TODO: Time and is split into the following sessions, listed in the horario, which will be covered in order:\nThe overall aim of this workshop is to enable you to:\nBroken down into specific objectives for each session, we’ve designed the workshop to enable you to do the following:\nTODO: Session title\nTangibly, during the workshop you will:",
+    "text": "1.1 Learning outcome and objectives\nEste taller dura 3 horas y consiste de las siguientes sesiones:\nConsulta tambien el horario\nThe overall aim of this workshop is to enable you to:\nHemos diseñado el taller para enseãrte lo siguiente:\nTODO: Session title\nTangibly, during the workshop you will:",
     "crumbs": [
       "Resumen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Temario</span>"
@@ -72,14 +62,14 @@
     ]
   },
   {
-    "objectID": "resumen/es-para-ti.html",
-    "href": "resumen/es-para-ti.html",
-    "title": "2  Is this for you?",
+    "objectID": "resumen/es-para-mi.html",
+    "href": "resumen/es-para-mi.html",
+    "title": "2  ¿Este taller es para mi?",
     "section": "",
     "text": "To help manage expectations and develop the material for this workshop, we make a few assumptions about who you are as a participant in the workshop.\nWe assume you can relate to one or more of the following:\n\nTODO: List assumptions\n\nWhile we have these assumptions to help focus the content of the workshop, if you have an interest in the workshop but don’t fit any of the assumptions, you are still welcome to attend! We welcome everyone until capacity has been reached.\nIn addition to the assumptions above, the workshop also has a fairly focused scope, which may also help you decide if this workshop is for you:\n\nTODO: List of concrete tasks we will do and not do.",
     "crumbs": [
       "Resumen",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Is this for you?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>¿Este taller es para mi?</span>"
     ]
   },
   {
@@ -208,7 +198,7 @@
     "href": "pre-taller/resumen.html",
     "title": "5  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (?sec-syllabus).\nLee el Código de Conducta (Chapter 8).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la parte inferior de cada página :arrow_right:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (?sec-código-de-conducta).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
     "crumbs": [
       "Pre-taller",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
@@ -303,8 +293,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html",
-    "href": "sesiones/sessión.html",
+    "objectID": "sesiones/potencial.html",
+    "href": "sesiones/potencial.html",
     "title": "10  TODO: Lesson title here",
     "section": "",
     "text": "10.1 Learning objectives\nThe learning objectives for this session are:",
@@ -314,8 +304,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#learning-objectives",
-    "href": "sesiones/sessión.html#learning-objectives",
+    "objectID": "sesiones/potencial.html#learning-objectives",
+    "href": "sesiones/potencial.html#learning-objectives",
     "title": "10  TODO: Lesson title here",
     "section": "",
     "text": "Objective one",
@@ -325,8 +315,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#todo-section",
-    "href": "sesiones/sessión.html#todo-section",
+    "objectID": "sesiones/potencial.html#todo-section",
+    "href": "sesiones/potencial.html#todo-section",
     "title": "10  TODO: Lesson title here",
     "section": "10.2 TODO: Section",
     "text": "10.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
@@ -336,8 +326,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#technologist-exercise-title",
-    "href": "sesiones/sessión.html#technologist-exercise-title",
+    "objectID": "sesiones/potencial.html#technologist-exercise-title",
+    "href": "sesiones/potencial.html#technologist-exercise-title",
     "title": "10  TODO: Lesson title here",
     "section": "10.3 :technologist: Exercise: Title",
     "text": "10.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
@@ -347,8 +337,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#speech_balloon-discussion-activity-title",
-    "href": "sesiones/sessión.html#speech_balloon-discussion-activity-title",
+    "objectID": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
+    "href": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
     "title": "10  TODO: Lesson title here",
     "section": "10.4 :speech_balloon: Discussion activity: Title",
     "text": "10.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
@@ -358,8 +348,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#book-reading-task-title",
-    "href": "sesiones/sessión.html#book-reading-task-title",
+    "objectID": "sesiones/potencial.html#book-reading-task-title",
+    "href": "sesiones/potencial.html#book-reading-task-title",
     "title": "10  TODO: Lesson title here",
     "section": "10.5 :book: Reading task: Title",
     "text": "10.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
@@ -369,8 +359,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#summary",
-    "href": "sesiones/sessión.html#summary",
+    "objectID": "sesiones/potencial.html#summary",
+    "href": "sesiones/potencial.html#summary",
     "title": "10  TODO: Lesson title here",
     "section": "10.6 Summary",
     "text": "10.6 Summary\n\nTODO: List of summary items",
@@ -380,8 +370,8 @@
     ]
   },
   {
-    "objectID": "sesiones/sessión.html#survey",
-    "href": "sesiones/sessión.html#survey",
+    "objectID": "sesiones/potencial.html#survey",
+    "href": "sesiones/potencial.html#survey",
     "title": "10  TODO: Lesson title here",
     "section": "10.7 Survey",
     "text": "10.7 Survey\nFeedback survey! :tada:",
@@ -391,14 +381,124 @@
     ]
   },
   {
+    "objectID": "sesiones/datos-crudos.html",
+    "href": "sesiones/datos-crudos.html",
+    "title": "11  datos-crudos",
+    "section": "",
+    "text": "11.1 De datos crudos a datos analysables\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas.",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>datos-crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#running-code",
+    "href": "sesiones/datos-crudos.html#running-code",
+    "title": "11  datos-crudos",
+    "section": "11.2 Running Code",
+    "text": "11.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>datos-crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html",
+    "href": "sesiones/análisis-sencillo.html",
+    "title": "12  TODO: Lesson title here",
+    "section": "",
+    "text": "12.1 Learning objectives\nThe learning objectives for this session are:",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#learning-objectives",
+    "href": "sesiones/análisis-sencillo.html#learning-objectives",
+    "title": "12  TODO: Lesson title here",
+    "section": "",
+    "text": "Objective one",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#todo-section",
+    "href": "sesiones/análisis-sencillo.html#todo-section",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.2 TODO: Section",
+    "text": "12.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#technologist-exercise-title",
+    "href": "sesiones/análisis-sencillo.html#technologist-exercise-title",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.3 :technologist: Exercise: Title",
+    "text": "12.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#speech_balloon-discussion-activity-title",
+    "href": "sesiones/análisis-sencillo.html#speech_balloon-discussion-activity-title",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.4 :speech_balloon: Discussion activity: Title",
+    "text": "12.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#book-reading-task-title",
+    "href": "sesiones/análisis-sencillo.html#book-reading-task-title",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.5 :book: Reading task: Title",
+    "text": "12.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#summary",
+    "href": "sesiones/análisis-sencillo.html#summary",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.6 Summary",
+    "text": "12.6 Summary\n\nTODO: List of summary items",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/análisis-sencillo.html#survey",
+    "href": "sesiones/análisis-sencillo.html#survey",
+    "title": "12  TODO: Lesson title here",
+    "section": "12.7 Survey",
+    "text": "12.7 Survey\nFeedback survey! :tada:",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+    ]
+  },
+  {
     "objectID": "sesiones/conclusión.html",
     "href": "sesiones/conclusión.html",
-    "title": "11  What next",
+    "title": "13  What next",
     "section": "",
     "text": "Slides\n\n\n\n\n\n\n\n\n\n\nNoteTeacher note\n\n\n\n\n\nThe slides contain speaking notes that you can view by pressing ‘S’ on the keyboard.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>What next</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>What next</span>"
     ]
   },
   {
