@@ -17,5 +17,5 @@ surveys:
 # Use `samwise::get_allowed_r_versions()` and `samwise::get_allowed_rstudio_versions()`
 # to get a list of the allowed R and RStudio versions.
 versions:
-  r: ""
-  rstudio: ""
+  r: "4.6.0"
+  rstudio: "2026.08.2"

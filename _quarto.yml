@@ -11,7 +11,7 @@ book:
   title: ""
   # TODO: Add more authors if needed.
   author:
-    - name: "Daniel Witte"
+    - name: "Daniel R. Witte"
       affiliation: "Steno Diabetes Center Aarhus"
       # orcid: ""
   date: last-modified
@@ -21,35 +21,34 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - part: "Overview"
+    - part: "Resumen"
       chapters:
-        - overview/syllabus.qmd
-        - overview/is-this-for-you.qmd
-        - overview/schedule.qmd
-        - overview/learning-design.qmd
-    - part: "Pre-workshop"
+        - resumen/temario.qmd
+        - resumen/es-para-ti.qmd
+        - resumen/horario.qmd
+        - resumen/diseño-aprendizaje.qmd
+    - part: "Pre-taller"
       chapters:
-        - pre-workshop/overview.qmd
-        - pre-workshop/installing-programs-r.qmd
-        - pre-workshop/installing-r-packages.qmd
-        - pre-workshop/code-of-conduct.qmd
-        - pre-workshop/survey.qmd
+        - pre-taller/resumen.qmd
+        - pre-taller/instalación-programas-r.qmd
+        - pre-taller/instalación-paquetes-r.qmd
+        - pre-taller/código-de-conducta.qmd
     - part: "Sessions"
       chapters:
         - sessions/introducción.qmd
-        - sessions/session.qmd
-        - sessions/conclusion.qmd
-  appendices:
-    - appendix/for-teachers.qmd
-    - appendix/references.qmd
+        - sessions/sessión.qmd
+        - sessions/conclusión.qmd
+  apendices:
+    - apendice/para-enseñantes.qmd
+    - apendice/referencias.qmd
     - CONTRIBUTING.md
     - LICENSE.md
   page-footer:
     center:
-      - text: "License: CC BY 4.0"
+      - text: "Licencia: CC BY 4.0"
         href: LICENSE.md
-      - text: "Code of Conduct"
-        href: "pre-workshop/code-of-conduct.qmd"
+      - text: "Código de Conducta"
+        href: "pre-taller/código-de-conducta.qmd"
 
 format:
   html: default

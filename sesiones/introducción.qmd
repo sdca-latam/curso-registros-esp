@@ -1,0 +1,33 @@
+# Introducción al taller {#sec-introducción}
+
+> [**Diapositivas de la introducción general en
+> línea**](../slides/introducción.html)
+
+::: {}
+```{=html}
+<iframe class="slide-deck" src="../slides/introducción.html"></iframe>
+```
+:::
+
+::: {.callout-note collapse="true"}
+## Nota para el profesór
+
+Las diapositivas pueden contener notas que se pueden visualizar con la
+'S' en el teclado
+:::
+
+## Tema de esta presentación
+
+Esta presentación da una introducción general a los conceptos centrales
+del trabajo con registros sanitarios. Se dicta como primera sesión o
+como presentación pre-curso (en línea).
+
+### Objectivos de aprendizaje
+
+Después de esta presentación los estudiantes tendrán los siguientes
+conocimientos: - Qué es un registro sanitario; con cuales componentes
+debe contar - A qué tipo de preguntas puede responder un registro -
+Cuales son los tipos de usuarios de los datos de un registro sanitario -
+A qué niveles existen datos / registros sanitarios y cuales son las
+necesidades de información a cada nivel -
+
