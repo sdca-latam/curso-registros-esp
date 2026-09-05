@@ -1,4 +1,4 @@
-# Instalación de los programas {#sec-installing-programs}
+# Instalación de los programas {#sec-instalación-programas}
 
 Para poder participar en el taller, es importante que tengas los
 siguientes programas instalados en tu computadora. Es posible que ya
@@ -15,40 +15,42 @@ en las instrucciones. Si no tendrás que actualizar las instalaciones.
     en la consola: `R.version.string`.
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Cualquier versión mas reciente que {{< meta versions.rstudio >}}. If
-    you have installed it before, check the current version by going to
-    the menu "Help -\> About RStudio".
+    Cualquier versión mas reciente que {{< meta versions.rstudio >}}. Si
+    has instalado RStudio anteriormente, puedes verificar la versión
+    actual yendo al menu "Help -\> About RStudio".
 
-3.  [Git](https://git-scm.com/download/win): Select the "Click here to
-    download" link. Git is used throughout many sessions in the
-    workshop. When installing, it will ask for a selecting a "Text
-    Editor" and while we won't be using this in the workshop, Git needs
-    to know this information so choose Notepad.
+3.  [Git](https://git-scm.com/download/win): Escoge el enlace "Click
+    here to download". Usaremos Git durante algunas partes del taller.
+    Al instalar Git, te pedirá seleccionar un "Text Editor" y aunque no
+    usaremos esa funcion en el taller es neceario proporcionar el dato
+    para la instalación de Git, así que lo mas fácil es escoger Notepad.
 
 ## MacOS
 
-1.  [R](https://cloud.r-project.org/bin/macosx/): Any version above
-    {{< meta versions.r >}}. If you have used R before, you can confirm
-    the version by running `R.version.string` in the Console. If you use
-    [Homebrew](https://brew.sh/) (which we strongly recommend installing
-    and using), installing R is as easy as opening a Terminal and
-    running:
+1.  [R](https://cloud.r-project.org/bin/macosx/): Cualquier versión mas
+    reciente que {{< meta versions.r >}}. Si has utilizado R
+    anteriormente, puedes verificar tu versión actual dando éste comando
+    en la consola: `R.version.string`. Si usas
+    [Homebrew](https://brew.sh/) (recomendado en general pero), la
+    instalación de R is muy fácil. Solo hay que dar el siguente comando
+    en el Terminal de tu computadora:
 
     ``` text
     brew install --cask r
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above {{< meta versions.rstudio >}}. If you have
-    installed it before, check the current version by going to the menu
-    "Help -\> About RStudio". With Homebrew:
+    Cualquier versión mas reciente que {{< meta versions.rstudio >}}. Si
+    has instalado RStudio anteriormente, puedes verificar la versión
+    actual yendo al menu "Help -\> About RStudio". Con Homebrew:
 
     ``` text
     brew install --cask rstudio
     ```
 
-3.  [Git](https://git-scm.com/download/mac): Git is used throughout many
-    sessions in the workshop. With Homebrew:
+3.  [Git](https://git-scm.com/download/mac): Usaremos Git durante
+    algunas partes del taller. MacOS viene con Git pre-instalado. Para
+    instalarlo con Homebrew:
 
     ``` text
     brew install git
@@ -56,71 +58,34 @@ en las instrucciones. Si no tendrás que actualizar las instalaciones.
 
 ## Linux (Ubuntu)
 
-1.  [R](https://cloud.r-project.org/bin/linux/ubuntu/): Any version
-    above {{< meta versions.r >}}. If you have used R before, you can
-    confirm the version by running `R.version.string` in the Console.
+1.  [R](https://cloud.r-project.org/bin/linux/ubuntu/): Cualquier
+    versión mas reciente que {{< meta versions.r >}}. Si has utilizado R
+    anteriormente, puedes verificar tu versión actual dando éste comando
+    en la consola: `R.version.string`.
 
     ``` text
     sudo apt -y install r-base
     ```
 
 2.  [RStudio](https://www.rstudio.com/products/rstudio/download/#download):
-    Any version above {{< meta versions.rstudio >}}. If you have
-    installed it before, check the current version by going to the menu
-    "Help -\> About RStudio".
+    Cualquier versión mas reciente que {{< meta versions.rstudio >}}. Si
+    has instalado RStudio anteriormente, puedes verificar la versión
+    actual yendo al menu "Help -\> About RStudio".
 
-3.  [Git](https://git-scm.com/download/mac): Git is used throughout many
-    sessions in the workshop.
+3.  [Git](https://git-scm.com/download/mac): Usaremos Git durante
+    algunas partes del taller.
 
     ``` text
     sudo apt install git
     ```
 :::
 
-All these programs are required for the workshop, even Git. Git, which
-is a software program to formally manage versions of files, is used
-because of it's popularity and the amount of documentation available for
-it. Check out the online book [Happy Git with
-R](https://happygitwithr.com/), especially the "Why Git" section, for an
-understanding on why we are teaching Git. Windows users tend to have
-more trouble with installing Git than macOS or Linux users. See the
-section on [Installing Git for
-Windows](https://happygitwithr.com/install-git.html#install-git-windows)
-for help.
-
-::: {.callout-note appearance="default"}
-Some pictures may show a Git pane in RStudio, but you may not see it. If
-you haven't created or opened an RStudio R Project (which is taught in
-the introductory workshop), the Git pane *does not* show up. It only
-shows up in R Projects that use Git to track file changes.
-:::
-
-::: {.callout-note appearance="default"}
-*A note to those who have or use work laptops with restrictive
-administrative privileges*: You may encounter problems installing
-software due to administrative reasons (e.g. you don't have permission
-to install things). Even if you have issues installing or updating the
-latest version of R or RStudio, you will likely be able to continue with
-the workshop as long as you have the minimum version listed above for R
-and for RStudio. If you have versions of R and RStudio that are older
-than that, you may need to ask your IT department to update your
-software if you can't do this yourself. Unfortunately, Git is not a
-commonly used software for some organizations, so you may not have it
-installed and you *will* need to ask IT to install it. We *require* it
-for the workshop, so please make sure to give IT enough time to be able
-to install it for you prior to the workshop.
-:::
-
-Once R, RStudio, and Git have been installed, open RStudio. *If you
-encounter any troubles during these pre-workshop tasks*, try as best as
-you can to complete the task and then let us know about the issues in
-the pre-workshop survey. If you continue having problems, indicate on
-the survey that you need help and we can try to book a quick video call
-to fix the problem. Otherwise, you can come to the workshop 15-20
-minutes earlier to get help.
-
-If you're unable to complete the setup procedure due to unfixable
-technical issues, you can use Posit Cloud (to use RStudio on the cloud)
-as a final solution in order to participate in the workshop. For help
-setting up Posit Cloud for this workshop, refer to the [Posit Cloud
-setup guide](https://guides.rostools.org/posit-cloud).
+Todos estos programas son necesarios para el taller, Git incluido. Git
+es usado para la gestión formal de versiones de archivos. Lo usamos
+porque tiene mucha documentación muy buena. Puedes aprender mas en éste
+libro en línea [Happy Git with R](https://happygitwithr.com/).
+Especialmente la sección "Why Git" explica bien por qué lo usamos.
+Usuarios de Windows a veces encuentran dificultades durante la
+instalación de Git. La siguiente guia ofrece pautas y ayuda [Installing
+Git for
+Windows](https://happygitwithr.com/install-git.html#install-git-windows).

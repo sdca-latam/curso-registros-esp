@@ -22,7 +22,7 @@ Esta presentación da una introducción general a los conceptos centrales
 del trabajo con registros sanitarios. Se dicta como primera sesión o
 como presentación pre-curso (en línea).
 
-### Objectivos de aprendizaje
+### Objetivos de aprendizaje
 
 Después de esta presentación los estudiantes tendrán los siguientes
 conocimientos:

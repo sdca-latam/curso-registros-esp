@@ -10,18 +10,8 @@ Consulta tambien el [horario](/resumen/horario.qmd)
 - [Un análisis sencillo](/sesiones/análisis-sencillo.qmd)
 - [Cierre](/sesiones/conclusión.qmd)
 
-## Learning outcome and objectives
+## Objetivos de aprendizaje
 
-The overall aim of this workshop is to enable you to:
+Hemos diseñado el taller para enseñarte lo siguiente:
 
-1.  Aim one
-
-Hemos diseñado el taller para enseãrte lo siguiente:
-
-[**TODO: Session title**](/sesiones/sesión.qmd)
-
-{{< include /includes/objectives/_session.qmd >}}
-
-Tangibly, during the workshop you will:
-
-- TODO: List concrete tasks and steps
+1.  Primer objetivo

@@ -39,7 +39,7 @@ siguen siguen casi idénticamente los pasos en ésta página.
 
 ### Público
 
-El curso está diseñado como taller para ivestigadores jóvenes y
+El curso está diseñado como taller para investigadores jóvenes y
 estudiantes con conocimientos en análisis de datos interesados en
 conocer metodologías de análisis con registros nacionales de salud.
 

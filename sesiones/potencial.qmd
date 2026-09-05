@@ -1,8 +1,11 @@
-# TODO: Lesson title here
+---
+title: "El potencial de los registros"
+format: html
+---
 
-<!-- TODO: Add an introduction here -->
+En esta sesión repasaremos rápidamente algunas de las definiciones
 
-## Learning objectives
+## Objetivos de aprendizaje
 
 The learning objectives for this session are:
 

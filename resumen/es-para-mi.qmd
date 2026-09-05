@@ -1,12 +1,24 @@
 # ¿Este taller es para mi? {#sec-es-para-mi}
 
-To help manage expectations and develop the material for this workshop,
-we make a few assumptions about *who you are* as a participant in the
-workshop.
+El curso está diseñado como taller para investigadores jóvenes y
+estudiantes con conocimientos en análisis de datos interesados en
+conocer metodologías de análisis con registros nacionales de salud.
 
-We assume you can relate to one or more of the following:
+Para ayudar a manejar las expectativas y para enfocar el desarrollo de
+los materiales, asumiremos cierta experiencia previa de los
+participantes de este taller. Esperamos que hayas estudiado, trabajado o
+tengas alguna experienca con:
 
-- TODO: List assumptions
+- Conceptos epidemiológicos básicos como prevalencia, determinantes,
+  desenlaces, diseño de cohortes abiertas y cerradas, tiempo de
+  seguimiento, censura, medidas de incidencia, medidas de riesgo,
+  medidas de asociación, sesgos, confusión.
+
+- Manejo de datos cuantitativos, conceptos básicos de la ciencia de
+  datos como formatos *long* y *wide*, fusión de datos deterministica y
+  probabilistica.
+
+- Análisis de datos con programas estadísiticos como R.
 
 While we have these assumptions to help focus the content of the
 workshop, if you have an interest in the workshop but don't fit any of
@@ -18,3 +30,4 @@ focused scope, which may also help you decide if this workshop is for
 you:
 
 - TODO: List of concrete tasks we will do and not do.
+

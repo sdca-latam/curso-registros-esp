@@ -1,9 +1,9 @@
 ---
-title: "datos-crudos"
+title: "Partiendo de datos crudos"
 format: html
 ---
 
-## De datos crudos a datos analysables
+## Objetivos de aprendizaje
 
 En esta sesión vamos a investigar la estructura de las bases de datos
 del registro de diabetes de Dinamarca, basándonos en datos simulados.
@@ -11,7 +11,11 @@ Esto quiere decir que todos los datos que veremos son generados
 aleatóreamente y no pertenecen a ninguna persona real.
 
 Usaremos el paquete "osdc" (Open Source Diabetes Classifier). Antes de
-iniciar esta sesión debes haber completado las tareas.
+iniciar esta sesión debes haber completado las tareas pre-taller.
+
+## Datos crudos
+
+## Datos analizables
 
 ## Running Code
 
