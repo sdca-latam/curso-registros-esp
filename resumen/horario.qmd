@@ -4,7 +4,7 @@ format:
     tbl-colwidths: [30, 70]
 ---
 
-# Programa {#sec-schedule}
+# Horario {#sec-horario}
 
 Este taller contiene presentaciones, ejercicios participatorios con
 programación en vivo utilizando datos simulados, discusiones y trabajo
@@ -14,7 +14,7 @@ en grupos.
 ## 10 de septiembre 2026 {.unnumbered}
 
 | Horario | Módulo | Detalle | Expositor |
-|------------------|------------------|------------------|------------------|
+|----|----|----|----|
 | 09:00 - 09:10 | Bienvenida | Presentación del docente y de las instituciones organizadoras. |  |
 | 09:10 - 10:00 | El potencial de los registros | Qué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano. | DW |
 | 10:00 - 10:15 | Break |  |  |

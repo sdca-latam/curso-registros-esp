@@ -7,13 +7,12 @@ project:
   #   - slides/*.html
 
 book:
-  # TODO: Fill in the title.
-  title: ""
+  title: "Introducción al uso de registros nacionales de salud para investigación"
   # TODO: Add more authors if needed.
   author:
     - name: "Daniel R. Witte"
       affiliation: "Steno Diabetes Center Aarhus"
-      # orcid: ""
+      orcid: "0000-0002-0769-2922"
   date: last-modified
   repo-url: "https://github.com/sdca-latam/curso-registros-esp"
   # TODO: Fill in the URL

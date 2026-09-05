@@ -10,8 +10,8 @@ format: gfm
 
 Este repositorio contiene los materiales para el curso taller
 "Introducción al uso de registros nacionales de salud para
-investigación", que se llevará a cabo el jueves 10 de septiembre 2026 en
-Lima, Perú.
+investigación". La primera edición del curso se llevará a cabo el jueves
+10 de septiembre 2026 en Lima, Perú.
 
 Para mayor detalle, vea la [página de
 bienvenida](https://sdca-latam.github.io/curso-registros-esp/).
