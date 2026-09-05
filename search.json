@@ -50,360 +50,360 @@
     ]
   },
   {
-    "objectID": "overview/syllabus.html",
-    "href": "overview/syllabus.html",
+    "objectID": "resumen/temario.html",
+    "href": "resumen/temario.html",
     "title": "1  Syllabus",
     "section": "",
     "text": "1.1 Learning outcome and objectives\nTODO: Include description and overall introduction of workshop\nThis workshop lasts TODO: Time and is split into the following sessions, listed in the schedule, which will be covered in order:\nThe overall aim of this workshop is to enable you to:\nBroken down into specific objectives for each session, we’ve designed the workshop to enable you to do the following:\nTODO: Session title\nTangibly, during the workshop you will:",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
-    "objectID": "overview/syllabus.html#learning-outcome-and-objectives",
-    "href": "overview/syllabus.html#learning-outcome-and-objectives",
+    "objectID": "resumen/temario.html#learning-outcome-and-objectives",
+    "href": "resumen/temario.html#learning-outcome-and-objectives",
     "title": "1  Syllabus",
     "section": "",
     "text": "Aim one\n\n\n\n\nObjective one\n\n\n\nTODO: List concrete tasks and steps",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
-    "objectID": "overview/is-this-for-you.html",
-    "href": "overview/is-this-for-you.html",
+    "objectID": "resumen/es-para-ti.html",
+    "href": "resumen/es-para-ti.html",
     "title": "2  Is this for you?",
     "section": "",
     "text": "To help manage expectations and develop the material for this workshop, we make a few assumptions about who you are as a participant in the workshop.\nWe assume you can relate to one or more of the following:\n\nTODO: List assumptions\n\nWhile we have these assumptions to help focus the content of the workshop, if you have an interest in the workshop but don’t fit any of the assumptions, you are still welcome to attend! We welcome everyone until capacity has been reached.\nIn addition to the assumptions above, the workshop also has a fairly focused scope, which may also help you decide if this workshop is for you:\n\nTODO: List of concrete tasks we will do and not do.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Is this for you?</span>"
     ]
   },
   {
-    "objectID": "overview/schedule.html",
-    "href": "overview/schedule.html",
+    "objectID": "resumen/horario.html",
+    "href": "resumen/horario.html",
     "title": "3  Programa",
     "section": "",
     "text": "Este taller contiene presentaciones, ejercicios participatorios con programación en vivo utilizando datos simulados, discusiones y trabajo en grupos.\n\n10 de septiembre 2026\n\n\n\n\n\n\n\n\n\n\n\nHorario\nMódulo\nDetalle\nExpositor\n\n\n\n\n09:00 - 09:10\nBienvenida\nPresentación del docente y de las instituciones organizadoras.\n\n\n\n09:10 - 10:00\nEl potencial de los registros\nQué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano.\nDW\n\n\n10:00 - 10:15\nBreak\n\n\n\n\n10:15 - 11:00\nDe los datos crudos a una pregunta de investigación\nCómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo.\nDW\n\n\n11:00 - 11:50\nManos a la obra: un análisis sencillo\nUn ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico.\nDW\n\n\n11:50 - 12:00\nCierre. Ideas y discusión\nQué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas.\nTodos",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Programa</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html",
-    "href": "overview/learning-design.html",
+    "objectID": "resumen/diseño-aprendizaje.html",
+    "href": "resumen/diseño-aprendizaje.html",
     "title": "4  Learning design",
     "section": "",
     "text": "4.1 Clear learning goals and a strong narrative\nThis workshop is designed using the science of learning. Learning is when new content gets incorporated into long-term storage in the brain in a way that it can be later retrieved. Some of the best ways to enable learning is to do “active learning” by engaging with the material, practicing retrieving what was just covered, repeatedly being exposed to the content, linking the new information with what you already know, and explaining it to someone else.\nWe use a variety of activities to target the different “pathways” of learning. A big part of learning is being engaged in the process of learning, not just learning the content itself. So to help you be engaged in your own learning, we want to involve you in the reasons why we do the things we do during this workshop.\nThroughout the workshop, we use these practices to support learning.\nThe learning goals and the narrative are tightly connected in this workshop. Learning is easier when you have a better idea of where you are going, where you are relative to the end goal, and what to expect along the way.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#code-alongs-as-the-main-activity",
-    "href": "overview/learning-design.html#code-alongs-as-the-main-activity",
+    "objectID": "resumen/diseño-aprendizaje.html#code-alongs-as-the-main-activity",
+    "href": "resumen/diseño-aprendizaje.html#code-alongs-as-the-main-activity",
     "title": "4  Learning design",
     "section": "4.2 “Code-alongs” as the main activity",
     "text": "4.2 “Code-alongs” as the main activity\n“Code-alongs” is when the teacher types on their computer that is on the projector and explains what it means as you also type along with them. The connection between using the hands and doing something tangible helps reinforce learning. It also helps the teachers to go slower as we have to both explain and type things out. This helps you learn better. “Less is more” works very well with learning.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#retrieval-practice-with-hands-on-exercises",
-    "href": "overview/learning-design.html#retrieval-practice-with-hands-on-exercises",
+    "objectID": "resumen/diseño-aprendizaje.html#retrieval-practice-with-hands-on-exercises",
+    "href": "resumen/diseño-aprendizaje.html#retrieval-practice-with-hands-on-exercises",
     "title": "4  Learning design",
     "section": "4.3 Retrieval practice with hands-on exercises",
     "text": "4.3 Retrieval practice with hands-on exercises\nHands-on exercises reinforce what was just taught through retrieval practice and repetition. It gives you a chance to engage with the material and the space to try it out on your own. This helps you form a better sense of how to do it yourself.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
-    "href": "overview/learning-design.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
+    "objectID": "resumen/diseño-aprendizaje.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
+    "href": "resumen/diseño-aprendizaje.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
     "title": "4  Learning design",
     "section": "4.4 Linking new information with existing knowledge with discussion activities",
     "text": "4.4 Linking new information with existing knowledge with discussion activities\nDiscussion activities encourage linking what you already know and do in your work with the new information. Because humans are social beings, we also tend to learn better when there is some social aspect to it. For example, explaining something to someone else is one of the best ways to learn, as nicely expressed in the quote “while we teach, we learn” from the Roman philosopher Seneca.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#minimal-use-of-lectures",
-    "href": "overview/learning-design.html#minimal-use-of-lectures",
+    "objectID": "resumen/diseño-aprendizaje.html#minimal-use-of-lectures",
+    "href": "resumen/diseño-aprendizaje.html#minimal-use-of-lectures",
     "title": "4  Learning design",
     "section": "4.5 Minimal use of lectures",
     "text": "4.5 Minimal use of lectures\nLectures, while extremely common, are forms of information sharing with the lowest rates of learning. In this workshop, we use reading tasks instead, so you can go at your pace, re-read things you may not understand, and take notes, all of which support learning. To help reinforce what you just read, the teacher will briefly summarise and emphasise key points after reading tasks, to repeat the main points and target another part of the brain (the auditory pathway).",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#frequent-breaks-and-variation-in-activities",
-    "href": "overview/learning-design.html#frequent-breaks-and-variation-in-activities",
+    "objectID": "resumen/diseño-aprendizaje.html#frequent-breaks-and-variation-in-activities",
+    "href": "resumen/diseño-aprendizaje.html#frequent-breaks-and-variation-in-activities",
     "title": "4  Learning design",
     "section": "4.6 Frequent breaks and variation in activities",
     "text": "4.6 Frequent breaks and variation in activities\nBreaks are how your brain can recharge and refocus. The brain is only able to effectively focus on one thing at a time in 30-50 minute blocks of time. That’s why we mix together code-alongs, exercises, discussions, and reading to give your brain some variation. Having an explicit break, even 5 minutes, is enough for the brain to better process and store what was covered.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#easily-accessible-material-that-is-online-always",
-    "href": "overview/learning-design.html#easily-accessible-material-that-is-online-always",
+    "objectID": "resumen/diseño-aprendizaje.html#easily-accessible-material-that-is-online-always",
+    "href": "resumen/diseño-aprendizaje.html#easily-accessible-material-that-is-online-always",
     "title": "4  Learning design",
     "section": "4.7 Easily accessible material that is online, always",
     "text": "4.7 Easily accessible material that is online, always\nAll the material is online on this website, so that it is easy for you to go back to after the workshop. This builds the repetition and retrieval practice part of learning. Our brains also get easily distracted, which is completely normal. So if you get distracted during the workshop, you can simply go to the material and get caught up with where we are. We also make sure to follow the material on the website closely, so that it is easier for you to follow along.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#a-safe-and-supportive-environment",
-    "href": "overview/learning-design.html#a-safe-and-supportive-environment",
+    "objectID": "resumen/diseño-aprendizaje.html#a-safe-and-supportive-environment",
+    "href": "resumen/diseño-aprendizaje.html#a-safe-and-supportive-environment",
     "title": "4  Learning design",
     "section": "4.8 A safe and supportive environment",
     "text": "4.8 A safe and supportive environment\nMental safety in a supportive environment is critical for effective learning. It puts the brain into a more relaxed state that allows for optimal processing and ultimately learning. That’s why we try to explicitly create that space, for example with the use of our Code of Conduct.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#using-origami-hats-to-ask-for-help",
-    "href": "overview/learning-design.html#using-origami-hats-to-ask-for-help",
+    "objectID": "resumen/diseño-aprendizaje.html#using-origami-hats-to-ask-for-help",
+    "href": "resumen/diseño-aprendizaje.html#using-origami-hats-to-ask-for-help",
     "title": "4  Learning design",
     "section": "4.9 Using origami hats to ask for help",
     "text": "4.9 Using origami hats to ask for help\nAsking for help can feel difficult, especially when you are learning and are unsure about something. To make it easier and feel safer, we use origami hats (or stickies) to show how everyone is doing. If you need help, you put up the “help” hat (usually orange) and a helper will come to you as soon as possible. If not, you can put up a “all good” hat (usually blue) to let us know you are following along. Since we often have several helpers, you usually won’t wait long. This simple system lets you ask for help without interrupting the teacher or drawing attention, so you can keep following along while you wait. Our goal is to make getting help easier and more comfortable.",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "overview/learning-design.html#being-involved-in-the-learning-process",
-    "href": "overview/learning-design.html#being-involved-in-the-learning-process",
+    "objectID": "resumen/diseño-aprendizaje.html#being-involved-in-the-learning-process",
+    "href": "resumen/diseño-aprendizaje.html#being-involved-in-the-learning-process",
     "title": "4  Learning design",
     "section": "4.10 Being involved in the learning process",
     "text": "4.10 Being involved in the learning process\nNow you know a bit more about the thoughts behind how we’ve designed this workshop to really try to support and enable your own learning! :tada: :grin:",
     "crumbs": [
-      "Overview",
+      "Resumen",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/overview.html",
-    "href": "pre-workshop/overview.html",
+    "objectID": "pre-taller/resumen.html",
+    "href": "pre-taller/resumen.html",
     "title": "5  Tareas preparatorias antes del taller",
     "section": "",
     "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (Chapter 8).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la parte inferior de cada página :arrow_right:",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/installing-programs-r.html",
-    "href": "pre-workshop/installing-programs-r.html",
+    "objectID": "pre-taller/instalación-programas-r.html",
+    "href": "pre-taller/instalación-programas-r.html",
     "title": "6  Instalación de los programas",
     "section": "",
-    "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instrucciones. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier versión mas reciente que . Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nRStudio: Cualquier versión mas reciente que . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Select the “Click here to download” link. Git is used throughout many sessions in the workshop. When installing, it will ask for a selecting a “Text Editor” and while we won’t be using this in the workshop, Git needs to know this information so choose Notepad.\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console. If you use Homebrew (which we strongly recommend installing and using), installing R is as easy as opening a Terminal and running:\nbrew install --cask r\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”. With Homebrew:\nbrew install --cask rstudio\nGit: Git is used throughout many sessions in the workshop. With Homebrew:\nbrew install git\n\n\n\n\nR: Any version above . If you have used R before, you can confirm the version by running R.version.string in the Console.\nsudo apt -y install r-base\nRStudio: Any version above . If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Git is used throughout many sessions in the workshop.\nsudo apt install git\n\n\n\n\nAll these programs are required for the workshop, even Git. Git, which is a software program to formally manage versions of files, is used because of it’s popularity and the amount of documentation available for it. Check out the online book Happy Git with R, especially the “Why Git” section, for an understanding on why we are teaching Git. Windows users tend to have more trouble with installing Git than macOS or Linux users. See the section on Installing Git for Windows for help.\n\n\n\n\n\n\nNote\n\n\n\nSome pictures may show a Git pane in RStudio, but you may not see it. If you haven’t created or opened an RStudio R Project (which is taught in the introductory workshop), the Git pane does not show up. It only shows up in R Projects that use Git to track file changes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA note to those who have or use work laptops with restrictive administrative privileges: You may encounter problems installing software due to administrative reasons (e.g. you don’t have permission to install things). Even if you have issues installing or updating the latest version of R or RStudio, you will likely be able to continue with the workshop as long as you have the minimum version listed above for R and for RStudio. If you have versions of R and RStudio that are older than that, you may need to ask your IT department to update your software if you can’t do this yourself. Unfortunately, Git is not a commonly used software for some organizations, so you may not have it installed and you will need to ask IT to install it. We require it for the workshop, so please make sure to give IT enough time to be able to install it for you prior to the workshop.\n\n\nOnce R, RStudio, and Git have been installed, open RStudio. If you encounter any troubles during these pre-workshop tasks, try as best as you can to complete the task and then let us know about the issues in the pre-workshop survey. If you continue having problems, indicate on the survey that you need help and we can try to book a quick video call to fix the problem. Otherwise, you can come to the workshop 15-20 minutes earlier to get help.\nIf you’re unable to complete the setup procedure due to unfixable technical issues, you can use Posit Cloud (to use RStudio on the cloud) as a final solution in order to participate in the workshop. For help setting up Posit Cloud for this workshop, refer to the Posit Cloud setup guide.",
+    "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instrucciones. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nRStudio: Cualquier versión mas reciente que 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Select the “Click here to download” link. Git is used throughout many sessions in the workshop. When installing, it will ask for a selecting a “Text Editor” and while we won’t be using this in the workshop, Git needs to know this information so choose Notepad.\n\n\n\n\nR: Any version above 4.6.0. If you have used R before, you can confirm the version by running R.version.string in the Console. If you use Homebrew (which we strongly recommend installing and using), installing R is as easy as opening a Terminal and running:\nbrew install --cask r\nRStudio: Any version above 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”. With Homebrew:\nbrew install --cask rstudio\nGit: Git is used throughout many sessions in the workshop. With Homebrew:\nbrew install git\n\n\n\n\nR: Any version above 4.6.0. If you have used R before, you can confirm the version by running R.version.string in the Console.\nsudo apt -y install r-base\nRStudio: Any version above 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Git is used throughout many sessions in the workshop.\nsudo apt install git\n\n\n\n\nAll these programs are required for the workshop, even Git. Git, which is a software program to formally manage versions of files, is used because of it’s popularity and the amount of documentation available for it. Check out the online book Happy Git with R, especially the “Why Git” section, for an understanding on why we are teaching Git. Windows users tend to have more trouble with installing Git than macOS or Linux users. See the section on Installing Git for Windows for help.\n\n\n\n\n\n\nNote\n\n\n\nSome pictures may show a Git pane in RStudio, but you may not see it. If you haven’t created or opened an RStudio R Project (which is taught in the introductory workshop), the Git pane does not show up. It only shows up in R Projects that use Git to track file changes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA note to those who have or use work laptops with restrictive administrative privileges: You may encounter problems installing software due to administrative reasons (e.g. you don’t have permission to install things). Even if you have issues installing or updating the latest version of R or RStudio, you will likely be able to continue with the workshop as long as you have the minimum version listed above for R and for RStudio. If you have versions of R and RStudio that are older than that, you may need to ask your IT department to update your software if you can’t do this yourself. Unfortunately, Git is not a commonly used software for some organizations, so you may not have it installed and you will need to ask IT to install it. We require it for the workshop, so please make sure to give IT enough time to be able to install it for you prior to the workshop.\n\n\nOnce R, RStudio, and Git have been installed, open RStudio. If you encounter any troubles during these pre-workshop tasks, try as best as you can to complete the task and then let us know about the issues in the pre-workshop survey. If you continue having problems, indicate on the survey that you need help and we can try to book a quick video call to fix the problem. Otherwise, you can come to the workshop 15-20 minutes earlier to get help.\nIf you’re unable to complete the setup procedure due to unfixable technical issues, you can use Posit Cloud (to use RStudio on the cloud) as a final solution in order to participate in the workshop. For help setting up Posit Cloud for this workshop, refer to the Posit Cloud setup guide.",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Instalación de los programas</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/installing-r-packages.html",
-    "href": "pre-workshop/installing-r-packages.html",
+    "objectID": "pre-taller/instalación-paquetes-r.html",
+    "href": "pre-taller/instalación-paquetes-r.html",
     "title": "7  Installing R Packages",
     "section": "",
     "text": "We will be using specific R packages for the workshop, so you will need to install them. To make it easier, we’ve created a custom R package called r3 that will install all the necessary packages for you for this workshop. Run these two functions in the Console by copying and pasting them to install our custom r3 package as well as the {tidyverse} package.\n\n\nConsole\n\ninstall.packages(\"r3\", repos = c(\"https://rostools.r-universe.dev\", \"https://cloud.r-project.org\"))\ninstall.packages(\"tidyverse\")\n\n\n\n\n\n\n\nTip\n\n\n\nInstalling packages is tricky, especially on some work laptops, and doesn’t always work as expected. Here are some other methods to try if you have trouble installing the packages with the code above.\nFor Windows users, you may have to install RTools to use either the {pak} or {remotes} method. The version of RTools you install must match the version of R that you have installed. For example, if you have R version 4.4, you need to install RTools 4.4.\nFirst, try installing the r3 package directly from GitHub with {pak}:\n\n\nConsole\n\ninstall.packages(\"pak\")\npak::pak(\"rostools/r3\")\n\nIf that doesn’t work, try with {remotes}:\n\n\nConsole\n\ninstall.packages(\"remotes\")\nremotes::install_github(\"rostools/r3\")\n\nIf you encounter any errors with either of these functions, try to restart R by going to “Sessions -&gt; Restart R” and re-run them again. If that also doesn’t work, try to complete the other tasks as best you can, complete the survey, and let us know you have a problem in the survey. We’ll email you at least a week before the workshop starts to try to help you get it working.\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhen you see a command like something::something(), for example with pak::pak(), you would “read” this as:\n\nR, can you please use the pak() function from the {pak} package.\n\nThe normal way of doing this would be to load the package with library(pak) and then running the command (pak()). But by using the ::, we tell R to directly use a function from a package, without needing to load the package and all of its other functions too. We use this trick because we only want to use the pak() command from the {pak} package and not have to load all the other functions as well. In this workshop we will be using :: often.",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing R Packages</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/code-of-conduct.html",
-    "href": "pre-workshop/code-of-conduct.html",
+    "objectID": "pre-taller/código-de-conducta.html",
+    "href": "pre-taller/código-de-conducta.html",
     "title": "8  Code of conduct",
     "section": "",
     "text": "8.1 Expected behavior\nLearning happens when we feel safe and supported. Since we want you to learn during this workshop, we want you to feel safe and supported. We also want all learners to have an enjoyable and fulfilling experience while participating in this workshop. So we expect all learners to show respect, kindness, and courtesy to other learners throughout the whole workshop and to help create a positive and safe learning environment.\nWhile most people and (sub-)cultures have an implicit, assumed set of practices and expectations for behaviour, we believe strongly in effective and clear communication. This includes making what is normally implicit expectations to instead be explicit expectations.\nTeachers and helpers will uphold and embody this code in all spaces and activities of the workshop, and we expect you as the learner to do the same. In fact, by participating in this workshop, you indicate that you agree to follow these explicit expectations. We have this code of conduct to communicate to you that we really value and want to nurture a space that encourages and enhances learning. Otherwise, why would we have a workshop if you can’t or aren’t able to effectively learn anything from it! :zany_face:\nWe want a welcoming, supportive, safe, and fun environment not only for ourselves as teachers and helpers, but also for all learners, regardless of background and identity. This means that we do not tolerate behaviour that is disrespectful to any of our teachers, helpers, or learners (see below for unacceptable behaviour).\nWe encourage the following kinds of behaviours in all interactions during this workshop that will foster a positive and professional learning environment:",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/code-of-conduct.html#expected-behavior",
-    "href": "pre-workshop/code-of-conduct.html#expected-behavior",
+    "objectID": "pre-taller/código-de-conducta.html#expected-behavior",
+    "href": "pre-taller/código-de-conducta.html#expected-behavior",
     "title": "8  Code of conduct",
     "section": "",
     "text": "Show kindness, courtesy, and respect towards other workshop members.\nAll interactions should be professional regardless of platform: either online or in-person.\nBe aware of your words by using welcoming and inclusive language. Words matter, a lot!\nBe respectful to different viewpoints and experiences.\nGracefully accept constructive criticism.\nFocus on what is best for everyone in the workshop.",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/code-of-conduct.html#unacceptable-behavior",
-    "href": "pre-workshop/code-of-conduct.html#unacceptable-behavior",
+    "objectID": "pre-taller/código-de-conducta.html#unacceptable-behavior",
+    "href": "pre-taller/código-de-conducta.html#unacceptable-behavior",
     "title": "8  Code of conduct",
     "section": "8.2 Unacceptable behavior",
     "text": "8.2 Unacceptable behavior\nWhile we assume you will not do these behaviours, we want to clearly communicate what unacceptable behaviour is. It is any behaviour, as actions or words, that excludes, intimidates, or causes discomfort to others. We do not tolerate discrimination or harassment based on characteristics that include, though are not limited to, gender identity and expression, sexual orientation, disability, physical appearance, body size, citizenship, nationality, ethnic or social origin, pregnancy, familial status, veteran status, genetic information, religion or belief (or lack thereof), membership of a national minority, property, age, education, socio-economic status, technical choices, and experience level. We of course also don’t tolerate verbally or physically violent behaviour towards others.\nExamples of unacceptable behavior includes:\n\nWritten or verbal comments that exclude people on the basis of membership of any specific group.\nThe display of sexual or violent images.\nUnwelcome sexual attention, advances, and/or physical contact.\nSustained disruption of workshop sessions or communications.\nInsults or put downs.\nSexist, racist, homophobic, transphobic, ableist, or exclusionary jokes.",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/code-of-conduct.html#consequences-of-unacceptable-behavior",
-    "href": "pre-workshop/code-of-conduct.html#consequences-of-unacceptable-behavior",
+    "objectID": "pre-taller/código-de-conducta.html#consequences-of-unacceptable-behavior",
+    "href": "pre-taller/código-de-conducta.html#consequences-of-unacceptable-behavior",
     "title": "8  Code of conduct",
     "section": "8.3 Consequences of unacceptable behavior",
     "text": "8.3 Consequences of unacceptable behavior\nLearners who are asked, either in person or online, to stop any inappropriate behavior are expected to comply immediately. If a learners engages in behaviour that violates this code of conduct, the organizers, teachers, or helpers may take any action they deem appropriate, including warning the offender or removing them from the workshop.\nIf you feel in any way unsafe or mistreated, you may contact us privately—all communication is confidential.\nThank you for helping make this a welcoming, friendly workshop for all :smile:\n\n\n\n\n\n\nNote\n\n\n\nAcknowledgements: Large portions of this code of conduct were taken and modified from other codes of conduct, specifically Software Carpentry and UofTCoders.",
     "crumbs": [
-      "Pre-workshop",
+      "Pre-taller",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
     ]
   },
   {
-    "objectID": "pre-workshop/survey.html",
-    "href": "pre-workshop/survey.html",
-    "title": "9  Survey",
+    "objectID": "sesiones/introducción.html",
+    "href": "sesiones/introducción.html",
+    "title": "9  Introducción al taller",
     "section": "",
-    "text": "We have a Code of Conduct. If you haven’t read it, read it now. The survey involves a question about Conduct. We want to make sure this workshop is a supportive and safe environment for learning, so this Code of Conduct is quite important.\nIf you haven’t read the sections under “Workshop overview” and “Pre-workshop tasks”, please read them now.\nYou’re almost done. Please fill out the pre-workshop survey to finish this section:\nPre-workshop survey :tada:\nSee you at the workshop! :wave:",
+    "text": "9.1 Tema de esta presentación\nEsta presentación da una introducción general a los conceptos centrales del trabajo con registros sanitarios. Se dicta como primera sesión o como presentación pre-curso (en línea).",
     "crumbs": [
-      "Pre-workshop",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Survey</span>"
+      "Sesiones",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al taller</span>"
     ]
   },
   {
-    "objectID": "sessions/introducción.html",
-    "href": "sessions/introducción.html",
-    "title": "10  Introduction to workshop",
+    "objectID": "sesiones/introducción.html#tema-de-esta-presentación",
+    "href": "sesiones/introducción.html#tema-de-esta-presentación",
+    "title": "9  Introducción al taller",
     "section": "",
-    "text": "10.1 The Big Picture\nTODO: Add text highlighting the bigger picture of why we teach this.",
+    "text": "9.1.1 Objectivos de aprendizaje\nDespués de esta presentación los estudiantes tendrán los siguientes conocimientos: - Qué es un registro sanitario; con cuales componentes debe contar - A qué tipo de preguntas puede responder un registro - Cuales son los tipos de usuarios de los datos de un registro sanitario - A qué niveles existen datos / registros sanitarios y cuales son las necesidades de información a cada nivel -",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Introduction to workshop</span>"
+      "Sesiones",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al taller</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html",
-    "href": "sessions/session.html",
-    "title": "11  TODO: Lesson title here",
+    "objectID": "sesiones/sessión.html",
+    "href": "sesiones/sessión.html",
+    "title": "10  TODO: Lesson title here",
     "section": "",
-    "text": "11.1 Learning objectives\nThe learning objectives for this session are:",
+    "text": "10.1 Learning objectives\nThe learning objectives for this session are:",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#learning-objectives",
-    "href": "sessions/session.html#learning-objectives",
-    "title": "11  TODO: Lesson title here",
+    "objectID": "sesiones/sessión.html#learning-objectives",
+    "href": "sesiones/sessión.html#learning-objectives",
+    "title": "10  TODO: Lesson title here",
     "section": "",
     "text": "Objective one",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#todo-section",
-    "href": "sessions/session.html#todo-section",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.2 TODO: Section",
-    "text": "11.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
+    "objectID": "sesiones/sessión.html#todo-section",
+    "href": "sesiones/sessión.html#todo-section",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.2 TODO: Section",
+    "text": "10.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#technologist-exercise-title",
-    "href": "sessions/session.html#technologist-exercise-title",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.3 :technologist: Exercise: Title",
-    "text": "11.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
+    "objectID": "sesiones/sessión.html#technologist-exercise-title",
+    "href": "sesiones/sessión.html#technologist-exercise-title",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.3 :technologist: Exercise: Title",
+    "text": "10.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#speech_balloon-discussion-activity-title",
-    "href": "sessions/session.html#speech_balloon-discussion-activity-title",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.4 :speech_balloon: Discussion activity: Title",
-    "text": "11.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
+    "objectID": "sesiones/sessión.html#speech_balloon-discussion-activity-title",
+    "href": "sesiones/sessión.html#speech_balloon-discussion-activity-title",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.4 :speech_balloon: Discussion activity: Title",
+    "text": "10.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#book-reading-task-title",
-    "href": "sessions/session.html#book-reading-task-title",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.5 :book: Reading task: Title",
-    "text": "11.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
+    "objectID": "sesiones/sessión.html#book-reading-task-title",
+    "href": "sesiones/sessión.html#book-reading-task-title",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.5 :book: Reading task: Title",
+    "text": "10.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#summary",
-    "href": "sessions/session.html#summary",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.6 Summary",
-    "text": "11.6 Summary\n\nTODO: List of summary items",
+    "objectID": "sesiones/sessión.html#summary",
+    "href": "sesiones/sessión.html#summary",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.6 Summary",
+    "text": "10.6 Summary\n\nTODO: List of summary items",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/session.html#survey",
-    "href": "sessions/session.html#survey",
-    "title": "11  TODO: Lesson title here",
-    "section": "11.7 Survey",
-    "text": "11.7 Survey\nFeedback survey! :tada:",
+    "objectID": "sesiones/sessión.html#survey",
+    "href": "sesiones/sessión.html#survey",
+    "title": "10  TODO: Lesson title here",
+    "section": "10.7 Survey",
+    "text": "10.7 Survey\nFeedback survey! :tada:",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
     ]
   },
   {
-    "objectID": "sessions/conclusion.html",
-    "href": "sessions/conclusion.html",
-    "title": "12  What next",
+    "objectID": "sesiones/conclusión.html",
+    "href": "sesiones/conclusión.html",
+    "title": "11  What next",
     "section": "",
     "text": "Slides\n\n\n\n\n\n\n\n\n\n\nNoteTeacher note\n\n\n\n\n\nThe slides contain speaking notes that you can view by pressing ‘S’ on the keyboard.",
     "crumbs": [
-      "Sessions",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>What next</span>"
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>What next</span>"
     ]
   },
   {
-    "objectID": "appendix/for-teachers.html",
-    "href": "appendix/for-teachers.html",
+    "objectID": "apendices/para-enseñantes.html",
+    "href": "apendices/para-enseñantes.html",
     "title": "Appendix A — For teachers",
     "section": "",
     "text": "A more general guide to teaching or helping is found on the Guides website. This page has information relevant specifically to this workshop.\n\nFor created teams, assign one teacher or helper to each group to help them specifically during the final group project.",

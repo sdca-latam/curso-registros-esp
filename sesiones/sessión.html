@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Installing R Packages</title>
+<title>10&nbsp; TODO: Lesson title here</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -71,8 +36,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../pre-workshop/code-of-conduct.html" rel="next">
-<link href="../pre-workshop/installing-programs-r.html" rel="prev">
+<link href="../sesiones/conclusión.html" rel="next">
+<link href="../sesiones/introducción.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +47,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-77a5896a02b4ad985511de0e21379b11.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a406815f2a93f70f676bc0c2d884f42d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -123,7 +88,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-workshop/overview.html">Pre-workshop</a></li><li class="breadcrumb-item"><a href="../pre-workshop/installing-r-packages.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Installing R Packages</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/sessión.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text">Resumen</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -164,25 +129,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../overview/syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../resumen/temario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../overview/is-this-for-you.html" class="sidebar-item-text sidebar-link">
+  <a href="../resumen/es-para-ti.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Is this for you?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../overview/schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="../resumen/horario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Programa</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../overview/learning-design.html" class="sidebar-item-text sidebar-link">
+  <a href="../resumen/diseño-aprendizaje.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Learning design</span></span></a>
   </div>
 </li>
@@ -191,7 +156,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Pre-workshop</span></a>
+ <span class="menu-text">Pre-taller</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -199,32 +164,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-workshop/overview.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-taller/resumen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tareas preparatorias antes del taller</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-workshop/installing-programs-r.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-taller/instalación-programas-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Instalación de los programas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-workshop/installing-r-packages.html" class="sidebar-item-text sidebar-link active">
+  <a href="../pre-taller/instalación-paquetes-r.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Installing R Packages</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../pre-workshop/code-of-conduct.html" class="sidebar-item-text sidebar-link">
+  <a href="../pre-taller/código-de-conducta.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Code of conduct</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pre-workshop/survey.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Survey</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Sessions</span></a>
+ <span class="menu-text">Sesiones</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -240,20 +199,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sessions/introducción.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Introduction to workshop</span></span></a>
+  <a href="../sesiones/introducción.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al taller</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sessions/session.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></span></a>
+  <a href="../sesiones/sessión.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../sessions/conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">What next</span></span></a>
+  <a href="../sesiones/conclusión.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">What next</span></span></a>
   </div>
 </li>
       </ul>
@@ -269,13 +228,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendix/for-teachers.html" class="sidebar-item-text sidebar-link">
+  <a href="../apendices/para-enseñantes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">For teachers</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendix/references.html" class="sidebar-item-text sidebar-link">
+  <a href="../apendices/referencias.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -298,15 +257,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">10.1</span> Learning objectives</a></li>
+  <li><a href="#todo-section" id="toc-todo-section" class="nav-link" data-scroll-target="#todo-section"><span class="header-section-number">10.2</span> TODO: Section</a></li>
+  <li><a href="#technologist-exercise-title" id="toc-technologist-exercise-title" class="nav-link" data-scroll-target="#technologist-exercise-title"><span class="header-section-number">10.3</span> :technologist: Exercise: Title</a></li>
+  <li><a href="#speech_balloon-discussion-activity-title" id="toc-speech_balloon-discussion-activity-title" class="nav-link" data-scroll-target="#speech_balloon-discussion-activity-title"><span class="header-section-number">10.4</span> :speech_balloon: Discussion activity: Title</a></li>
+  <li><a href="#book-reading-task-title" id="toc-book-reading-task-title" class="nav-link" data-scroll-target="#book-reading-task-title"><span class="header-section-number">10.5</span> :book: Reading task: Title</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">10.6</span> Summary</a></li>
+  <li><a href="#survey" id="toc-survey" class="nav-link" data-scroll-target="#survey"><span class="header-section-number">10.7</span> Survey</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../pre-workshop/overview.html">Pre-workshop</a></li><li class="breadcrumb-item"><a href="../pre-workshop/installing-r-packages.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Installing R Packages</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/sessión.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-installing-r-packages" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Installing R Packages</span></span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></h1>
 </div>
 
 
@@ -323,65 +294,57 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<!-- NOTE: This comes from `template-workshop` template. -->
-<p>We will be using specific R packages for the workshop, so you will need to install them. To make it easier, we’ve created a custom R package called <code>r3</code> that will install all the necessary packages for you for this workshop. Run these two functions in the Console by copying and pasting them to install our custom <code>r3</code> package as well as the <code>{tidyverse}</code> package.</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"r3"</span>, <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://rostools.r-universe.dev"</span>, <span class="st">"https://cloud.r-project.org"</span>))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<!-- TODO: Add an introduction here -->
+<section id="learning-objectives" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">10.1</span> Learning objectives</h2>
+<p>The learning objectives for this session are:</p>
+<ol type="1">
+<li>Objective one</li>
+</ol>
+</section>
+<section id="todo-section" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="todo-section"><span class="header-section-number">10.2</span> TODO: Section</h2>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+<span class="screen-reader-only">Note</span>Reading task: ~4 minutes
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Installing packages is tricky, especially on some work laptops, and doesn’t always work as expected. Here are some other methods to try if you have trouble installing the packages with the code above.</p>
-<p>For Windows users, you may have to install <a href="https://cran.r-project.org/bin/windows/Rtools/">RTools</a> to use either the <code>{pak}</code> or <code>{remotes}</code> method. The version of RTools you install must match the version of R that you have installed. For example, if you have R version 4.4, you need to install RTools 4.4.</p>
-<p>First, try installing the <code>r3</code> package directly from GitHub with <code>{pak}</code>:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"rostools/r3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>If that doesn’t work, try with <code>{remotes}</code>:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rostools/r3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>If you encounter any errors with either of these functions, try to restart R by going to “Sessions -&gt; Restart R” and re-run them again. If that also doesn’t work, try to complete the other tasks as best you can, complete the survey, and let us know you have a problem in the survey. We’ll email you at least a week before the workshop starts to try to help you get it working.</p>
+<p>TODO: Reading text</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When you see a command like <code>something::something()</code>, for example with <code>pak::pak()</code>, you would “read” this as:</p>
-<blockquote class="blockquote">
-<p>R, can you please use the <code>pak()</code> function from the <code>{pak}</code> package.</p>
-</blockquote>
-<p>The normal way of doing this would be to load the package with <code>library(pak)</code> and then running the command (<code>pak()</code>). But by using the <code>::</code>, we tell R to directly use a function from a package, without needing to load the package and all of its other functions too. We use this trick because we only want to use the <code>pak()</code> command from the <code>{pak}</code> package and not have to load all the other functions as well. In this workshop we will be using <code>::</code> often.</p>
-</div>
-</div>
+</section>
+<section id="technologist-exercise-title" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="technologist-exercise-title"><span class="header-section-number">10.3</span> :technologist: Exercise: Title</h2>
+<p><strong>Time: ~NUM minutes.</strong></p>
+<p>Text</p>
+</section>
+<section id="speech_balloon-discussion-activity-title" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="speech_balloon-discussion-activity-title"><span class="header-section-number">10.4</span> :speech_balloon: Discussion activity: Title</h2>
+<p><strong>Time: ~Num minutes.</strong></p>
+<p>Text</p>
+</section>
+<section id="book-reading-task-title" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="book-reading-task-title"><span class="header-section-number">10.5</span> :book: Reading task: Title</h2>
+<p><strong>Time: ~Num minutes.</strong></p>
+<p>Text</p>
+</section>
+<section id="summary" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="summary"><span class="header-section-number">10.6</span> Summary</h2>
+<ul>
+<li>TODO: List of summary items</li>
+</ul>
+</section>
+<section id="survey" class="level2" data-number="10.7">
+<h2 data-number="10.7" class="anchored" data-anchor-id="survey"><span class="header-section-number">10.7</span> Survey</h2>
+<p><a href="TODO" class="btn btn-primary" role="button">Feedback survey! :tada:</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -786,13 +749,13 @@ Tip
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../pre-workshop/installing-programs-r.html" class="pagination-link" aria-label="Instalación de los programas">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Instalación de los programas</span></span>
+      <a href="../sesiones/introducción.html" class="pagination-link" aria-label="Introducción al taller">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al taller</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pre-workshop/code-of-conduct.html" class="pagination-link" aria-label="Code of conduct">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Code of conduct</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../sesiones/conclusión.html" class="pagination-link" aria-label="What next">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">What next</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -806,12 +769,12 @@ Tip
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
     <a class="nav-link active" href="../LICENSE.html" aria-current="page">
-<p>License: CC BY 4.0</p>
+<p>Licencia: CC BY 4.0</p>
 </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../pre-workshop/code-of-conduct.html">
-<p>Code of Conduct</p>
+    <a class="nav-link" href="../pre-taller/código-de-conducta.html">
+<p>Código de Conducta</p>
 </a>
   </li>  
 </ul>

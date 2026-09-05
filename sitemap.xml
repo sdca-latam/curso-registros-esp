@@ -2,74 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/index.html</loc>
-    <lastmod>2026-09-04T11:40:33.749Z</lastmod>
+    <lastmod>2026-09-05T08:24:15.722Z</lastmod>
   </url>
   <url>
-    <loc>/overview/syllabus.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/resumen/temario.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/overview/is-this-for-you.html</loc>
-    <lastmod>2026-09-04T11:40:33.749Z</lastmod>
+    <loc>/resumen/es-para-ti.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/overview/schedule.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/resumen/horario.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/overview/learning-design.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/resumen/diseño-aprendizaje.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/pre-workshop/overview.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/pre-taller/resumen.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/pre-workshop/installing-programs-r.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/pre-taller/instalación-programas-r.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/pre-workshop/installing-r-packages.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/pre-taller/instalación-paquetes-r.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/pre-workshop/code-of-conduct.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/pre-taller/código-de-conducta.html</loc>
+    <lastmod>2026-09-05T08:24:15.722Z</lastmod>
   </url>
   <url>
-    <loc>/pre-workshop/survey.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/sesiones/introducción.html</loc>
+    <lastmod>2026-09-05T08:24:15.724Z</lastmod>
   </url>
   <url>
-    <loc>/sessions/introducción.html</loc>
-    <lastmod>2026-09-04T11:40:33.751Z</lastmod>
+    <loc>/sesiones/sessión.html</loc>
+    <lastmod>2026-09-05T08:24:15.724Z</lastmod>
   </url>
   <url>
-    <loc>/sessions/session.html</loc>
-    <lastmod>2026-09-04T11:40:33.751Z</lastmod>
+    <loc>/sesiones/conclusión.html</loc>
+    <lastmod>2026-09-05T08:24:15.723Z</lastmod>
   </url>
   <url>
-    <loc>/sessions/conclusion.html</loc>
-    <lastmod>2026-09-04T11:40:33.750Z</lastmod>
+    <loc>/apendices/para-enseñantes.html</loc>
+    <lastmod>2026-09-05T08:24:15.721Z</lastmod>
   </url>
   <url>
-    <loc>/appendix/for-teachers.html</loc>
-    <lastmod>2026-09-04T11:40:33.748Z</lastmod>
-  </url>
-  <url>
-    <loc>/appendix/references.html</loc>
-    <lastmod>2026-09-04T11:40:33.749Z</lastmod>
+    <loc>/apendices/referencias.html</loc>
+    <lastmod>2026-09-05T08:24:15.722Z</lastmod>
   </url>
   <url>
     <loc>/CONTRIBUTING.html</loc>
-    <lastmod>2026-09-04T11:40:33.748Z</lastmod>
+    <lastmod>2026-09-05T08:24:15.721Z</lastmod>
   </url>
   <url>
     <loc>/LICENSE.html</loc>
-    <lastmod>2026-09-04T11:40:33.748Z</lastmod>
+    <lastmod>2026-09-05T08:24:15.721Z</lastmod>
   </url>
   <url>
     <loc>/curso-registros-esp.pdf</loc>
-    <lastmod>2026-09-04T11:41:58.886Z</lastmod>
+    <lastmod>2026-09-05T08:26:23.872Z</lastmod>
   </url>
 </urlset>
