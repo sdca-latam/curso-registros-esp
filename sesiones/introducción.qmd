@@ -25,8 +25,13 @@ como presentación pre-curso (en línea).
 ### Objectivos de aprendizaje
 
 Después de esta presentación los estudiantes tendrán los siguientes
-conocimientos: - Qué es un registro sanitario; con cuales componentes
-debe contar - A qué tipo de preguntas puede responder un registro -
-Cuales son los tipos de usuarios de los datos de un registro sanitario -
-A qué niveles existen datos / registros sanitarios y cuales son las
-necesidades de información a cada nivel -
+conocimientos:
+
+- Qué es un registro sanitario; con cuales componentes debe contar
+
+- A qué tipo de preguntas puede responder un registro
+
+- Cuales son los tipos de usuarios de los datos de un registro sanitario
+
+- A qué niveles existen datos / registros sanitarios y cuales son las
+  necesidades de información a cada nivel
