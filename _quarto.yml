@@ -35,7 +35,9 @@ book:
     - part: "Sesiones"
       chapters:
         - sesiones/introducción.qmd
-        - sesiones/sessión.qmd
+        - sesiones/potencial.qmd
+        - sesiones/datos-crudos.qmd
+        - sesiones/análisis-sencillo.qmd
         - sesiones/conclusión.qmd
   appendices:
     - apendices/para-enseñantes.qmd

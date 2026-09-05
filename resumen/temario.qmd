@@ -16,8 +16,7 @@ The overall aim of this workshop is to enable you to:
 
 1.  Aim one
 
-Broken down into specific objectives for each session, we've designed
-the workshop to enable you to do the following:
+Hemos diseñado el taller para enseãrte lo siguiente:
 
 [**TODO: Session title**](/sesiones/sesión.qmd)
 
