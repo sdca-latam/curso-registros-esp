@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<script src="introducción_files/libs/clipboard/clipboard.min.js"></script>
+<script src="introducción_files/libs/quarto-html/tabby.min.js"></script>
+<script src="introducción_files/libs/quarto-html/popper.min.js"></script>
+<script src="introducción_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="introducción_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="introducción_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="introducción_files/libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.27">
+
+  <meta name="author" content="Daniel R. Witte · Aarhus University / Steno Diabetes Center Aarhus">
+  <meta name="dcterms.date" content="2026-09-10">
+  <title>Introducción al uso de registros nacionales de salud para investigación</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="introducción_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="introducción_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="introducción_files/libs/revealjs/dist/theme/quarto-23c92a486159bd4e9fbb0a20cc8c1054.css">
+  <link href="introducción_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="introducción_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="introducción_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="introducción_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-visibility="hidden" class="quarto-title-block center">
+  <h1 class="title">Introducción al uso de registros nacionales de salud para investigación</h1>
+  <p class="subtitle">Estructuras, Experiencias, Ejercicios</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Daniel R. Witte · Aarhus University / Steno Diabetes Center Aarhus 
+</div>
+</div>
+</div>
+
+  <p class="date">2026-09-10</p>
+</section>
+<section id="section" class="slide level2 slide-dark" data-background-color="#0A3B36">
+<h2></h2>
+<div class="big-title">
+<p>Introducción al uso de registros nacionales de salud para investigación</p>
+</div>
+<div class="tagline">
+<p>Estructuras, Experiencias, Ejercicios</p>
+</div>
+<div class="meta">
+<p>Septiembre 2026<br>
+Daniel R. Witte · Aarhus University / Steno Diabetes Center Aarhus</p>
+</div>
+<div class="dots">
+
+</div>
+</section>
+<section id="cómo-está-organizado-este-curso" class="slide level2">
+<h2><img data-src="images/icon-numbered-list.png" class="tico"> Cómo está organizado este curso</h2>
+<div class="numlist tall">
+<div class="numcard">
+<div class="num">
+<p>01</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Sesión Virtual (28-08-2026)</p>
+</div>
+<ul>
+<li>Presentación del ponente</li>
+<li>Introducción de conceptos centrales</li>
+<li>Preparación del sistema de análisis (R)</li>
+</ul>
+</div>
+</div>
+<div class="numcard">
+<div class="num">
+<p>02</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Sesión Presencial (10-09-2026)</p>
+</div>
+<ul>
+<li>El potencial de los registros</li>
+<li>De los datos crudos a una pregunta de investigación</li>
+<li>Manos a la obra: un análisis sencillo</li>
+<li>Cierre. Ideas y discusión</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="quién-soy" class="slide level2">
+<h2>¿Quién soy?</h2>
+<div class="numlist">
+<div class="numcard">
+<div class="num">
+<p>&nbsp;</p>
+</div>
+<div class="ncontent">
+<ul>
+<li>Formación en medicina (Universidad de Utrecht – Holanda)</li>
+<li>Profesor de Epidemiología de la Diabetes en la universidad de Aarhus (Dinamarca) y el Steno Diabetes Center Aarhus</li>
+<li>Experiencia con trabajos de cohorte, ensayos clínicos y análisis de registros</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="figure-card">
+<p><img data-src="images/steno-centers-map.png"></p>
+</div>
+</section>
+<section id="cómo-está-organizada-esta-sesión" class="slide level2">
+<h2><img data-src="images/icon-numbered-list.png" class="tico"> Cómo está organizada esta sesión</h2>
+<div class="numlist slim">
+<div class="numcard">
+<div class="num">
+<p>01</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Presentación</p>
+</div>
+</div>
+</div>
+<div class="numcard">
+<div class="num">
+<p>02</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Conceptos centrales</p>
+</div>
+<p>¿Qué es un registro?</p>
+</div>
+</div>
+<div class="numcard">
+<div class="num">
+<p>03</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Preparación para los ejercicios prácticos</p>
+</div>
+<p>Instalación del paquete estadístico R y paquetes de análisis específicos</p>
+</div>
+</div>
+<div class="numcard">
+<div class="num">
+<p>04</p>
+</div>
+<div class="ncontent">
+<div class="nc-title">
+<p>Preguntas</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="a-que-tipo-de-preguntas-puede-responder-un-registro" class="slide level2">
+<h2><img data-src="images/icon-question.png" class="tico"> ¿A que tipo de preguntas puede responder un registro?</h2>
+<div class="cardgrid">
+<div class="icard">
+<div class="ic-head">
+<p><img data-src="images/icon-people.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>¿Cuántas personas viven con diabetes y cuántas se diagnostican cada año?</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Prevalencia e incidencia, por tipo (T1/T2), edad, sexo, territorio<br>
+Tasas totales, no una estimación basada en muestreo</p>
+</div>
+</div>
+<div class="icard">
+<div class="ic-head">
+<p><img data-src="images/icon-stethoscope.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>¿Reciben la atención que deberían recibir?</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Exámenes, controles, medicación:</p>
+<ul>
+<li>Cobertura efectiva</li>
+<li>Calidad de servicios clínicos</li>
+</ul>
+</div>
+</div>
+<div class="icard">
+<div class="ic-head">
+<p><img data-src="images/icon-heart-pulse.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>¿Qué complicaciones desarrollan, y cuándo?</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Retinopatía, nefropatía, amputaciones, eventos cardiovasculares, a lo largo del tiempo.</p>
+</div>
+</div>
+<div class="icard">
+<div class="ic-head">
+<p><img data-src="images/icon-hourglass.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>¿Cuánto antes mueren, y de qué?</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Mortalidad, exceso de mortalidad y años de vida perdidos en comparación con la población general.</p>
+</div>
+</div>
+</div>
+<div class="callout-gold">
+<p><strong>Ninguna de estas preguntas se responde completamente con una encuesta transversal ni con un ensayo clínico.</strong><br>
+<strong>Una característica principal de los registros es la observación de una población completa, de forma continua, durante años.</strong></p>
+</div>
+</section>
+<section id="quién-usa-un-registro-y-para-qué" class="slide level2">
+<h2><img data-src="images/icon-people.png" class="tico"> ¿Quién usa un registro y para qué?</h2>
+<div class="subtitle">
+<p>El mismo registro puede servir para responder a preguntas distintas, según quién pregunte</p>
+</div>
+<div class="t-usuarios">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nivel y usuario</th>
+<th>La pregunta que hace</th>
+<th>El producto que necesita</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gobierno nacional<br>Ministerio, seguridad social</td>
+<td>¿Cuánta enfermedad hay, dónde y con qué desenlaces? ¿La política está funcionando?</td>
+<td>Indicadores nacionales comparables en el tiempo, series de incidencia y mortalidad, proyecciones</td>
+</tr>
+<tr class="even">
+<td>Gobierno regional y local<br>Secretarías, municipios</td>
+<td>¿Qué territorios están peor y dónde faltan servicios?</td>
+<td>Tasas por distrito con denominadores poblacionales, mapas, comparación entre pares</td>
+</tr>
+<tr class="odd">
+<td>Sistema de salud o asegurador</td>
+<td>¿Dónde se concentra el costo evitable y la brecha de atención?</td>
+<td>Cohortes de riesgo, cobertura efectiva por prestador, costos atribuibles</td>
+</tr>
+<tr class="even">
+<td>Servicio o establecimiento</td>
+<td>¿Cómo estamos frente a centros comparables?</td>
+<td>Tableros de proceso y resultado, con ajuste por composición de la población atendida</td>
+</tr>
+<tr class="odd">
+<td>Profesional clínico</td>
+<td>¿Cuáles de mis pacientes están fuera de control o sin control anual?</td>
+<td>Listas nominales accionables y comparación con sus pares — no un informe agregado</td>
+</tr>
+<tr class="even">
+<td>Universidad o equipo de investigación</td>
+<td>¿Qué causa qué? ¿Qué intervención funciona y en quién?</td>
+<td>Microdatos seudonimizados, enlace con otras fuentes, años de historia, entorno seguro</td>
+</tr>
+<tr class="odd">
+<td>Paciente y ciudadano</td>
+<td>¿Qué se sabe de mí, quién lo usa y para qué? ¿Cómo estoy frente a otros?</td>
+<td>Acceso a sus propios datos, resultados agregados publicados, transparencia sobre los usos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="qué-niveles-de-registros-sanitarios-existen" class="slide level2">
+<h2><img data-src="images/icon-layers.png" class="tico"> ¿Qué niveles de registros sanitarios existen?</h2>
+<div class="subtitle">
+<p>La respuesta depende del nivel: cada uno necesita información distinta y usa herramientas distintas</p>
+</div>
+<div class="t-niveles">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th>Necesidades de información</th>
+<th>Herramientas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Global</td>
+<td>Indicadores agregados por país y región</td>
+<td>Informes mundiales (OCDE, OMS, Banco Mundial)</td>
+</tr>
+<tr class="even">
+<td>Nacional</td>
+<td>Indicadores para planificación, mejora de la equidad, distribución de recursos</td>
+<td>Informes nacionales (ministerios, bancos de datos, universidades)</td>
+</tr>
+<tr class="odd">
+<td>Servicio de salud</td>
+<td>Indicadores por centro y territorio para planificar y seguir la actividad</td>
+<td>Informes, central de resultados</td>
+</tr>
+<tr class="even">
+<td>Organización sanitaria</td>
+<td>Compras, gestión financiera, medicamentos, gestión de citas</td>
+<td>Bases de datos y aplicaciones de gestión</td>
+</tr>
+<tr class="odd">
+<td>Paciente</td>
+<td>Cuidado del paciente</td>
+<td>Historia clínica</td>
+</tr>
+<tr class="even">
+<td>Comunitario</td>
+<td>Seguimiento de la población y cambios demográficos</td>
+<td>Censo, registro civil, estadísticas de mortalidad</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="qué-es-un-registro-sanitario" class="slide level2">
+<h2><img data-src="images/icon-registry-structure.png" class="tico"> ¿Qué es un registro sanitario?</h2>
+<div class="subtitle">
+<p>Un sistema organizado que recoge datos uniformes sobre una población definida por una enfermedad, condición o exposición (EMA, 2021)</p>
+</div>
+<div class="hub">
+  <svg viewbox="0 0 1164 426" preserveaspectratio="none">
+    <g stroke="#9FB8B4" stroke-width="2" fill="none">
+      <line x1="582" y1="203" x2="582" y2="100"></line>
+      <line x1="582" y1="203" x2="763" y2="127"></line>
+      <line x1="582" y1="203" x2="763" y2="280"></line>
+      <line x1="582" y1="203" x2="582" y2="307"></line>
+      <line x1="582" y1="203" x2="402" y2="280"></line>
+      <line x1="582" y1="203" x2="402" y2="127"></line>
+    </g>
+  </svg>
+  <div class="node" style="left:443.5px; top:0px;">
+    <div class="n-title">Metadatos</div><div class="n-sub">diccionario, códigos, linaje</div>
+  </div>
+  <div class="node" style="left:763.2px; top:76.8px;">
+    <div class="n-title">Documentación</div><div class="n-sub">protocolo, algoritmo, calidad</div>
+  </div>
+  <div class="node" style="left:763.2px; top:230.4px;">
+    <div class="n-title">Infraestructura informática</div><div class="n-sub">enlace, entorno seguro, respaldo</div>
+  </div>
+  <div class="node" style="left:443.5px; top:307.2px;">
+    <div class="n-title">Reglas de acceso</div><div class="n-sub">quién, cómo y en cuánto tiempo</div>
+  </div>
+  <div class="node" style="left:123.8px; top:230.4px;">
+    <div class="n-title">Marco institucional</div><div class="n-sub">quién lo mantiene y con qué fondos</div>
+  </div>
+  <div class="node" style="left:123.8px; top:76.8px;">
+    <div class="n-title">Marco legal</div><div class="n-sub">base jurídica del uso secundario</div>
+  </div>
+  <div class="core">DATOS</div>
+</div>
+<div class="callout-gold">
+<p><strong>Un registro no es una base de datos.</strong> Es una base de datos más los seis elementos que la hacen interpretable, legítima, mantenible y accesible. Los proyectos fallan casi siempre por los seis, no por el primero.</p>
+</div>
+<div class="source">
+<p>Definición: EMA, Guideline on registry-based studies, EMA/426390/2021. · Estructura de componentes: Zaletel &amp; Kralj (PARENT JA, 2015); Gliklich et al.&nbsp;(AHRQ, 4.ª ed., 2020).</p>
+</div>
+</section>
+<section id="section-1" class="slide level2" data-background-image="images/screenshot-dge-portal.png" data-background-size="contain" data-background-color="#ffffff">
+<h2></h2>
+</section>
+<section id="section-2" class="slide level2" data-background-image="images/screenshot-datos-abiertos.png" data-background-size="contain" data-background-color="#ffffff">
+<h2></h2>
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/screenshot-sala-situacional-diabetes.png" data-background-size="contain" data-background-color="#ffffff">
+<h2></h2>
+<!-- This slide is HIDDEN in the original .pptx. Quarto removes slides marked
+     {visibility="hidden"} from the output entirely, so it is left visible here.
+     Add {visibility="hidden"} to the heading below to drop it again. -->
+</section>
+<section id="componentes-de-un-sistema-de-información-en-salud" class="slide level2">
+<h2><img data-src="images/icon-components.png" class="tico"> Componentes de un sistema de información en salud</h2>
+<div class="subtitle">
+<p>Un registro se apoya en los seis; si falta uno, el registro no se sostiene</p>
+</div>
+<div class="cardgrid cols-3">
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-resources.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Recursos</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Marco legal, normativa y planificación; personal, financiamiento, logística y tecnología.</p>
+</div>
+</div>
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-indicators.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Indicadores</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Conjunto acordado de indicadores y metas, con sus definiciones, a lo largo de toda la cadena.</p>
+</div>
+</div>
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-database.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Fuentes de datos</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Basadas en la población (censo, registro civil, encuestas) y en las instituciones (registros de servicios).</p>
+</div>
+</div>
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-data-management.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Gestión de datos</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Recolección, almacenamiento, control de calidad, procesamiento, flujo y compilación.</p>
+</div>
+</div>
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-information-products.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Productos de información</p>
+</div>
+</div>
+<div class="ic-body">
+<p>El dato analizado y presentado como información procesable, no como archivo bruto.</p>
+</div>
+</div>
+<div class="icard compact flush">
+<div class="ic-head">
+<p><img data-src="images/icon-dissemination.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Difusión y uso</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Poner la información a disposición de quienes toman decisiones — y facilitar su uso.</p>
+</div>
+</div>
+</div>
+<div class="source">
+<p>Marco de la OMS/HMN para sistemas de información en salud.</p>
+</div>
+</section>
+<section id="siete-componentes-y-qué-ocurre-si-falta-uno" class="slide level2">
+<h2><img data-src="images/icon-clipboard.png" class="tico"> Siete componentes, y qué ocurre si falta uno</h2>
+<div class="t-comp">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Qué incluye</th>
+<th>Si falta…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Datos</td>
+<td>Registros individuales, identificador, fechas, códigos; definición de caso explícita</td>
+<td>No hay registro. Pero tener sólo esto es la situación más común</td>
+</tr>
+<tr class="even">
+<td>Metadatos</td>
+<td>Diccionario de variables, catálogos de códigos, procedencia y linaje, versiones, unidades, valores permitidos</td>
+<td>Nadie fuera del equipo original puede interpretar una variable; el análisis deja de ser reproducible</td>
+</tr>
+<tr class="odd">
+<td>Documentación</td>
+<td>Protocolo, manual de operaciones, algoritmo de caso, informes de calidad (conformidad, completitud, plausibilidad), historial de cambios</td>
+<td>No se puede juzgar si el dato sirve para la pregunta; los sesgos se descubren después de publicar</td>
+</tr>
+<tr class="even">
+<td>Marco legal</td>
+<td>Base jurídica para el uso secundario, protección de datos, consentimiento o su exención, obligación de reporte</td>
+<td>El registro existe pero no se puede usar; o se usa en zona gris y cae en la primera auditoría</td>
+</tr>
+<tr class="odd">
+<td>Marco institucional</td>
+<td>Titular nombrado, responsable del tratamiento, financiamiento estable, gobernanza con los actores, plan de sostenibilidad</td>
+<td>Nadie lo mantiene entre proyectos; se degrada al cambiar el gobierno, el equipo o el proveedor</td>
+</tr>
+<tr class="even">
+<td>Reglas de acceso</td>
+<td>Criterios y formulario de solicitud, comité que aprueba, contratos, control de divulgación de resultados, plazos publicados</td>
+<td>O no accede nadie, o accede quien conoce a alguien; ambas cosas destruyen la confianza</td>
+</tr>
+<tr class="odd">
+<td>Infraestructura</td>
+<td>Enlace de identificadores, entorno seguro de análisis, versionado, respaldo, seguridad, catálogo público de metadatos</td>
+<td>El acceso depende de enviar copias por correo; se pierden la trazabilidad y la seguridad</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="source">
+<p>Síntesis a partir de Zaletel &amp; Kralj (PARENT JA, 2015); EMA EMA/426390/2021, anexo de buenas prácticas; Gliklich et al.&nbsp;(AHRQ, 2020); Kahn et al., eGEMs 2016 (calidad de datos).</p>
+</div>
+</section>
+<section id="el-acceso-las-reglas-pesan-tanto-como-los-datos" class="slide level2">
+<h2><img data-src="images/icon-key.png" class="tico"> El acceso: las reglas pesan tanto como los datos</h2>
+<div class="subtitle">
+<p>El marco de los «cinco seguros» (Five Safes), usado hoy por la mayoría de los entornos seguros de análisis</p>
+</div>
+<div class="cardgrid cols-5">
+<div class="icard centred">
+<div class="ic-head">
+<p><img data-src="images/icon-safe-projects.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Proyectos seguros</p>
+</div>
+</div>
+<div class="ic-body">
+<p>¿El uso propuesto es legítimo y de interés público?</p>
+</div>
+</div>
+<div class="icard centred">
+<div class="ic-head">
+<p><img data-src="images/icon-safe-people.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Personas seguras</p>
+</div>
+</div>
+<div class="ic-body">
+<p>¿Quién analiza está acreditado y formado?</p>
+</div>
+</div>
+<div class="icard centred">
+<div class="ic-head">
+<p><img data-src="images/icon-safe-settings.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Entornos seguros</p>
+</div>
+</div>
+<div class="ic-body">
+<p>¿Dónde se analiza impide copiar o extraer?</p>
+</div>
+</div>
+<div class="icard centred">
+<div class="ic-head">
+<p><img data-src="images/icon-database.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Datos seguros</p>
+</div>
+</div>
+<div class="ic-body">
+<p>¿El detalle entregado es el mínimo necesario?</p>
+</div>
+</div>
+<div class="icard centred">
+<div class="ic-head">
+<p><img data-src="images/icon-safe-outputs.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Resultados seguros</p>
+</div>
+</div>
+<div class="ic-body">
+<p>¿Lo que sale del entorno es no divulgativo?</p>
+</div>
+</div>
+</div>
+<div class="chevrons">
+  <div class="step">Solicitud con protocolo</div><div class="tick"></div>
+  <div class="step">Evaluación: comité y ética</div><div class="tick"></div>
+  <div class="step">Acceso en entorno seguro</div><div class="tick"></div>
+  <div class="step">Control de salida de resultados</div><div class="tick"></div>
+  <div class="step last">Publicación y retorno</div>
+</div>
+<div class="callout-teal">
+<p><strong>Dos exigencias complementarias.</strong> Los principios FAIR piden que el registro sea localizable, accesible, interoperable y reutilizable — lo que en la práctica significa un catálogo público de metadatos aunque los datos individuales nunca salgan. La Recomendación de la OCDE sobre gobernanza de datos de salud pide además coordinación entre custodios, estándares comunes y procedimientos que reduzcan las barreras al uso legítimo.</p>
+</div>
+<div class="source">
+<p>Desai, Ritchie &amp; Welpton, Five Safes, UWE Working Papers in Economics 1601, 2016. · Wilkinson et al., Sci Data 2016;3:160018. · OCDE, OECD/LEGAL/0433, 2017.</p>
+</div>
+</section>
+<section id="el-mismo-registro-exigencias-incompatibles" class="slide level2">
+<h2><img data-src="images/icon-sliders.png" class="tico"> El mismo registro, exigencias incompatibles</h2>
+<div class="subtitle">
+<p>Latencia, agregación y vía de entrega cambian según el usuario — y no se pueden optimizar todas a la vez</p>
+</div>
+<div class="t-exig">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Usuario</th>
+<th>Latencia aceptable</th>
+<th>Nivel de agregación</th>
+<th>Vía de entrega</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Gobierno nacional</td>
+<td>Anual</td>
+<td>País y región</td>
+<td>Informe público y tablero abierto</td>
+</tr>
+<tr class="even">
+<td>Gobierno regional y local</td>
+<td>Trimestral</td>
+<td>Distrito y establecimiento</td>
+<td>Tablero territorial, informe periódico</td>
+</tr>
+<tr class="odd">
+<td>Asegurador o red</td>
+<td>Mensual</td>
+<td>Afiliado y prestador</td>
+<td>Sistema de gestión interno</td>
+</tr>
+<tr class="even">
+<td>Establecimiento</td>
+<td>Mensual o semanal</td>
+<td>Paciente, dentro del centro</td>
+<td>Reporte devuelto al centro</td>
+</tr>
+<tr class="odd">
+<td>Profesional clínico</td>
+<td>Días o tiempo real</td>
+<td>Paciente nominal</td>
+<td>La propia historia clínica, no el registro</td>
+</tr>
+<tr class="even">
+<td>Investigación</td>
+<td>Anual, pero con décadas de historia</td>
+<td>Microdatos seudonimizados</td>
+<td>Solicitud formal y entorno seguro</td>
+</tr>
+<tr class="odd">
+<td>Paciente y ciudadano</td>
+<td>Cuando lo solicite</td>
+<td>Sus propios datos, más agregados públicos</td>
+<td>Portal o derecho de acceso</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout-gold">
+<p><strong>Cuanto más cerca del paciente, menor latencia y mayor identificabilidad; cuanto más lejos, más agregación y más historia.</strong> Ningún sistema único sirve a todos: por eso el registro y la historia clínica conviven en lugar de competir.</p>
+</div>
+<!-- This slide is HIDDEN in the original .pptx. See the note on slide 12. -->
+</section>
+<section id="el-paciente-y-el-ciudadano-como-usuarios" class="slide level2">
+<h2><img data-src="images/icon-patient-care.png" class="tico"> El paciente y el ciudadano como usuarios</h2>
+<div class="subtitle">
+<p>El nivel que casi nunca aparece en el diseño — y del que depende la licencia social del registro</p>
+</div>
+<div class="cardgrid">
+<div class="icard flush">
+<div class="ic-head">
+<p><img data-src="images/icon-personal-access.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Acceso a los propios datos</p>
+</div>
+</div>
+<div class="ic-body">
+<p>La normativa de protección de datos convierte al paciente en usuario con derecho de acceso. Si el registro no puede responder «¿qué tiene usted sobre mí?», tiene un problema legal, no sólo comunicacional.</p>
+</div>
+</div>
+<div class="icard flush">
+<div class="ic-head">
+<p><img data-src="images/icon-pie-chart.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Retorno de resultados agregados</p>
+</div>
+</div>
+<div class="ic-body">
+<p>Publicar qué se encontró, en lenguaje llano y con regularidad. Es lo que convierte la recolección en un intercambio y no en una extracción.</p>
+</div>
+</div>
+<div class="icard flush">
+<div class="ic-head">
+<p><img data-src="images/icon-participation.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Participación en la gobernanza</p>
+</div>
+</div>
+<div class="ic-body">
+<p>La Recomendación de la OCDE pide consulta pública y participación de los interesados para que el uso de datos personales de salud sea coherente con las expectativas razonables de las personas.</p>
+</div>
+</div>
+<div class="icard flush">
+<div class="ic-head">
+<p><img data-src="images/icon-trust-shield.png" class="ic-icon"></p>
+<div class="ic-title">
+<p>Confianza como infraestructura</p>
+</div>
+</div>
+<div class="ic-body">
+<p>La confianza sostiene el marco legal. Cuando se pierde — por una filtración o por un uso no anunciado — se pierde también la base política del registro.</p>
+</div>
+</div>
+</div>
+<div class="source">
+<p>OCDE, Recommendation of the Council on Health Data Governance, OECD/LEGAL/0433, 2017.</p>
+</div>
+</section>
+<section id="registro-sanitario-historia-clínica-electrónica" class="slide level2">
+<h2><img data-src="images/icon-not-equal.png" class="tico"> Registro sanitario ≠ historia clínica electrónica</h2>
+<div class="subtitle">
+<p>Las dos diferencias que más consecuencias tienen: a quién cubre y cuándo está disponible</p>
+</div>
+<div class="t-hce">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimensión</th>
+<th>Historia clínica electrónica (hospital o red)</th>
+<th>Registro sanitario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Propósito</td>
+<td>Atender a este paciente hoy. Uso primario: es una herramienta de trabajo clínico y de facturación</td>
+<td>Describir a una población en el tiempo. Uso secundario de datos que ya existen</td>
+</tr>
+<tr class="even">
+<td>Cobertura</td>
+<td>Quien consulta en esa red: población afiliada o usuaria de un prestador. El resto es invisible</td>
+<td>Población definida a priori: todos los residentes de un territorio, o todos los casos que cumplen la definición</td>
+</tr>
+<tr class="odd">
+<td>Denominador</td>
+<td>No existe. No se sabe quién no consultó, ni cuántos son</td>
+<td>Explícito: censo, padrón o registro civil. Sin denominador no hay tasa</td>
+</tr>
+<tr class="even">
+<td>Actualidad</td>
+<td>Casi tiempo real: el dato está disponible en el momento de la atención</td>
+<td>Actualización mensual, trimestral o anual, tras la extracción, el enlace y el control de calidad</td>
+</tr>
+<tr class="odd">
+<td>Longitudinalidad</td>
+<td>Se corta al cambiar de prestador, de asegurador o de ciudad</td>
+<td>Continua mientras exista el identificador, aunque la persona cambie de prestador</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="source">
+<p>Casey JA, et al.&nbsp;Annu Rev Public Health 2016;37:61–81. · Porto Alegre ilustra la restricción de cobertura: sólo servicios del SUS, con ~49 % de la población dependiendo exclusivamente de ese sistema.</p>
+</div>
+</section>
+<section id="otras-dimensiones-que-señala-la-literatura" class="slide level2">
+<h2><img data-src="images/icon-scales.png" class="tico"> Otras dimensiones que señala la literatura</h2>
+<div class="t-hce">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimensión</th>
+<th>Historia clínica electrónica</th>
+<th>Registro sanitario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Definición de caso</td>
+<td>Implícita: la que escribió cada clínico, con variabilidad entre miles de profesionales</td>
+<td>Explícita, algorítmica, versionada y reproducible por terceros</td>
+</tr>
+<tr class="even">
+<td>Estandarización</td>
+<td>Catálogos y campos propios del proveedor de software; a menudo texto libre</td>
+<td>Semántica común acordada: CIE, CIAP, ATC, unidades y valores permitidos</td>
+</tr>
+<tr class="odd">
+<td>Riqueza del contenido</td>
+<td>Muy alta: notas, imágenes, evolución clínica — pero poco estructurada</td>
+<td>Más pobre en detalle, pero comparable, documentada y analizable</td>
+</tr>
+<tr class="even">
+<td>Calidad y sesgo</td>
+<td>Completitud no aleatoria: los pacientes más enfermos generan más datos</td>
+<td>La calidad se mide y se publica: conformidad, completitud y plausibilidad</td>
+</tr>
+<tr class="odd">
+<td>Gobernanza y acceso</td>
+<td>Del prestador; acceso caso a caso, sin reglas publicadas</td>
+<td>Titular nombrado, base legal y procedimiento de acceso conocido de antemano</td>
+</tr>
+<tr class="even">
+<td>Estabilidad</td>
+<td>Cambia — o se pierde — al cambiar de proveedor de software</td>
+<td>Diseñado para sobrevivir al proveedor, al equipo y al gobierno de turno</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="source">
+<p>Weiskopf NG, Rusanov A, Weng C. AMIA Annu Symp Proc 2013:1472–7. · Kahn MG, et al.&nbsp;eGEMs 2016;4(1):1244. · Casey JA, et al.&nbsp;Annu Rev Public Health 2016;37:61–81.</p>
+</div>
+</section>
+<section id="tres-sesgos-que-nacen-de-esa-diferencia" class="slide level2">
+<h2><img data-src="images/icon-alert-circle.png" class="tico"> Tres sesgos que nacen de esa diferencia</h2>
+<div class="subtitle">
+<p>Por qué no basta con «sacar indicadores de la historia clínica»</p>
+</div>
+<div class="rowstack">
+<div class="rowcard rust">
+<p><img data-src="images/icon-no-denominator.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Ausencia de denominador</p>
+</div>
+<div class="rc-body">
+<p>Quien no consulta no existe en el sistema. La prevalencia calculada sobre la población atendida no es la prevalencia poblacional, y el sesgo es mayor justamente donde hay menos acceso.</p>
+</div>
+</div>
+<div class="rc-cite">
+<p>Haneuse &amp; Daniels, eGEMs 2016</p>
+</div>
+</div>
+<div class="rowcard rust">
+<p><img data-src="images/icon-magnifier.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Presencia informada</p>
+</div>
+<div class="rc-body">
+<p>Estar en la historia clínica no es aleatorio: indica que la persona está enferma. Y quien tiene más contactos acumula más diagnósticos y más mediciones, lo que distorsiona las asociaciones.</p>
+</div>
+</div>
+<div class="rc-cite">
+<p>Goldstein BA, et al.&nbsp;Am J Epidemiol 2016;184:847–55</p>
+</div>
+</div>
+<div class="rowcard rust">
+<p><img data-src="images/icon-bar-chart.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Completitud no aleatoria</p>
+</div>
+<div class="rc-body">
+<p>Los pacientes más enfermos tienen más datos. Un valor faltante no es ruido: es información sobre el proceso de atención, y tratarlo como faltante al azar sesga el resultado.</p>
+</div>
+</div>
+<div class="rc-cite">
+<p>Weiskopf, Rusanov &amp; Weng, AMIA 2013</p>
+</div>
+</div>
+</div>
+<div class="callout-bar">
+<p>Lo que aporta el registro frente a esto: un denominador poblacional, una definición de caso explícita y el enlace con mortalidad y con otras fuentes.</p>
+</div>
+</section>
+<section id="no-compiten-la-historia-clínica-alimenta-al-registro" class="slide level2">
+<h2><img data-src="images/icon-flow.png" class="tico"> No compiten: la historia clínica alimenta al registro</h2>
+<div class="flowrow">
+  <div class="fbox">
+    <div class="f-title">Sistemas transaccionales</div>
+    <div class="f-body">HCE, dispensación, facturación, laboratorio. Tiempo real, uso primario.</div>
+  </div>
+  <div class="arrow">➤</div>
+  <div class="fbox">
+    <div class="f-title">Extracción, enlace y control</div>
+    <div class="f-body">Identificador, deduplicación, algoritmo de caso, informes de calidad. Proceso periódico.</div>
+  </div>
+  <div class="arrow">➤</div>
+  <div class="fbox">
+    <div class="f-title">Registro poblacional</div>
+    <div class="f-body">Versión fechada, documentada y citable, con denominador y metadatos.</div>
+  </div>
+  <div class="arrow">➤</div>
+  <div class="fbox dark">
+    <div class="f-title">Productos por usuario</div>
+    <div class="f-body">Tableros, informes, listas nominales, microdatos en entorno seguro.</div>
+  </div>
+</div>
+
+<div class="latency-label">Latencia, y quién vive en cada tramo</div>
+
+<div class="latency">
+  <div class="seg"><div class="bar" style="background:#12564F">Tiempo real</div><div class="who">Profesional clínico</div></div>
+  <div class="seg"><div class="bar" style="background:#2C6B62">Diario o semanal</div><div class="who">Gestión del establecimiento</div></div>
+  <div class="seg"><div class="bar" style="background:#6E8F78">Mensual</div><div class="who">Asegurador o red</div></div>
+  <div class="seg"><div class="bar" style="background:#B79A55">Trimestral</div><div class="who">Gobierno regional y local</div></div>
+  <div class="seg"><div class="bar" style="background:#D99A2B">Anual</div><div class="who">Gobierno nacional e investigación</div></div>
+</div>
+<div class="callout-gold">
+<p><strong>La pregunta útil no es «¿registro o historia clínica?».</strong> Es qué extracción, con qué periodicidad y con qué reglas convierte lo que la historia clínica ya produce en algo que sirva a los demás niveles. Porto Alegre es exactamente esa arquitectura: ocho sistemas transaccionales del SUS alimentando un registro poblacional.</p>
+</div>
+</section>
+<section id="tres-barreras-que-no-pertenecen-a-un-solo-nivel" class="slide level2">
+<h2><img data-src="images/icon-warning.png" class="tico"> Tres barreras que no pertenecen a un solo nivel</h2>
+<div class="rowstack">
+<div class="rowcard teal rc-mid">
+<p><img data-src="images/icon-infinity.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Sostenibilidad</p>
+</div>
+<div class="rc-body">
+<p>Un registro no se «termina». El equipo de Porto Alegre es explícito: mantenerlo exige recursos futuros, y por eso la Secretaría Municipal de Salud y la UFRGS montaron un acuerdo permanente en lugar de un proyecto.</p>
+</div>
+</div>
+</div>
+<div class="rowcard plain-rust rc-mid">
+<p><img data-src="images/icon-scales.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Fragilidad institucional</p>
+</div>
+<div class="rc-body">
+<p>La Cuenta de Alto Costo de Colombia opera desde 2008 por resolución. En 2026 una nueva resolución reorganizó el reporte de enfermedades de alto costo y organizaciones de pacientes advirtieron públicamente sobre la pérdida de 18 años de análisis independiente. Sólido técnicamente ≠ seguro institucionalmente.</p>
+</div>
+</div>
+</div>
+<div class="rowcard gold rc-mid">
+<p><img data-src="images/icon-feedback-loop.png" class="rc-icon"></p>
+<div class="rc-main">
+<div class="rc-title">
+<p>Retorno de información</p>
+</div>
+<div class="rc-body">
+<p>Si el dato no vuelve a quien lo digita (el clínico) ni a quien lo genera (el paciente), su calidad cae. El feedback no es cortesía: es infraestructura del registro.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="source">
+<p>Colombia: Resolución 4700 de 2008 (mod. 2463 de 2014) y Resolución 1563 de 2026, MinSalud. Porto Alegre: Dal Moro et al., J Clin Med 2024;13:2783.</p>
+</div>
+</section>
+<section id="section-4" class="slide level2 slide-dark" data-background-color="#0A3B36">
+<h2></h2>
+<div class="section-title">
+<p>Preparación para ejercicio práctico</p>
+</div>
+</section>
+<section id="section-5" class="slide level2" data-background-image="images/screenshot-posit-downloads.png" data-background-size="contain" data-background-color="#ffffff">
+<h2></h2>
+</section>
+<section id="section-6" class="slide level2" data-background-image="images/screenshot-rstudio-docs.png" data-background-size="contain" data-background-color="#ffffff">
+<h2></h2>
+</section>
+<section>
+<section id="welcome-to-the-todo-add-workshop-name" class="title-slide slide level1 center">
+<h1>Welcome to the TODO: add workshop name</h1>
+<p>TODO: update these.</p>
+<ul>
+<li>:heavy_check_mark: Accept the GitHub Organization invite</li>
+<li>:heavy_check_mark: Go to the table with the group name</li>
+<li>:heavy_check_mark: Introduce yourself to your group members</li>
+</ul>
+<aside class="notes">
+<p>Introduce teachers and helpers after welcoming everyone and getting them to do this.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>TODO: Add more slides as desired or needed.</p>
+</section>
+<section id="raising_hand_woman-before-this-workshop-how-many-knew-or-have-heard-about" class="slide level2 center">
+<h2>:raising_hand_woman: Before this workshop… How many knew or have heard about …</h2>
+</section>
+<section id="workshop-details" class="slide level2">
+<h2>Workshop details</h2>
+</section>
+<section id="setup-and-layout" class="slide level2 smaller">
+<h2>Setup and layout</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Workshop is mix of:
+<ul>
+<li>“Code-alongs” (we type and explain, you type along)</li>
+<li>Hands-on coding, discussing, and reading exercises</li>
+</ul></li>
+<li>All material is online (and <a href="../LICENSE.html">openly licensed</a>)</li>
+<li><a href="https://guides.rostools.org/learning.html">Further Learning</a> page for resources</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Schedule listed is a <em>guide</em> only, some sessions are longer, others shorter</li>
+<li>Includes plenty of social activities
+<ul>
+<li>During lunch, try to sit beside someone you don’t know</li>
+<li>Discussion activities</li>
+</ul></li>
+<li>Instructors are also learning too!</li>
+</ul>
+</div></div>
+<aside class="notes">
+<p>Explain a bit more about the reading, why doing it, and that this workshop in particular has a lot more of it than more advanced workshops.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="getting-or-asking-for-help-raising_hand_womanraising_hand_man" class="slide level2 smaller">
+<h2>Getting or asking for help :raising_hand_woman::raising_hand_man:</h2>
+<ul>
+<li>Put the sticky on your laptop to get help</li>
+<li>There are lots of helpers</li>
+<li>Table mates, try to help out too</li>
+<li>We’re all learning here!
+<ul>
+<li>This is a supportive and safe environment</li>
+<li>Remember our Code of Conduct</li>
+</ul></li>
+</ul>
+</section>
+<section id="practice-using-stickies-have-you-todo-complete-this." class="slide level2 center">
+<h2>Practice using stickies: Have you TODO: Complete this.</h2>
+</section>
+<section id="activities" class="slide level2 center">
+<h2>Activities</h2>
+</section>
+<section id="walkingwalking_woman-who-has-todo-complete-this" class="slide level2 center">
+<h2>:walking::walking_woman: Who has TODO: Complete this</h2>
+<aside class="notes">
+<p>Go to different sides of the room for “Yes” and “No”. Or a continuum from one end of the room to the other.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<p>:::::::::::::</p>
+<p>:::::::::::::::</p>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="introducción_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="introducción_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="introducción_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="introducción_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+
+        maxScale: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copiado");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copiado");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
