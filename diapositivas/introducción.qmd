@@ -239,7 +239,7 @@ según quién pregunte
 
 ::: t-usuarios
 | Nivel y usuario | La pregunta que hace | El producto que necesita |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Gobierno nacional<br>Ministerio, seguridad social | ¿Cuánta enfermedad hay, dónde y con qué desenlaces? ¿La política está funcionando? | Indicadores nacionales comparables en el tiempo, series de incidencia y mortalidad, proyecciones |
 | Gobierno regional y local<br>Secretarías, municipios | ¿Qué territorios están peor y dónde faltan servicios? | Tasas por distrito con denominadores poblacionales, mapas, comparación entre pares |
 | Sistema de salud o asegurador | ¿Dónde se concentra el costo evitable y la brecha de atención? | Cohortes de riesgo, cobertura efectiva por prestador, costos atribuibles |
@@ -258,7 +258,7 @@ usa herramientas distintas
 
 ::: t-niveles
 | Nivel | Necesidades de información | Herramientas |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Global | Indicadores agregados por país y región | Informes mundiales (OCDE, OMS, Banco Mundial) |
 | Nacional | Indicadores para planificación, mejora de la equidad, distribución de recursos | Informes nacionales (ministerios, bancos de datos, universidades) |
 | Servicio de salud | Indicadores por centro y territorio para planificar y seguir la actividad | Informes, central de resultados |
@@ -440,7 +440,7 @@ Marco de la OMS/HMN para sistemas de información en salud.
 
 ::: t-comp
 | Componente | Qué incluye | Si falta… |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Datos | Registros individuales, identificador, fechas, códigos; definición de caso explícita | No hay registro. Pero tener sólo esto es la situación más común |
 | Metadatos | Diccionario de variables, catálogos de códigos, procedencia y linaje, versiones, unidades, valores permitidos | Nadie fuera del equipo original puede interpretar una variable; el análisis deja de ser reproducible |
 | Documentación | Protocolo, manual de operaciones, algoritmo de caso, informes de calidad (conformidad, completitud, plausibilidad), historial de cambios | No se puede juzgar si el dato sirve para la pregunta; los sesgos se descubren después de publicar |
@@ -570,7 +570,7 @@ pueden optimizar todas a la vez
 
 ::: t-exig
 | Usuario | Latencia aceptable | Nivel de agregación | Vía de entrega |
-|------------------|------------------|------------------|------------------|
+|----|----|----|----|
 | Gobierno nacional | Anual | País y región | Informe público y tablero abierto |
 | Gobierno regional y local | Trimestral | Distrito y establecimiento | Tablero territorial, informe periódico |
 | Asegurador o red | Mensual | Afiliado y prestador | Sistema de gestión interno |
@@ -675,7 +675,7 @@ está disponible
 
 ::: t-hce
 | Dimensión | Historia clínica electrónica (hospital o red) | Registro sanitario |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Propósito | Atender a este paciente hoy. Uso primario: es una herramienta de trabajo clínico y de facturación | Describir a una población en el tiempo. Uso secundario de datos que ya existen |
 | Cobertura | Quien consulta en esa red: población afiliada o usuaria de un prestador. El resto es invisible | Población definida a priori: todos los residentes de un territorio, o todos los casos que cumplen la definición |
 | Denominador | No existe. No se sabe quién no consultó, ni cuántos son | Explícito: censo, padrón o registro civil. Sin denominador no hay tasa |
@@ -693,7 +693,7 @@ de la población dependiendo exclusivamente de ese sistema.
 
 ::: t-hce
 | Dimensión | Historia clínica electrónica | Registro sanitario |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | Definición de caso | Implícita: la que escribió cada clínico, con variabilidad entre miles de profesionales | Explícita, algorítmica, versionada y reproducible por terceros |
 | Estandarización | Catálogos y campos propios del proveedor de software; a menudo texto libre | Semántica común acordada: CIE, CIAP, ATC, unidades y valores permitidos |
 | Riqueza del contenido | Muy alta: notas, imágenes, evolución clínica — pero poco estructurada | Más pobre en detalle, pero comparable, documentada y analizable |

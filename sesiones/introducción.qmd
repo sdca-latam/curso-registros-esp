@@ -1,7 +1,7 @@
 # Introducción al taller {#sec-introducción}
 
 > [**Diapositivas de la introducción general en
-> línea**](../slides/introducción.html)
+> línea**](../diapositivas/introducción.html)
 
 ::: {}
 ```{=html}
@@ -30,4 +30,3 @@ debe contar - A qué tipo de preguntas puede responder un registro -
 Cuales son los tipos de usuarios de los datos de un registro sanitario -
 A qué niveles existen datos / registros sanitarios y cuales son las
 necesidades de información a cada nivel -
-
