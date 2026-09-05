@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Bienvenida",
+    "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "",
     "text": "Bienvenida\nBienvenidos al curso “Introducción al uso de registros nacionales de salud para investigación”. Este curso breve tiene como objetivo introducir los conceptos centrales del uso de registros de salud para investigación epidemiológica. El curso está enfocado en las enfermedades crónicas, especialmente en la diabetes pero los principios generales pueden aplicarse en otros contextos.\nEl curso se organiza por primera vez en 2026 en colaboración entre el Grupo Crónicas, el NCD Policy Lab y Steno Diabetes Center Aarhus.\nEsta página web contiene todo el material del taller, incluyendo presentaciones y ejercicios. Está estructurado como un libro, con un “capítulo” para cada sesión. Haremos uso intensivo del internet durante el taller, donde las sesiones interactivas de programación en vivo siguen siguen casi idénticamente los pasos en ésta página.",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#programa",
     "href": "index.html#programa",
-    "title": "Bienvenida",
+    "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "Programa",
     "text": "Programa\n\n\n\n\n\n\n\n\n\nHorario\nMódulo\nDetalle\nExpositor\n\n\n\n\n09:00 - 09:10\nBienvenida\nPresentación del docente y de las instituciones organizadoras.\n\n\n\n09:10 - 10:00\nEl potencial de los registros\nQué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano.\nDW\n\n\n10:00 - 10:15\nBreak\n\n\n\n\n10:15 - 11:00\nDe los datos crudos a una pregunta de investigación\nCómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo.\nDW\n\n\n11:00 - 11:50\nManos a la obra: un análisis sencillo\nUn ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico.\nDW\n\n\n11:50 - 12:00\nCierre. Ideas y discusión\nQué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas.\nTodos",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#preparación",
     "href": "index.html#preparación",
-    "title": "Bienvenida",
+    "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "Preparación",
     "text": "Preparación\nPara agilizar las sesiones el día del taller, les pedimos que completen las tareas preparatorias antes de llegar a la clase.\n\n\n\n\n\n\nTipDo you find this workshop material useful?\n\n\n\nIf yes, please consider “starring” our GitHub repository. Starring the repository will save it to your list of saved repositories, so it’s easy for you to find again later. As a plus, it helps give our project more visibility :star2:",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#re-utilización-y-licencia",
     "href": "index.html#re-utilización-y-licencia",
-    "title": "Bienvenida",
+    "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "Re-utilización y licencia",
     "text": "Re-utilización y licencia\n\nEl taller se publica con una licencia Licencia Internacional Pública de Atribución/Reconocimiento 4.0 de Creative Commons. Quiere decir que los materiales pueden ser utilizados, re-utilizados y adaptados, contal que cualquier nueva versión o reproducción parcial o total contenga reconocimiento y atribución a éste material como fuente.",
     "crumbs": [
@@ -42,7 +42,7 @@
   {
     "objectID": "index.html#como-se-construyó-este-taller",
     "href": "index.html#como-se-construyó-este-taller",
-    "title": "Bienvenida",
+    "title": "Introducción al uso de registros nacionales de salud para investigación",
     "section": "Como se construyó este taller",
     "text": "Como se construyó este taller\nLos materiales de este taller fueron creados usando el formato Quarto, Git y GitHub para la gestión del repositorio y Github Pages para crear y alojar la página web.",
     "crumbs": [
@@ -52,23 +52,23 @@
   {
     "objectID": "resumen/temario.html",
     "href": "resumen/temario.html",
-    "title": "1  Syllabus",
+    "title": "1  Temario",
     "section": "",
-    "text": "1.1 Learning outcome and objectives\nTODO: Include description and overall introduction of workshop\nThis workshop lasts TODO: Time and is split into the following sessions, listed in the schedule, which will be covered in order:\nThe overall aim of this workshop is to enable you to:\nBroken down into specific objectives for each session, we’ve designed the workshop to enable you to do the following:\nTODO: Session title\nTangibly, during the workshop you will:",
+    "text": "1.1 Learning outcome and objectives\nTODO: Include description and overall introduction of workshop\nThis workshop lasts TODO: Time and is split into the following sessions, listed in the horario, which will be covered in order:\nThe overall aim of this workshop is to enable you to:\nBroken down into specific objectives for each session, we’ve designed the workshop to enable you to do the following:\nTODO: Session title\nTangibly, during the workshop you will:",
     "crumbs": [
       "Resumen",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Temario</span>"
     ]
   },
   {
     "objectID": "resumen/temario.html#learning-outcome-and-objectives",
     "href": "resumen/temario.html#learning-outcome-and-objectives",
-    "title": "1  Syllabus",
+    "title": "1  Temario",
     "section": "",
     "text": "Aim one\n\n\n\n\nObjective one\n\n\n\nTODO: List concrete tasks and steps",
     "crumbs": [
       "Resumen",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Temario</span>"
     ]
   },
   {
@@ -85,12 +85,12 @@
   {
     "objectID": "resumen/horario.html",
     "href": "resumen/horario.html",
-    "title": "3  Programa",
+    "title": "3  Horario",
     "section": "",
     "text": "Este taller contiene presentaciones, ejercicios participatorios con programación en vivo utilizando datos simulados, discusiones y trabajo en grupos.\n\n10 de septiembre 2026\n\n\n\n\n\n\n\n\n\n\n\nHorario\nMódulo\nDetalle\nExpositor\n\n\n\n\n09:00 - 09:10\nBienvenida\nPresentación del docente y de las instituciones organizadoras.\n\n\n\n09:10 - 10:00\nEl potencial de los registros\nQué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano.\nDW\n\n\n10:00 - 10:15\nBreak\n\n\n\n\n10:15 - 11:00\nDe los datos crudos a una pregunta de investigación\nCómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo.\nDW\n\n\n11:00 - 11:50\nManos a la obra: un análisis sencillo\nUn ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico.\nDW\n\n\n11:50 - 12:00\nCierre. Ideas y discusión\nQué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas.\nTodos",
     "crumbs": [
       "Resumen",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Programa</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Horario</span>"
     ]
   },
   {
@@ -208,7 +208,7 @@
     "href": "pre-taller/resumen.html",
     "title": "5  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (Chapter 8).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la parte inferior de cada página :arrow_right:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (?sec-syllabus).\nLee el Código de Conducta (Chapter 8).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la parte inferior de cada página :arrow_right:",
     "crumbs": [
       "Pre-taller",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
