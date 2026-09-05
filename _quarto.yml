@@ -23,7 +23,7 @@ book:
     - part: "Resumen"
       chapters:
         - resumen/temario.qmd
-        - resumen/es-para-ti.qmd
+        - resumen/es-para-mi.qmd
         - resumen/horario.qmd
         - resumen/diseño-aprendizaje.qmd
     - part: "Pre-taller"

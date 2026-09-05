@@ -1,14 +1,14 @@
 # Temario {#sec-temario}
 
-TODO: Include description and overall introduction of workshop
+Este taller dura 3 horas y consiste de las siguientes sesiones:
 
-This workshop lasts TODO: Time and is split into the following sessions,
-listed in the [horario](/resumen/horario.qmd), which will be covered in
-order:
+Consulta tambien el [horario](/resumen/horario.qmd)
 
-- [Introduction to the workshop](/sesiones/introducción.qmd)
-- [TODO: Session title](/sesiones/sesión.qmd)
-- [Concluding remarks](/sesiones/conclusión.qmd)
+- [Introducción al taller](/sesiones/introducción.qmd)
+- [Potencial de los registros](/sesiones/potencial.qmd)
+- [Partiendo de los datos crudos](/sesiones/datos-crudos.qmd)
+- [Un análisis sencillo](/sesiones/análisis-sencillo.qmd)
+- [Cierre](/sesiones/conclusión.qmd)
 
 ## Learning outcome and objectives
 

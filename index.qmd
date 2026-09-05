@@ -43,24 +43,11 @@ El curso está diseñado como taller para ivestigadores jóvenes y
 estudiantes con conocimientos en análisis de datos interesados en
 conocer metodologías de análisis con registros nacionales de salud.
 
-## Programa
-
-| Horario | Módulo | Detalle | Expositor |
-|----|----|----|----|
-| 09:00 - 09:10 | Bienvenida | Presentación del docente y de las instituciones organizadoras. |  |
-| 09:10 - 10:00 | El potencial de los registros | Qué son los registros nacionales y poblacionales, y qué los hace tan valiosos. El modelo nórdico como ejemplo. Qué preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Fortalezas y limitaciones en lenguaje sencillo. Cierre del bloque contrastando con el contexto latinoamericano/peruano. | DW |
-| 10:00 - 10:15 | Break |  |  |
-| 10:15 - 11:00 | De los datos crudos a una pregunta de investigación | Cómo se pasa de una base administrativa gigante a un conjunto de datos analizable. Ideas básicas: definir una población, elegir variables a partir de códigos, construir un seguimiento en el tiempo. | DW |
-| 11:00 - 11:50 | Manos a la obra: un análisis sencillo | Un ejercicio guiado y simple con datos sintéticos o de ejemplo, donde todos siguen el mismo paso a paso: cargar los datos, mirar la estructura, y correr un análisis básico. | DW |
-| 11:50 - 12:00 | Cierre. Ideas y discusión | Qué se necesitaría para hacer esto en nuestra región/país y ronda de preguntas. | Todos |
-
 ## Preparación
 
 Para agilizar las sesiones el día del taller, les pedimos que completen
-las [tareas preparatorias](/pre-workshop/overview.qmd) antes de llegar a
-la clase.
-
-{{< include /includes/_star-us.qmd >}}
+las [tareas preparatorias](/pre-taller/resumen.qmd) antes de llegar a la
+clase.
 
 ## Re-utilización y licencia
 

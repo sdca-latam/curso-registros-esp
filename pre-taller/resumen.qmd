@@ -18,14 +18,13 @@ includes:
 1.  Instala los programas R, RStudio, Quarto, y Git en sus versiones mas
     actuales de acuerdo con @sec-installing-programs.
 2.  Instala los paquetes R necesarios.
-3.  Lee el temario (@sec-syllabus).
-4.  Lee el [Código de Conducta](/pre-workshop/code-of-conduct.qmd)
-    (@sec-code-of-conduct).
+3.  Lee el temario (@sec-temario).
+4.  Lee el [Código de Conducta](/pre-taller/código-de-conducta.qmd)
+    (@sec-código-de-conducta).
 
 Cada sección contiene detalles sobre cómo completar cada tarea.
 
 ::: callout-tip
-Puedes pasar a la siguiente sección haciendo click en la parte inferior
-de cada página :arrow_right:
+Puedes pasar a la siguiente sección haciendo click en la flechita en la
+parte inferior de cada página ➡️:
 :::
-
