@@ -44,18 +44,18 @@
     "href": "resumen/temario.html",
     "title": "1  Temario",
     "section": "",
-    "text": "1.1 Learning outcome and objectives\nEste taller dura 3 horas y consiste de las siguientes sesiones:\nConsulta tambien el horario\nThe overall aim of this workshop is to enable you to:\nHemos diseñado el taller para enseãrte lo siguiente:\nTODO: Session title\nTangibly, during the workshop you will:",
+    "text": "1.1 Objetivos de aprendizaje\nEste taller dura 3 horas y consiste de las siguientes sesiones:\nConsulta tambien el horario\nHemos diseñado el taller para enseñarte lo siguiente:",
     "crumbs": [
       "Resumen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Temario</span>"
     ]
   },
   {
-    "objectID": "resumen/temario.html#learning-outcome-and-objectives",
-    "href": "resumen/temario.html#learning-outcome-and-objectives",
+    "objectID": "resumen/temario.html#objetivos-de-aprendizaje",
+    "href": "resumen/temario.html#objetivos-de-aprendizaje",
     "title": "1  Temario",
     "section": "",
-    "text": "Aim one\n\n\n\n\nObjective one\n\n\n\nTODO: List concrete tasks and steps",
+    "text": "Primer objetivo",
     "crumbs": [
       "Resumen",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Temario</span>"
@@ -66,7 +66,7 @@
     "href": "resumen/es-para-mi.html",
     "title": "2  ¿Este taller es para mi?",
     "section": "",
-    "text": "To help manage expectations and develop the material for this workshop, we make a few assumptions about who you are as a participant in the workshop.\nWe assume you can relate to one or more of the following:\n\nTODO: List assumptions\n\nWhile we have these assumptions to help focus the content of the workshop, if you have an interest in the workshop but don’t fit any of the assumptions, you are still welcome to attend! We welcome everyone until capacity has been reached.\nIn addition to the assumptions above, the workshop also has a fairly focused scope, which may also help you decide if this workshop is for you:\n\nTODO: List of concrete tasks we will do and not do.",
+    "text": "El curso está diseñado como taller para investigadores jóvenes y estudiantes con conocimientos en análisis de datos interesados en conocer metodologías de análisis con registros nacionales de salud.\nPara ayudar a manejar las expectativas y para enfocar el desarrollo de los materiales, asumiremos cierta experiencia previa de los participantes de este taller. Esperamos que hayas estudiado, trabajado o tengas alguna experienca con:\n\nConceptos epidemiológicos básicos como prevalencia, determinantes, desenlaces, diseño de cohortes abiertas y cerradas, tiempo de seguimiento, censura, medidas de incidencia, medidas de riesgo, medidas de asociación, sesgos, confusión.\nManejo de datos cuantitativos, conceptos básicos de la ciencia de datos como formatos long y wide, fusión de datos deterministica y probabilistica.\nAnálisis de datos con programas estadísiticos como R.\n\nWhile we have these assumptions to help focus the content of the workshop, if you have an interest in the workshop but don’t fit any of the assumptions, you are still welcome to attend! We welcome everyone until capacity has been reached.\nIn addition to the assumptions above, the workshop also has a fairly focused scope, which may also help you decide if this workshop is for you:\n\nTODO: List of concrete tasks we will do and not do.",
     "crumbs": [
       "Resumen",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>¿Este taller es para mi?</span>"
@@ -198,7 +198,7 @@
     "href": "pre-taller/resumen.html",
     "title": "5  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 6.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (?sec-código-de-conducta).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con ?sec-installing-programs.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (?sec-código-de-conducta).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
     "crumbs": [
       "Pre-taller",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
@@ -209,7 +209,7 @@
     "href": "pre-taller/instalación-programas-r.html",
     "title": "6  Instalación de los programas",
     "section": "",
-    "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instrucciones. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nRStudio: Cualquier versión mas reciente que 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Select the “Click here to download” link. Git is used throughout many sessions in the workshop. When installing, it will ask for a selecting a “Text Editor” and while we won’t be using this in the workshop, Git needs to know this information so choose Notepad.\n\n\n\n\nR: Any version above 4.6.0. If you have used R before, you can confirm the version by running R.version.string in the Console. If you use Homebrew (which we strongly recommend installing and using), installing R is as easy as opening a Terminal and running:\nbrew install --cask r\nRStudio: Any version above 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”. With Homebrew:\nbrew install --cask rstudio\nGit: Git is used throughout many sessions in the workshop. With Homebrew:\nbrew install git\n\n\n\n\nR: Any version above 4.6.0. If you have used R before, you can confirm the version by running R.version.string in the Console.\nsudo apt -y install r-base\nRStudio: Any version above 2026.08.2. If you have installed it before, check the current version by going to the menu “Help -&gt; About RStudio”.\nGit: Git is used throughout many sessions in the workshop.\nsudo apt install git\n\n\n\n\nAll these programs are required for the workshop, even Git. Git, which is a software program to formally manage versions of files, is used because of it’s popularity and the amount of documentation available for it. Check out the online book Happy Git with R, especially the “Why Git” section, for an understanding on why we are teaching Git. Windows users tend to have more trouble with installing Git than macOS or Linux users. See the section on Installing Git for Windows for help.\n\n\n\n\n\n\nNote\n\n\n\nSome pictures may show a Git pane in RStudio, but you may not see it. If you haven’t created or opened an RStudio R Project (which is taught in the introductory workshop), the Git pane does not show up. It only shows up in R Projects that use Git to track file changes.\n\n\n\n\n\n\n\n\nNote\n\n\n\nA note to those who have or use work laptops with restrictive administrative privileges: You may encounter problems installing software due to administrative reasons (e.g. you don’t have permission to install things). Even if you have issues installing or updating the latest version of R or RStudio, you will likely be able to continue with the workshop as long as you have the minimum version listed above for R and for RStudio. If you have versions of R and RStudio that are older than that, you may need to ask your IT department to update your software if you can’t do this yourself. Unfortunately, Git is not a commonly used software for some organizations, so you may not have it installed and you will need to ask IT to install it. We require it for the workshop, so please make sure to give IT enough time to be able to install it for you prior to the workshop.\n\n\nOnce R, RStudio, and Git have been installed, open RStudio. If you encounter any troubles during these pre-workshop tasks, try as best as you can to complete the task and then let us know about the issues in the pre-workshop survey. If you continue having problems, indicate on the survey that you need help and we can try to book a quick video call to fix the problem. Otherwise, you can come to the workshop 15-20 minutes earlier to get help.\nIf you’re unable to complete the setup procedure due to unfixable technical issues, you can use Posit Cloud (to use RStudio on the cloud) as a final solution in order to participate in the workshop. For help setting up Posit Cloud for this workshop, refer to the Posit Cloud setup guide.",
+    "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instrucciones. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”.\nGit: Escoge el enlace “Click here to download”. Usaremos Git durante algunas partes del taller. Al instalar Git, te pedirá seleccionar un “Text Editor” y aunque no usaremos esa funcion en el taller es neceario proporcionar el dato para la instalación de Git, así que lo mas fácil es escoger Notepad.\n\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string. Si usas Homebrew (recomendado en general pero), la instalación de R is muy fácil. Solo hay que dar el siguente comando en el Terminal de tu computadora:\nbrew install --cask r\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”. Con Homebrew:\nbrew install --cask rstudio\nGit: Usaremos Git durante algunas partes del taller. MacOS viene con Git pre-instalado. Para instalarlo con Homebrew:\nbrew install git\n\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nsudo apt -y install r-base\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”.\nGit: Usaremos Git durante algunas partes del taller.\nsudo apt install git\n\n\n\n\nTodos estos programas son necesarios para el taller, Git incluido. Git es usado para la gestión formal de versiones de archivos. Lo usamos porque tiene mucha documentación muy buena. Puedes aprender mas en éste libro en línea Happy Git with R. Especialmente la sección “Why Git” explica bien por qué lo usamos. Usuarios de Windows a veces encuentran dificultades durante la instalación de Git. La siguiente guia ofrece pautas y ayuda Installing Git for Windows.",
     "crumbs": [
       "Pre-taller",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Instalación de los programas</span>"
@@ -218,12 +218,12 @@
   {
     "objectID": "pre-taller/instalación-paquetes-r.html",
     "href": "pre-taller/instalación-paquetes-r.html",
-    "title": "7  Installing R Packages",
+    "title": "7  Instalación de los paquetes R necesarios",
     "section": "",
     "text": "We will be using specific R packages for the workshop, so you will need to install them. To make it easier, we’ve created a custom R package called r3 that will install all the necessary packages for you for this workshop. Run these two functions in the Console by copying and pasting them to install our custom r3 package as well as the {tidyverse} package.\n\n\nConsole\n\ninstall.packages(\"r3\", repos = c(\"https://rostools.r-universe.dev\", \"https://cloud.r-project.org\"))\ninstall.packages(\"tidyverse\")\n\n\n\n\n\n\n\nTip\n\n\n\nInstalling packages is tricky, especially on some work laptops, and doesn’t always work as expected. Here are some other methods to try if you have trouble installing the packages with the code above.\nFor Windows users, you may have to install RTools to use either the {pak} or {remotes} method. The version of RTools you install must match the version of R that you have installed. For example, if you have R version 4.4, you need to install RTools 4.4.\nFirst, try installing the r3 package directly from GitHub with {pak}:\n\n\nConsole\n\ninstall.packages(\"pak\")\npak::pak(\"rostools/r3\")\n\nIf that doesn’t work, try with {remotes}:\n\n\nConsole\n\ninstall.packages(\"remotes\")\nremotes::install_github(\"rostools/r3\")\n\nIf you encounter any errors with either of these functions, try to restart R by going to “Sessions -&gt; Restart R” and re-run them again. If that also doesn’t work, try to complete the other tasks as best you can, complete the survey, and let us know you have a problem in the survey. We’ll email you at least a week before the workshop starts to try to help you get it working.\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhen you see a command like something::something(), for example with pak::pak(), you would “read” this as:\n\nR, can you please use the pak() function from the {pak} package.\n\nThe normal way of doing this would be to load the package with library(pak) and then running the command (pak()). But by using the ::, we tell R to directly use a function from a package, without needing to load the package and all of its other functions too. We use this trick because we only want to use the pak() command from the {pak} package and not have to load all the other functions as well. In this workshop we will be using :: often.",
     "crumbs": [
       "Pre-taller",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Installing R Packages</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Instalación de los paquetes R necesarios</span>"
     ]
   },
   {
@@ -286,7 +286,7 @@
     "href": "sesiones/introducción.html#tema-de-esta-presentación",
     "title": "9  Introducción al taller",
     "section": "",
-    "text": "9.1.1 Objectivos de aprendizaje\nDespués de esta presentación los estudiantes tendrán los siguientes conocimientos:\n\nQué es un registro sanitario; con cuales componentes debe contar\nA qué tipo de preguntas puede responder un registro\nCuales son los tipos de usuarios de los datos de un registro sanitario\nA qué niveles existen datos / registros sanitarios y cuales son las necesidades de información a cada nivel",
+    "text": "9.1.1 Objetivos de aprendizaje\nDespués de esta presentación los estudiantes tendrán los siguientes conocimientos:\n\nQué es un registro sanitario; con cuales componentes debe contar\nA qué tipo de preguntas puede responder un registro\nCuales son los tipos de usuarios de los datos de un registro sanitario\nA qué niveles existen datos / registros sanitarios y cuales son las necesidades de información a cada nivel",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al taller</span>"
@@ -295,111 +295,133 @@
   {
     "objectID": "sesiones/potencial.html",
     "href": "sesiones/potencial.html",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "",
-    "text": "10.1 Learning objectives\nThe learning objectives for this session are:",
+    "text": "10.1 Objetivos de aprendizaje\nEn esta sesión repasaremos rápidamente algunas de las definiciones\nThe learning objectives for this session are:",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
-    "objectID": "sesiones/potencial.html#learning-objectives",
-    "href": "sesiones/potencial.html#learning-objectives",
-    "title": "10  TODO: Lesson title here",
+    "objectID": "sesiones/potencial.html#objetivos-de-aprendizaje",
+    "href": "sesiones/potencial.html#objetivos-de-aprendizaje",
+    "title": "10  El potencial de los registros",
     "section": "",
     "text": "Objective one",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#todo-section",
     "href": "sesiones/potencial.html#todo-section",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.2 TODO: Section",
     "text": "10.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#technologist-exercise-title",
     "href": "sesiones/potencial.html#technologist-exercise-title",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.3 :technologist: Exercise: Title",
     "text": "10.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
     "href": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.4 :speech_balloon: Discussion activity: Title",
     "text": "10.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#book-reading-task-title",
     "href": "sesiones/potencial.html#book-reading-task-title",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.5 :book: Reading task: Title",
     "text": "10.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#summary",
     "href": "sesiones/potencial.html#summary",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.6 Summary",
     "text": "10.6 Summary\n\nTODO: List of summary items",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#survey",
     "href": "sesiones/potencial.html#survey",
-    "title": "10  TODO: Lesson title here",
+    "title": "10  El potencial de los registros",
     "section": "10.7 Survey",
     "text": "10.7 Survey\nFeedback survey! :tada:",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html",
     "href": "sesiones/datos-crudos.html",
-    "title": "11  datos-crudos",
+    "title": "11  Partiendo de datos crudos",
     "section": "",
-    "text": "11.1 De datos crudos a datos analysables\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas.",
+    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>datos-crudos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#datos-crudos",
+    "href": "sesiones/datos-crudos.html#datos-crudos",
+    "title": "11  Partiendo de datos crudos",
+    "section": "11.2 Datos crudos",
+    "text": "11.2 Datos crudos",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#datos-analizables",
+    "href": "sesiones/datos-crudos.html#datos-analizables",
+    "title": "11  Partiendo de datos crudos",
+    "section": "11.3 Datos analizables",
+    "text": "11.3 Datos analizables",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html#running-code",
     "href": "sesiones/datos-crudos.html#running-code",
-    "title": "11  datos-crudos",
-    "section": "11.2 Running Code",
-    "text": "11.2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "title": "11  Partiendo de datos crudos",
+    "section": "11.4 Running Code",
+    "text": "11.4 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>datos-crudos</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; datos-crudos – Introducción al uso de registros nacionales de salud para investigación</title>
+<title>11&nbsp; Partiendo de datos crudos – Introducción al uso de registros nacionales de salud para investigación</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -123,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/datos-crudos.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">datos-crudos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/datos-crudos.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -217,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pre-taller/instalación-paquetes-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Installing R Packages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Instalación de los paquetes R necesarios</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -246,13 +246,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/potencial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El potencial de los registros</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/datos-crudos.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">datos-crudos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -314,17 +314,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#de-datos-crudos-a-datos-analysables" id="toc-de-datos-crudos-a-datos-analysables" class="nav-link active" data-scroll-target="#de-datos-crudos-a-datos-analysables"><span class="header-section-number">11.1</span> De datos crudos a datos analysables</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code"><span class="header-section-number">11.2</span> Running Code</a></li>
+  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link active" data-scroll-target="#objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</a></li>
+  <li><a href="#datos-crudos" id="toc-datos-crudos" class="nav-link" data-scroll-target="#datos-crudos"><span class="header-section-number">11.2</span> Datos crudos</a></li>
+  <li><a href="#datos-analizables" id="toc-datos-analizables" class="nav-link" data-scroll-target="#datos-analizables"><span class="header-section-number">11.3</span> Datos analizables</a></li>
+  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code"><span class="header-section-number">11.4</span> Running Code</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/datos-crudos.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">datos-crudos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/datos-crudos.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">datos-crudos</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></h1>
 </div>
 
 
@@ -341,13 +343,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="de-datos-crudos-a-datos-analysables" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="de-datos-crudos-a-datos-analysables"><span class="header-section-number">11.1</span> De datos crudos a datos analysables</h2>
+<section id="objetivos-de-aprendizaje" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</h2>
 <p>En esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.</p>
-<p>Usaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas.</p>
+<p>Usaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.</p>
 </section>
-<section id="running-code" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="running-code"><span class="header-section-number">11.2</span> Running Code</h2>
+<section id="datos-crudos" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="datos-crudos"><span class="header-section-number">11.2</span> Datos crudos</h2>
+</section>
+<section id="datos-analizables" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="datos-analizables"><span class="header-section-number">11.3</span> Datos analizables</h2>
+</section>
+<section id="running-code" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="running-code"><span class="header-section-number">11.4</span> Running Code</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -769,8 +777,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../sesiones/potencial.html" class="pagination-link" aria-label="TODO: Lesson title here">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></span>
+      <a href="../sesiones/potencial.html" class="pagination-link" aria-label="El potencial de los registros">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El potencial de los registros</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
