@@ -5,7 +5,7 @@
 
 ::: {}
 ```{=html}
-<iframe class="slide-deck" src="../slides/introducción.html"></iframe>
+<iframe class="slide-deck" src="../diapositivas/introducción.html"></iframe>
 ```
 :::
 
