@@ -198,7 +198,7 @@
     "href": "pre-taller/resumen.html",
     "title": "5  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con ?sec-installing-programs.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\nLee el Código de Conducta (?sec-código-de-conducta).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con ?sec-installing-programs.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
     "crumbs": [
       "Pre-taller",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
@@ -297,7 +297,7 @@
     "href": "sesiones/potencial.html",
     "title": "10  El potencial de los registros",
     "section": "",
-    "text": "10.1 Objetivos de aprendizaje\nEn esta sesión repasaremos rápidamente algunas de las definiciones\nThe learning objectives for this session are:",
+    "text": "10.1 Objetivos de aprendizaje\nEn esta sesión repasaremos rápidamente algunas de las definiciones\nEl objetivo de esta sesión es que el estudiante conozca y pueda explicar:\nTomando el modelo nórdico como ejemplo discutiremos qué tipo de preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Discutiremos fortalezas, limitaciones y retos. Cerraremos el bloque contrastando con el contexto latinoamericano/peruano.",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
@@ -308,7 +308,7 @@
     "href": "sesiones/potencial.html#objetivos-de-aprendizaje",
     "title": "10  El potencial de los registros",
     "section": "",
-    "text": "Objective one",
+    "text": "Qué son los registros sanitarios poblacionales, con enfoque en enfermedades crónicas\nCómo se construyen y mantienen\nQué los hace tan valiosos\nCual es la experiencia de los países nórdicos y de Brasil",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
