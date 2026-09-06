@@ -19,8 +19,6 @@ includes:
     actuales de acuerdo con @sec-installing-programs.
 2.  Instala los paquetes R necesarios.
 3.  Lee el temario (@sec-temario).
-4.  Lee el [Código de Conducta](/pre-taller/código-de-conducta.qmd)
-    (@sec-código-de-conducta).
 
 Cada sección contiene detalles sobre cómo completar cada tarea.
 
