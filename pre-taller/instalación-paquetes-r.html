@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -335,62 +300,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <!-- NOTE: This comes from `template-workshop` template. -->
-<p>We will be using specific R packages for the workshop, so you will need to install them. To make it easier, we’ve created a custom R package called <code>r3</code> that will install all the necessary packages for you for this workshop. Run these two functions in the Console by copying and pasting them to install our custom <code>r3</code> package as well as the <code>{tidyverse}</code> package.</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"r3"</span>, <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://rostools.r-universe.dev"</span>, <span class="st">"https://cloud.r-project.org"</span>))</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Installing packages is tricky, especially on some work laptops, and doesn’t always work as expected. Here are some other methods to try if you have trouble installing the packages with the code above.</p>
-<p>For Windows users, you may have to install <a href="https://cran.r-project.org/bin/windows/Rtools/">RTools</a> to use either the <code>{pak}</code> or <code>{remotes}</code> method. The version of RTools you install must match the version of R that you have installed. For example, if you have R version 4.4, you need to install RTools 4.4.</p>
-<p>First, try installing the <code>r3</code> package directly from GitHub with <code>{pak}</code>:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"rostools/r3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>If that doesn’t work, try with <code>{remotes}</code>:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Console</strong></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-filename="Console"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"rostools/r3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>If you encounter any errors with either of these functions, try to restart R by going to “Sessions -&gt; Restart R” and re-run them again. If that also doesn’t work, try to complete the other tasks as best you can, complete the survey, and let us know you have a problem in the survey. We’ll email you at least a week before the workshop starts to try to help you get it working.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>When you see a command like <code>something::something()</code>, for example with <code>pak::pak()</code>, you would “read” this as:</p>
-<blockquote class="blockquote">
-<p>R, can you please use the <code>pak()</code> function from the <code>{pak}</code> package.</p>
-</blockquote>
-<p>The normal way of doing this would be to load the package with <code>library(pak)</code> and then running the command (<code>pak()</code>). But by using the <code>::</code>, we tell R to directly use a function from a package, without needing to load the package and all of its other functions too. We use this trick because we only want to use the <code>pak()</code> command from the <code>{pak}</code> package and not have to load all the other functions as well. In this workshop we will be using <code>::</code> often.</p>
-</div>
-</div>
 
 
 
