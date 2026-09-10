@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>12&nbsp; TODO: Lesson title here – Introducción al uso de registros nacionales de salud para investigación</title>
+<title>10&nbsp; Análisis sencillo con datos de registro – Introducción al uso de registros nacionales de salud para investigación</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,6 +26,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -36,7 +71,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../sesiones/conclusión.html" rel="next">
 <link href="../sesiones/datos-crudos.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -88,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/análisis-sencillo.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/análisis-sencillo.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis sencillo con datos de registro</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -141,19 +175,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resumen/es-para-mi.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Este taller es para mi?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">¿Este taller es como para mi?</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../resumen/horario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Horario</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resumen/diseño-aprendizaje.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Learning design</span></span></a>
   </div>
 </li>
       </ul>
@@ -170,25 +198,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pre-taller/resumen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tareas preparatorias antes del taller</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Tareas preparatorias antes del taller</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pre-taller/instalación-programas-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Instalación de los programas</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Instalación de los programas</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pre-taller/instalación-paquetes-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Instalación de los paquetes R necesarios</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../pre-taller/código-de-conducta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Code of conduct</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Instalación de los paquetes R necesarios</span></span></a>
   </div>
 </li>
       </ul>
@@ -205,66 +227,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/introducción.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Introducción al taller</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Introducción al taller</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/potencial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">El potencial de los registros</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">El potencial de los registros</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/datos-crudos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../sesiones/análisis-sencillo.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../sesiones/conclusión.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What next</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../apendices/para-enseñantes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">For teachers</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../apendices/referencias.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../CONTRIBUTING.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Contributing</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LICENSE.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Creative Commons Attribution 4.0 International</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis sencillo con datos de registro</span></span></a>
   </div>
 </li>
       </ul>
@@ -279,22 +260,43 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">12.1</span> Learning objectives</a></li>
-  <li><a href="#todo-section" id="toc-todo-section" class="nav-link" data-scroll-target="#todo-section"><span class="header-section-number">12.2</span> TODO: Section</a></li>
-  <li><a href="#technologist-exercise-title" id="toc-technologist-exercise-title" class="nav-link" data-scroll-target="#technologist-exercise-title"><span class="header-section-number">12.3</span> :technologist: Exercise: Title</a></li>
-  <li><a href="#speech_balloon-discussion-activity-title" id="toc-speech_balloon-discussion-activity-title" class="nav-link" data-scroll-target="#speech_balloon-discussion-activity-title"><span class="header-section-number">12.4</span> :speech_balloon: Discussion activity: Title</a></li>
-  <li><a href="#book-reading-task-title" id="toc-book-reading-task-title" class="nav-link" data-scroll-target="#book-reading-task-title"><span class="header-section-number">12.5</span> :book: Reading task: Title</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">12.6</span> Summary</a></li>
-  <li><a href="#survey" id="toc-survey" class="nav-link" data-scroll-target="#survey"><span class="header-section-number">12.7</span> Survey</a></li>
+  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link active" data-scroll-target="#objetivos-de-aprendizaje"><span class="header-section-number">10.1</span> Objetivos de aprendizaje</a></li>
+  <li><a href="#datos-analizables" id="toc-datos-analizables" class="nav-link" data-scroll-target="#datos-analizables"><span class="header-section-number">10.2</span> Datos analizables</a>
+  <ul class="collapse">
+  <li><a href="#calculando-la-edad" id="toc-calculando-la-edad" class="nav-link" data-scroll-target="#calculando-la-edad"><span class="header-section-number">10.2.1</span> Calculando la edad</a></li>
+  <li><a href="#calculando-la-duración-de-diabetes" id="toc-calculando-la-duración-de-diabetes" class="nav-link" data-scroll-target="#calculando-la-duración-de-diabetes"><span class="header-section-number">10.2.2</span> Calculando la duración de diabetes</a></li>
+  <li><a href="#calculando-la-edad-al-diagnóstico" id="toc-calculando-la-edad-al-diagnóstico" class="nav-link" data-scroll-target="#calculando-la-edad-al-diagnóstico"><span class="header-section-number">10.2.3</span> Calculando la edad al diagnóstico</a></li>
+  <li><a href="#suprimiendo-errores" id="toc-suprimiendo-errores" class="nav-link" data-scroll-target="#suprimiendo-errores"><span class="header-section-number">10.2.4</span> Suprimiendo errores</a></li>
+  <li><a href="#modificando-algunas-variables" id="toc-modificando-algunas-variables" class="nav-link" data-scroll-target="#modificando-algunas-variables"><span class="header-section-number">10.2.5</span> Modificando algunas variables</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">10.3</span> </a></li>
+  <li><a href="#sec-objetivo" id="toc-sec-objetivo" class="nav-link" data-scroll-target="#sec-objetivo"><span class="header-section-number">10.4</span> Modelo mínimo de incidencia</a></li>
+  <li><a href="#sec-datos" id="toc-sec-datos" class="nav-link" data-scroll-target="#sec-datos"><span class="header-section-number">11</span> Los datos de partida y la definición del seguimiento</a></li>
+  <li><a href="#sec-lexis" id="toc-sec-lexis" class="nav-link" data-scroll-target="#sec-lexis"><span class="header-section-number">12</span> Construir el objeto <code>Lexis</code></a>
+  <ul class="collapse">
+  <li><a href="#sec-cutlexis" id="toc-sec-cutlexis" class="nav-link" data-scroll-target="#sec-cutlexis"><span class="header-section-number">12.1</span> Introducir el estado de diabetes con <code>cutLexis()</code></a></li>
+  <li><a href="#sec-boxes" id="toc-sec-boxes" class="nav-link" data-scroll-target="#sec-boxes"><span class="header-section-number">12.2</span> El diagrama de estados</a></li>
+  </ul></li>
+  <li><a href="#sec-diagramas" id="toc-sec-diagramas" class="nav-link" data-scroll-target="#sec-diagramas"><span class="header-section-number">13</span> Diagramas de Lexis</a></li>
+  <li><a href="#sec-tasas" id="toc-sec-tasas" class="nav-link" data-scroll-target="#sec-tasas"><span class="header-section-number">14</span> Tasas de incidencia por sexo</a>
+  <ul class="collapse">
+  <li><a href="#sec-tabla" id="toc-sec-tabla" class="nav-link" data-scroll-target="#sec-tabla"><span class="header-section-number">14.1</span> Tabulación</a></li>
+  <li><a href="#sec-estimaciones" id="toc-sec-estimaciones" class="nav-link" data-scroll-target="#sec-estimaciones"><span class="header-section-number">14.2</span> Las estimaciones de tasa</a></li>
+  <li><a href="#sec-grafico" id="toc-sec-grafico" class="nav-link" data-scroll-target="#sec-grafico"><span class="header-section-number">14.3</span> El gráfico</a></li>
+  <li><a href="#sec-rr" id="toc-sec-rr" class="nav-link" data-scroll-target="#sec-rr"><span class="header-section-number">14.4</span> La razón de tasas</a></li>
+  </ul></li>
+  <li><a href="#sec-generalizacion" id="toc-sec-generalizacion" class="nav-link" data-scroll-target="#sec-generalizacion"><span class="header-section-number">15</span> Hacia dónde se generaliza esto</a></li>
+  <li><a href="#sec-errores" id="toc-sec-errores" class="nav-link" data-scroll-target="#sec-errores"><span class="header-section-number">16</span> Errores frecuentes</a></li>
+  <li><a href="#sec-session" id="toc-sec-session" class="nav-link" data-scroll-target="#sec-session"><span class="header-section-number">17</span> </a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/análisis-sencillo.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../sesiones/introducción.html">Sesiones</a></li><li class="breadcrumb-item"><a href="../sesiones/análisis-sencillo.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis sencillo con datos de registro</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">TODO: Lesson title here</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis sencillo con datos de registro</span></h1>
 </div>
 
 
@@ -311,54 +313,411 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- TODO: Add an introduction here -->
-<section id="learning-objectives" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">12.1</span> Learning objectives</h2>
-<p>The learning objectives for this session are:</p>
+<section id="objetivos-de-aprendizaje" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="objetivos-de-aprendizaje"><span class="header-section-number">10.1</span> Objetivos de aprendizaje</h2>
+<p>En esta sesión vamos a continuar explorando la base de datos que hemos generado simulando el registro de diabetes de Dinamarca</p>
+</section>
+<section id="datos-analizables" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="datos-analizables"><span class="header-section-number">10.2</span> Datos analizables</h2>
+<p>Ahora que tenemos las fechas de incidencia de diabetes en ‘classified_diabetes’ y la población total en ‘sim_bef’ (sexo y fecha de nacimiento) podemos generar una base que contenga toda la información ligando estas 2 bases. Lo hacemos de forma deterministica, con la clave del PNR.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>sim_diab <span class="ot">&lt;-</span> <span class="fu">right_join</span>(classified_diabetes, sim_bef, <span class="at">by =</span> <span class="st">"pnr"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="calculando-la-edad" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="calculando-la-edad"><span class="header-section-number">10.2.1</span> Calculando la edad</h3>
+<p>El primer paso sigue siendo preparatorio; vamos a calcular la edad.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>age <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">today</span>() <span class="sc">-</span> sim_diab<span class="sc">$</span>foed_dato)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sim_diab<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Nos damos cuenta de que la edad está expresada en días, así que tenemos que tranformarla en años</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>age <span class="ot">&lt;-</span> sim_diab<span class="sc">$</span>age <span class="sc">/</span> <span class="fl">365.25</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sim_diab<span class="sc">$</span>age)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sim_diab<span class="sc">$</span>age)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Podemos ver claramente que estos datos son simulados porque observamos algunas edades extremas y además vemos que la distribución es casi uniforme mientras que sería mucho más probable ver una distribución que aproxime la pirámide poblacional de Dinamarca.</p>
+</section>
+<section id="calculando-la-duración-de-diabetes" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="calculando-la-duración-de-diabetes"><span class="header-section-number">10.2.2</span> Calculando la duración de diabetes</h3>
+<p>Del mismo modo vamos a calcular la duración de la diabetes para casos con el diagnóstico.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>duration <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  (<span class="fu">today</span>() <span class="sc">-</span> sim_diab<span class="sc">$</span>raw_inclusion_date) <span class="sc">/</span> <span class="fl">365.25</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sim_diab<span class="sc">$</span>duration)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sim_diab<span class="sc">$</span>duration)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="calculando-la-edad-al-diagnóstico" class="level3" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="calculando-la-edad-al-diagnóstico"><span class="header-section-number">10.2.3</span> Calculando la edad al diagnóstico</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>age_dm <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  sim_diab<span class="sc">$</span>stable_inclusion_date <span class="sc">-</span> sim_diab<span class="sc">$</span>foed_dato</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>) <span class="sc">/</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fl">365.25</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sim_diab<span class="sc">$</span>age_dm)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(sim_diab<span class="sc">$</span>age_dm)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="suprimiendo-errores" class="level3" data-number="10.2.4">
+<h3 data-number="10.2.4" class="anchored" data-anchor-id="suprimiendo-errores"><span class="header-section-number">10.2.4</span> Suprimiendo errores</h3>
+<p>Nos damos cuenta que hay valores negativos en la edad al diagnóstico a consecuencia del uso de datos simulados. Para poder progresar en el análisis vamos a suprimir los casos con edades al diagnóstico negativas. En casos reales también vale la pena verificar esto ya que puede haber errores administrativos o de la base de datos.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>sim_diab <span class="ot">&lt;-</span> sim_diab[<span class="sc">-</span><span class="fu">which</span>(sim_diab<span class="sc">$</span>age_dm <span class="sc">&lt;=</span> <span class="dv">0</span>), ]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="modificando-algunas-variables" class="level3" data-number="10.2.5">
+<h3 data-number="10.2.5" class="anchored" data-anchor-id="modificando-algunas-variables"><span class="header-section-number">10.2.5</span> Modificando algunas variables</h3>
+<p>Ya que el modelo simulado da solo casos de diabetes tipo 2, vamos a suprimir la variable ‘has_t1d’. Además vamos a suprimir la variable ‘raw_inclusion_date’ para el ejemplo de este taller.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>sim_diab <span class="ot">&lt;-</span> sim_diab <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">!</span><span class="fu">c</span>(has_t1d, raw_inclusion_date))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Observamos que por el modo en que se creo la base actual (sim_diab) juntando dos bases anteriores, la variable ‘has_t2d’ actualmente tiene valores faltantes (NA) para los que no desarrollan diabetes, mientras que debería ser FALSE. Vamos a hacer el cambio:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>has_t2d[<span class="fu">is.na</span>(sim_diab<span class="sc">$</span>has_t2d)] <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Finalmente la variable a la variable sexo le falta codificación. Vamos a añadir una etiqueta:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>sim_diab<span class="sc">$</span>sex <span class="ot">&lt;-</span> <span class="fu">factor</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  sim_diab<span class="sc">$</span>koen,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">levels =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Male"</span>, <span class="st">"Female"</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+</section>
+<section id="section" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="section"><span class="header-section-number">10.3</span> </h2>
+</section>
+<section id="sec-objetivo" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-objetivo"><span class="header-section-number">10.4</span> Modelo mínimo de incidencia</h2>
+<p>Vamos a continuar con un análisis de incidencia mínimo, con una sola transición. En este modelo todas las personas empiezan la vida en el estado <strong>Healthy</strong> y lo único que puede ocurrir es el paso al estado <strong>T2D</strong>. En los datos simulados no hay defunciones, de modo que no hace falta un planteamiento de riesgos competitivos. Aun así construiremos el análisis como un objeto <code>Lexis</code>, porque es la estructura de base del paquete <code>Epi</code> y va a servir para comprender el modelo de transición.</p>
+<p>Los tres pasos son:</p>
 <ol type="1">
-<li>Objective one</li>
+<li>Reestructurar los registros individuales en un objeto <code>Lexis</code>, introducir el estado de diabetes y dividir el seguimiento en bandas de edad.</li>
+<li>Dibujar diagramas de Lexis para ver cómo es realmente el seguimiento.</li>
+<li>Tabular y graficar las tasas de incidencia específicas por edad en hombres y mujeres.</li>
 </ol>
 </section>
-<section id="todo-section" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="todo-section"><span class="header-section-number">12.2</span> TODO: Section</h2>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="sec-datos" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Los datos de partida y la definición del seguimiento</h1>
+<p>Partimos del data frame <code>sim_diab</code>, con una fila por persona:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 8%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Tipo</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pnr</code></td>
+<td>entero</td>
+<td>identificador de la persona</td>
+</tr>
+<tr class="even">
+<td><code>stable_inclusion_date</code></td>
+<td>Date</td>
+<td>fecha del diagnóstico de T2D</td>
+</tr>
+<tr class="odd">
+<td><code>has_t2d</code></td>
+<td>lógico</td>
+<td>¿recibió la persona un diagnóstico de T2D?</td>
+</tr>
+<tr class="even">
+<td><code>koen</code></td>
+<td>factor</td>
+<td>sexo, ya etiquetado</td>
+</tr>
+<tr class="odd">
+<td><code>foed_dato</code></td>
+<td>Date</td>
+<td>fecha de nacimiento</td>
+</tr>
+<tr class="even">
+<td><code>age</code></td>
+<td>numérico</td>
+<td><strong>edad actual</strong> — edad al final de la observación, en años</td>
+</tr>
+<tr class="odd">
+<td><code>duration</code></td>
+<td>numérico</td>
+<td>duración de la diabetes en años</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(sim_diab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>La decisión de diseño de este tutorial es que <strong>el seguimiento empieza en el nacimiento</strong>. Cada persona entra en la cohorte a la edad 0, sana, y se la observa hasta su edad actual. Quien tiene <code>has_t2d == TRUE</code> pasa por un diagnóstico en algún punto intermedio.</p>
+<p>En la escala de edad eso se ve así:</p>
+<pre><code>edad 0 ─────────── Healthy ─────────── edad al dx ─── T2D ─── edad actual
+                   (en riesgo)                      (fuera de riesgo)</code></pre>
+<p>El tiempo transcurrido después del diagnóstico <strong>no</strong> está en riesgo de diabetes incidente, así que hay que excluirlo del denominador. Conseguir eso de forma automática es una de las razones principales para usar <code>Lexis</code> en lugar de tabular a mano.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Reading task: ~4 minutes
+<span class="screen-reader-only">Warning</span>Sobre el realismo del diseño
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>TODO: Reading text</p>
+<p>Seguir datos de registro desde el nacimiento suele ser imposible: las personas entran en observación cuando arranca el registro o cuando inmigran, y fingir lo contrario genera tiempo-persona inmortal. Aquí los datos están simulados con cobertura completa de toda la vida, así que no hay problema. En una cohorte real basada en el CPR se entraría en <code>pmax(foed_dato, inicio del registro, fecha de inmigración)</code>, lo que supone un <code>pmax()</code> adicional y no cambia nada de lo que sigue.</p>
 </div>
 </div>
 </section>
-<section id="technologist-exercise-title" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="technologist-exercise-title"><span class="header-section-number">12.3</span> :technologist: Exercise: Title</h2>
-<p><strong>Time: ~NUM minutes.</strong></p>
-<p>Text</p>
-</section>
-<section id="speech_balloon-discussion-activity-title" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="speech_balloon-discussion-activity-title"><span class="header-section-number">12.4</span> :speech_balloon: Discussion activity: Title</h2>
-<p><strong>Time: ~Num minutes.</strong></p>
-<p>Text</p>
-</section>
-<section id="book-reading-task-title" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="book-reading-task-title"><span class="header-section-number">12.5</span> :book: Reading task: Title</h2>
-<p><strong>Time: ~Num minutes.</strong></p>
-<p>Text</p>
-</section>
-<section id="summary" class="level2" data-number="12.6">
-<h2 data-number="12.6" class="anchored" data-anchor-id="summary"><span class="header-section-number">12.6</span> Summary</h2>
+<section id="sec-lexis" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Construir el objeto <code>Lexis</code></h1>
+<p>Un objeto <code>Lexis</code> es un data frame de <em>intervalos de seguimiento</em> en una o varias <strong>escalas de tiempo</strong>, más unas columnas de control:</p>
 <ul>
-<li>TODO: List of summary items</li>
+<li><code>lex.id</code> — identificador de la persona</li>
+<li><code>lex.dur</code> — longitud del intervalo, en las unidades de las escalas de tiempo (aquí años)</li>
+<li><code>lex.Cst</code> — estado al <strong>inicio</strong> del intervalo (<em>Current state</em>)</li>
+<li><code>lex.Xst</code> — estado al <strong>final</strong> del intervalo (<em>eXit state</em>)</li>
+</ul>
+<p>Todas las escalas de tiempo avanzan al mismo ritmo, de modo que se indica dónde <em>entra</em> cada persona en todas las escalas y dónde <em>sale</em> en una sola. <code>Epi</code> deduce el resto.</p>
+<p>Usaremos dos escalas, siguiendo la convención habitual de <code>Epi</code>:</p>
+<ul>
+<li><code>A</code> — edad de entrada en el seguimiento; todas las personas entran en 0 en este ejemplo</li>
+<li><code>P</code> — tiempo calendario (<em>period</em>) en años decimales; <code>cal.yr()</code> convierte un <code>Date</code> a esa escala, que es lo que hace conmensurables el calendario y la edad</li>
+</ul>
+<p>Como todo el mundo entra a la edad 0, la escala natural para especificar la salida es la edad: la salida ocurre a la edad actual de la persona, es decir, en <code>age</code>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Por qué las escalas se llaman <code>A</code> y <code>P</code> y no <code>age</code> y <code>per</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cada escala de tiempo se convierte en una columna del objeto <code>Lexis</code> con ese mismo nombre. Si se llama <code>age</code> a la escala mientras el data frame ya tiene una columna <code>age</code>, <code>Lexis()</code> se detiene con:</p>
+<pre><code>Error in Lexis(...) : Cannot merge data with duplicate names:age</code></pre>
+<p>Hay dos salidas: renombrar la escala, o renombrar la columna de datos. Renombrar la escala es menos invasivo y coincide con la notación <code>A</code> / <code>P</code> que usan la documentación y las viñetas de <code>Epi</code>. La columna <code>age</code> sigue estando disponible en el objeto resultante con su significado original —edad al final de la observación—, mientras que la columna <code>A</code> guarda la edad al inicio de cada intervalo.</p>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Lx <span class="ot">&lt;-</span> <span class="fu">Lexis</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">entry =</span> <span class="fu">list</span>(<span class="at">A =</span> <span class="dv">0</span>, <span class="at">P =</span> <span class="fu">cal.yr</span>(foed_dato)),</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">exit =</span> <span class="fu">list</span>(<span class="at">A =</span> age),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">entry.status =</span> <span class="fu">factor</span>(<span class="st">"Healthy"</span>, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Healthy"</span>, <span class="st">"T2D"</span>)),</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">exit.status =</span> <span class="fu">factor</span>(<span class="st">"Healthy"</span>, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Healthy"</span>, <span class="st">"T2D"</span>)),</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">id =</span> pnr,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> sim_diab</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Lx)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(Lx)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>En este punto <em>nadie</em> tiene diabetes: cada intervalo es una vida completa desde 0 hasta la edad actual, con <code>lex.Cst == lex.Xst == "Healthy"</code>. <code>lex.dur</code> es igual a <code>age</code>, así que <code>sum(Lx$lex.dur)</code> son los años-persona totales de la cohorte.</p>
+<section id="sec-cutlexis" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-cutlexis"><span class="header-section-number">12.1</span> Introducir el estado de diabetes con <code>cutLexis()</code></h2>
+<p><code>cutLexis()</code> corta el seguimiento de cada persona en un punto determinado y le cambia el estado a partir de ahí. Es la forma idiomática de añadir un estado intermedio a un objeto <code>Lexis</code> ya construido.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>Dx <span class="ot">&lt;-</span> <span class="fu">cutLexis</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  Lx,</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">cut =</span> Lx<span class="sc">$</span>age_dm, <span class="co"># edad al diagnóstico; NA = sin corte</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">timescale =</span> <span class="st">"A"</span>, <span class="co"># el punto de corte se da en la escala de edad</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">new.state =</span> <span class="st">"T2D"</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">new.scale =</span> <span class="st">"tfd"</span>, <span class="co"># opcional: añade la escala "tiempo desde el dx"</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">precursor.states =</span> <span class="st">"Healthy"</span> <span class="co"># estados que el nuevo estado sobreescribe</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Tres detalles que conviene entender:</p>
+<ul>
+<li><code>cut</code> se toma <strong>en el orden de filas del objeto <code>Lexis</code></strong>, no en el de <code>sim_diab</code>. Hay que escribir siempre <code>Lx$age_dm</code> y no <code>sim_diab$age_dm</code>: si <code>Lexis()</code> descartó alguna fila, los dos vectores dejan de estar alineados y los cortes caen sobre las personas equivocadas.</li>
+<li>Un <code>NA</code> en <code>cut</code> significa “no cortar a esta persona”. Los no casos conservan un único intervalo.</li>
+<li><code>new.scale = "tfd"</code> añade una escala de tiempo que vale <code>NA</code> antes del diagnóstico y cuenta desde 0 a partir de él. No hace falta para la incidencia, pero no cuesta nada y es la escala sobre la que se modelarían los desenlaces posteriores al diagnóstico.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Dx)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(<span class="fu">table</span>(Dx<span class="sc">$</span>lex.id)) <span class="co"># los casos tienen dos filas; los no casos, una</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tapply</span>(Dx<span class="sc">$</span>lex.dur, Dx<span class="sc">$</span>lex.Cst, sum) <span class="co"># años-persona repartidos entre los dos estados</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>La tabla de transiciones ya muestra <code>Healthy -&gt; T2D</code>. El corte conserva los años-persona: parte las vidas, no las acorta, así que <code>sum(Dx$lex.dur)</code> sigue siendo igual que antes; lo que cambia es que ahora una parte pertenece al estado <code>T2D</code>.</p>
+</section>
+<section id="sec-boxes" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="sec-boxes"><span class="header-section-number">12.2</span> El diagrama de estados</h2>
+<p><code>boxes()</code> dibuja la estructura de estados con los años-persona, el número de transiciones y las tasas estimadas encima. Para un modelo de dos estados resulta casi trivial, pero es un buen reflejo: enseña qué modelo cree <code>Epi</code> que se ha especificado.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxes</span>(Dx, <span class="at">boxpos =</span> <span class="cn">TRUE</span>, <span class="at">show.BE =</span> <span class="cn">TRUE</span>, <span class="at">scale.R =</span> <span class="dv">1000</span>, <span class="at">hmult =</span> <span class="fl">1.2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>scale.R = 1000</code> pone la tasa de la flecha en casos por 1000 años-persona; <code>show.BE = TRUE</code> añade cuántas personas empiezan y terminan en cada estado.</p>
+</section>
+</section>
+<section id="sec-diagramas" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Diagramas de Lexis</h1>
+<p>Un diagrama de Lexis representa el seguimiento como segmentos en el plano (tiempo calendario, edad). Como todo el mundo entra a la edad 0, cada persona es una única línea a 45° que arranca del eje horizontal en su año de nacimiento. Con una cohorte de tamaño registro esto se convierte en una mancha sólida, así que primero conviene muestrear un número manejable de personas.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>ids <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="fu">unique</span>(Dx<span class="sc">$</span>lex.id), <span class="dv">60</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>Dsub <span class="ot">&lt;-</span> <span class="fu">subset</span>(Dx, lex.id <span class="sc">%in%</span> ids)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Los colores se derivan de los niveles de <code>koen</code>, de manera que el código funciona sea cual sea el idioma de las etiquetas ya presentes en los datos:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cols <span class="ot">&lt;-</span> <span class="fu">setNames</span>(<span class="fu">c</span>(<span class="st">"#1B6CA8"</span>, <span class="st">"#C1462F"</span>), <span class="fu">levels</span>(sim_diab<span class="sc">$</span>koen))</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>cols</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p><code>plot.Lexis()</code> recibe las escalas de tiempo como primer argumento. Se pueden dar por posición (<code>1:2</code> significa “primera escala en el eje x, segunda en el eje y”), pero como aquí queremos la orientación convencional —calendario en horizontal, edad en vertical— es más claro nombrarlas.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>), <span class="at">las =</span> <span class="dv">1</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  Dsub,</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"P"</span>, <span class="st">"A"</span>),</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"Healthy"</span> <span class="ot">=</span> <span class="st">"grey60"</span>, <span class="st">"T2D"</span> <span class="ot">=</span> <span class="st">"#C1462F"</span>)[Dsub<span class="sc">$</span>lex.Cst],</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">grid =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Calendar year"</span>,</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Age (years)"</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Punto final de cada intervalo: una cruz donde hubo diagnóstico</span></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>  Dsub,</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"P"</span>, <span class="st">"A"</span>),</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="fu">c</span>(<span class="st">"Healthy"</span> <span class="ot">=</span> <span class="cn">NA</span>, <span class="st">"T2D"</span> <span class="ot">=</span> <span class="dv">3</span>)[Dsub<span class="sc">$</span>lex.Xst],</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">"#C1462F"</span>,</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">cex =</span> <span class="fl">0.9</span>,</span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="dv">2</span></span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(</span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"topleft"</span>,</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">bty =</span> <span class="st">"n"</span>,</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">legend =</span> <span class="fu">c</span>(<span class="st">"Seguimiento sano"</span>, <span class="st">"Tras el diagnóstico"</span>, <span class="st">"Diagnóstico de T2D"</span>),</span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"grey60"</span>, <span class="st">"#C1462F"</span>, <span class="st">"#C1462F"</span>),</span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">lty =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="cn">NA</span>),</span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="dv">2</span>,</span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="cn">NA</span>, <span class="dv">3</span>)</span>
+<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Cada línea de vida es gris hasta el diagnóstico y roja después. Solo los tramos grises entran en el denominador de la incidencia.</p>
+<p>Una segunda vista, coloreada por sexo en lugar de por estado:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>), <span class="at">las =</span> <span class="dv">1</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  Dsub,</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(<span class="st">"P"</span>, <span class="st">"A"</span>),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">grid =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> cols[Dsub<span class="sc">$</span>koen],</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"Calendar year"</span>,</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"Age (years)"</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>, <span class="at">bty =</span> <span class="st">"n"</span>, <span class="at">legend =</span> <span class="fu">names</span>(cols), <span class="at">col =</span> cols, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>También existe <code>Lexis.diagram()</code> si se quiere una rejilla de Lexis vacía y formal para anotar a mano, pero para dibujar seguimiento real lo que se usa es <code>plot.Lexis()</code>.</p>
+</section>
+<section id="sec-tasas" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Tasas de incidencia por sexo</h1>
+<p>Aquí vamos a calcular una sola tasa por sexo: los eventos y los años-persona en riesgo se suman sobre todo el rango de edad conservado y se dividen. Es la tasa cruda de la cohorte.</p>
+<section id="sec-tabla" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="sec-tabla"><span class="header-section-number">14.1</span> Tabulación</h2>
+<p><code>stat.table()</code> es la herramienta de <code>Epi</code> para esto. <code>ratio(D, Y, 1000)</code> calcula la tasa por 1000 años-persona dentro de cada celda. Ahora el único índice es el sexo.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">stat.table</span>(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">index =</span> <span class="fu">list</span>(<span class="at">Sex =</span> koen),</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">contents =</span> <span class="fu">list</span>(</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Person-years"</span> <span class="ot">=</span> <span class="fu">sum</span>(lex.dur),</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Cases"</span> <span class="ot">=</span> <span class="fu">sum</span>(event),</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Rate per 1000"</span> <span class="ot">=</span> <span class="fu">ratio</span>(event, lex.dur, <span class="dv">1000</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">margins =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> Rx</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>La columna de márgenes da la tasa global de la cohorte, que es la que se obtendría ignorando también el sexo.</p>
+</section>
+<section id="sec-estimaciones" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="sec-estimaciones"><span class="header-section-number">14.2</span> Las estimaciones de tasa</h2>
+<p>La tasa empírica es D / Y, con un intervalo de confianza al 95 % aproximado <code>rate * exp(±1.96 / sqrt(D))</code>. El error estándar de una tasa en escala logarítmica depende únicamente del número de eventos, así que con miles de casos el intervalo es estrecho.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>rates <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(<span class="fu">cbind</span>(event, lex.dur) <span class="sc">~</span> koen, <span class="at">data =</span> Rx, <span class="at">FUN =</span> sum)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>rates<span class="sc">$</span>rate <span class="ot">&lt;-</span> rates<span class="sc">$</span>event <span class="sc">/</span> rates<span class="sc">$</span>lex.dur <span class="sc">*</span> <span class="dv">1000</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>rates<span class="sc">$</span>lo <span class="ot">&lt;-</span> rates<span class="sc">$</span>rate <span class="sc">*</span> <span class="fu">exp</span>(<span class="sc">-</span><span class="fl">1.96</span> <span class="sc">/</span> <span class="fu">sqrt</span>(rates<span class="sc">$</span>event))</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>rates<span class="sc">$</span>hi <span class="ot">&lt;-</span> rates<span class="sc">$</span>rate <span class="sc">*</span> <span class="fu">exp</span>(<span class="fl">1.96</span> <span class="sc">/</span> <span class="fu">sqrt</span>(rates<span class="sc">$</span>event))</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>rates</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="sec-grafico" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="sec-grafico"><span class="header-section-number">14.3</span> El gráfico</h2>
+<p>Con una sola estimación por sexo no hay ninguna curva que dibujar, así que lo apropiado es un gráfico de puntos con sus intervalos. El eje logarítmico se mantiene: las tasas de incidencia se comparan de forma multiplicativa, y en escala logarítmica la distancia vertical entre los dos puntos <em>es</em> el logaritmo de la razón de tasas.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="fl">4.5</span>, <span class="dv">1</span>, <span class="dv">1</span>), <span class="at">las =</span> <span class="dv">1</span>, <span class="at">bty =</span> <span class="st">"n"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>xpos <span class="ot">&lt;-</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(rates))</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="cn">NA</span>,</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlim =</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="fu">nrow</span>(rates) <span class="sc">+</span> <span class="fl">0.5</span>),</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylim =</span> <span class="fu">range</span>(rates<span class="sc">$</span>lo, rates<span class="sc">$</span>hi),</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">log =</span> <span class="st">"y"</span>,</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">xaxt =</span> <span class="st">"n"</span>,</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">""</span>,</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"T2D incidence rate per 1000 PY"</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="fu">segments</span>(xpos, rates<span class="sc">$</span>lo, xpos, rates<span class="sc">$</span>hi, <span class="at">col =</span> cols[rates<span class="sc">$</span>koen], <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>(xpos, rates<span class="sc">$</span>rate, <span class="at">pch =</span> <span class="dv">16</span>, <span class="at">cex =</span> <span class="fl">1.8</span>, <span class="at">col =</span> cols[rates<span class="sc">$</span>koen])</span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="fu">axis</span>(<span class="dv">1</span>, <span class="at">at =</span> xpos, <span class="at">labels =</span> <span class="fu">as.character</span>(rates<span class="sc">$</span>koen))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="sec-rr" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="sec-rr"><span class="header-section-number">14.4</span> La razón de tasas</h2>
+<p>Leer la diferencia entre los dos puntos a ojo funciona, pero el modelo de Poisson la cuantifica con su intervalo de confianza en una línea. La familia <code>poisreg</code> de <code>Epi</code> toma la respuesta como <code>cbind(eventos, años-persona)</code> y modela la tasa directamente, sin <em>offset</em>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>m0 <span class="ot">&lt;-</span> <span class="fu">glm</span>(<span class="fu">cbind</span>(event, lex.dur) <span class="sc">~</span> koen, <span class="at">family =</span> poisreg, <span class="at">data =</span> Rx)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ci.exp</span>(m0) <span class="sc">*</span> <span class="fu">c</span>(<span class="dv">1000</span>, <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>La primera fila es la tasa del nivel de referencia de <code>koen</code>, multiplicada por 1000 para dejarla por 1000 años-persona; debe coincidir con la tabla anterior. La segunda es la razón de tasas del otro nivel frente al de referencia, que no lleva escala.</p>
+<p>Esta razón de tasas es cruda. Para ajustarla por edad basta con añadir la edad al modelo, y con eso ya se entra en <a href="#sec-generalizacion" class="quarto-xref"><span>Chapter 15</span></a>.</p>
+</section>
+</section>
+<section id="sec-generalizacion" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Hacia dónde se generaliza esto</h1>
+<p>Pasar por <code>Lexis</code> en lugar de tabular bandas de edad a mano compensa en cuanto el modelo crece:</p>
+<ul>
+<li><strong>Añadir la mortalidad</strong> consiste en un segundo <code>cutLexis()</code> (o un tercer estado en <code>exit.status</code>). La muerte pasa entonces a competir con el diagnóstico, y <code>summary()</code>/<code>boxes()</code> informan de ambas transiciones sin ningún cambio en el código anterior.</li>
+<li><strong>Los efectos de periodo y cohorte</strong> salen de dividir también en <code>P</code> y añadirlo al modelo; <code>apc.fit()</code> acepta directamente un objeto <code>Lexis</code> dividido.</li>
+<li><strong>Los desenlaces posdiagnóstico</strong> se modelan en la escala <code>tfd</code> que <code>cutLexis()</code> ya creó: complicaciones, mortalidad, intensificación del tratamiento.</li>
+<li><strong>La prevalencia y la esperanza de vida</strong> se obtienen del mismo objeto con <code>simLexis()</code>.</li>
+<li><strong>La entrada retardada</strong> —la versión realista de esta cohorte— es un solo cambio en la lista <code>entry</code>; la división, el corte, la tabulación y el modelado no se tocan.</li>
 </ul>
 </section>
-<section id="survey" class="level2" data-number="12.7">
-<h2 data-number="12.7" class="anchored" data-anchor-id="survey"><span class="header-section-number">12.7</span> Survey</h2>
-<p><a href="TODO" class="btn btn-primary" role="button">Feedback survey! :tada:</a></p>
+<section id="sec-errores" class="level1" data-number="16">
+<h1 data-number="16"><span class="header-section-number">16</span> Errores frecuentes</h1>
+<ul>
+<li>Dar a una escala de tiempo el nombre de una columna que ya existe. De ahí sale <code>Cannot merge data with duplicate names:age</code>. Renombrar la escala (<code>A</code>, <code>P</code>) o la columna.</li>
+<li>Dejar el tiempo-persona posdiagnóstico en el denominador. Hay que filtrar por <code>lex.Cst == "Healthy"</code> <strong>después</strong> de dividir, no antes de cortar.</li>
+<li>Pasar <code>sim_diab$age_dm</code> en lugar de <code>Lx$age_dm</code> a <code>cutLexis()</code>. Si al construir el objeto <code>Lexis</code> se descartó alguna fila, los cortes caen en silencio sobre las personas equivocadas.</li>
+<li>Cortar en un punto que cae fuera del seguimiento. <code>cutLexis()</code> no protesta: si el corte está en la entrada o antes, la persona empieza en el nuevo estado y su transición desaparece. Comparar el número de casos con el de transiciones es la forma más rápida de detectarlo.</li>
+<li>Derivar la edad al diagnóstico de <code>duration</code> en lugar de <code>stable_inclusion_date</code>. Solo coinciden si ambas variables comparten el mismo momento de referencia.</li>
+<li>Usar solo <code>lex.Xst == "T2D"</code> como indicador de evento. La forma segura es siempre <code>lex.Cst == "Healthy" &amp; lex.Xst == "T2D"</code>.</li>
+<li>Mezclar unidades. Si la edad va en años y el calendario en días, <code>lex.dur</code> no significa nada. <code>cal.yr()</code> existe precisamente para evitarlo, y todo lo demás se mantiene en años de principio a fin.</li>
+<li>Olvidar que seguir desde el nacimiento es una comodidad de la simulación. En datos de registro reales fabrica tiempo-persona inmortal en las edades jóvenes.</li>
+<li>Graficar las tasas en un eje y lineal y concluir que los sexos divergen con la edad, cuando la razón de tasas es en realidad constante.</li>
+</ul>
+</section>
+<section id="sec-session" class="level1" data-number="17">
+<h1 data-number="17"><span class="header-section-number">17</span> </h1>
 
 
 </section>
@@ -767,13 +1126,10 @@ ul.task-list li input[type="checkbox"] {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../sesiones/datos-crudos.html" class="pagination-link" aria-label="Partiendo de datos crudos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Partiendo de datos crudos</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../sesiones/conclusión.html" class="pagination-link" aria-label="What next">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">What next</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -785,13 +1141,8 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link active" href="../LICENSE.html" aria-current="page">
+    <a class="nav-link" href="../LICENSE.html">
 <p>Licencia: CC BY 4.0</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="../pre-taller/código-de-conducta.html">
-<p>Código de Conducta</p>
 </a>
   </li>  
 </ul>

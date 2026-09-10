@@ -64,12 +64,12 @@
   {
     "objectID": "resumen/es-para-mi.html",
     "href": "resumen/es-para-mi.html",
-    "title": "2  ¿Este taller es para mi?",
+    "title": "2  ¿Este taller es como para mi?",
     "section": "",
     "text": "El curso está diseñado como taller para investigadores jóvenes y estudiantes con conocimientos en análisis de datos interesados en conocer metodologías de análisis con registros nacionales de salud.\nPara ayudar a manejar las expectativas y para enfocar el desarrollo de los materiales, asumiremos cierta experiencia previa de los participantes de este taller. Esperamos que hayas estudiado, trabajado o tengas alguna experienca con:\n\nConceptos epidemiológicos básicos como prevalencia, determinantes, desenlaces, diseño de cohortes abiertas y cerradas, tiempo de seguimiento, censura, medidas de incidencia, medidas de riesgo, medidas de asociación, sesgos, confusión.\nManejo de datos cuantitativos, conceptos básicos de la ciencia de datos como formatos long y wide, fusión de datos deterministica y probabilistica.\nAnálisis de datos con programas estadísiticos como R.\n\nWhile we have these assumptions to help focus the content of the workshop, if you have an interest in the workshop but don’t fit any of the assumptions, you are still welcome to attend! We welcome everyone until capacity has been reached.\nIn addition to the assumptions above, the workshop also has a fairly focused scope, which may also help you decide if this workshop is for you:\n\nTODO: List of concrete tasks we will do and not do.",
     "crumbs": [
       "Resumen",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>¿Este taller es para mi?</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>¿Este taller es como para mi?</span>"
     ]
   },
   {
@@ -84,520 +84,270 @@
     ]
   },
   {
-    "objectID": "resumen/diseño-aprendizaje.html",
-    "href": "resumen/diseño-aprendizaje.html",
-    "title": "4  Learning design",
-    "section": "",
-    "text": "4.1 Clear learning goals and a strong narrative\nThis workshop is designed using the science of learning. Learning is when new content gets incorporated into long-term storage in the brain in a way that it can be later retrieved. Some of the best ways to enable learning is to do “active learning” by engaging with the material, practicing retrieving what was just covered, repeatedly being exposed to the content, linking the new information with what you already know, and explaining it to someone else.\nWe use a variety of activities to target the different “pathways” of learning. A big part of learning is being engaged in the process of learning, not just learning the content itself. So to help you be engaged in your own learning, we want to involve you in the reasons why we do the things we do during this workshop.\nThroughout the workshop, we use these practices to support learning.\nThe learning goals and the narrative are tightly connected in this workshop. Learning is easier when you have a better idea of where you are going, where you are relative to the end goal, and what to expect along the way.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#code-alongs-as-the-main-activity",
-    "href": "resumen/diseño-aprendizaje.html#code-alongs-as-the-main-activity",
-    "title": "4  Learning design",
-    "section": "4.2 “Code-alongs” as the main activity",
-    "text": "4.2 “Code-alongs” as the main activity\n“Code-alongs” is when the teacher types on their computer that is on the projector and explains what it means as you also type along with them. The connection between using the hands and doing something tangible helps reinforce learning. It also helps the teachers to go slower as we have to both explain and type things out. This helps you learn better. “Less is more” works very well with learning.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#retrieval-practice-with-hands-on-exercises",
-    "href": "resumen/diseño-aprendizaje.html#retrieval-practice-with-hands-on-exercises",
-    "title": "4  Learning design",
-    "section": "4.3 Retrieval practice with hands-on exercises",
-    "text": "4.3 Retrieval practice with hands-on exercises\nHands-on exercises reinforce what was just taught through retrieval practice and repetition. It gives you a chance to engage with the material and the space to try it out on your own. This helps you form a better sense of how to do it yourself.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
-    "href": "resumen/diseño-aprendizaje.html#linking-new-information-with-existing-knowledge-with-discussion-activities",
-    "title": "4  Learning design",
-    "section": "4.4 Linking new information with existing knowledge with discussion activities",
-    "text": "4.4 Linking new information with existing knowledge with discussion activities\nDiscussion activities encourage linking what you already know and do in your work with the new information. Because humans are social beings, we also tend to learn better when there is some social aspect to it. For example, explaining something to someone else is one of the best ways to learn, as nicely expressed in the quote “while we teach, we learn” from the Roman philosopher Seneca.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#minimal-use-of-lectures",
-    "href": "resumen/diseño-aprendizaje.html#minimal-use-of-lectures",
-    "title": "4  Learning design",
-    "section": "4.5 Minimal use of lectures",
-    "text": "4.5 Minimal use of lectures\nLectures, while extremely common, are forms of information sharing with the lowest rates of learning. In this workshop, we use reading tasks instead, so you can go at your pace, re-read things you may not understand, and take notes, all of which support learning. To help reinforce what you just read, the teacher will briefly summarise and emphasise key points after reading tasks, to repeat the main points and target another part of the brain (the auditory pathway).",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#frequent-breaks-and-variation-in-activities",
-    "href": "resumen/diseño-aprendizaje.html#frequent-breaks-and-variation-in-activities",
-    "title": "4  Learning design",
-    "section": "4.6 Frequent breaks and variation in activities",
-    "text": "4.6 Frequent breaks and variation in activities\nBreaks are how your brain can recharge and refocus. The brain is only able to effectively focus on one thing at a time in 30-50 minute blocks of time. That’s why we mix together code-alongs, exercises, discussions, and reading to give your brain some variation. Having an explicit break, even 5 minutes, is enough for the brain to better process and store what was covered.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#easily-accessible-material-that-is-online-always",
-    "href": "resumen/diseño-aprendizaje.html#easily-accessible-material-that-is-online-always",
-    "title": "4  Learning design",
-    "section": "4.7 Easily accessible material that is online, always",
-    "text": "4.7 Easily accessible material that is online, always\nAll the material is online on this website, so that it is easy for you to go back to after the workshop. This builds the repetition and retrieval practice part of learning. Our brains also get easily distracted, which is completely normal. So if you get distracted during the workshop, you can simply go to the material and get caught up with where we are. We also make sure to follow the material on the website closely, so that it is easier for you to follow along.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#a-safe-and-supportive-environment",
-    "href": "resumen/diseño-aprendizaje.html#a-safe-and-supportive-environment",
-    "title": "4  Learning design",
-    "section": "4.8 A safe and supportive environment",
-    "text": "4.8 A safe and supportive environment\nMental safety in a supportive environment is critical for effective learning. It puts the brain into a more relaxed state that allows for optimal processing and ultimately learning. That’s why we try to explicitly create that space, for example with the use of our Code of Conduct.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#using-origami-hats-to-ask-for-help",
-    "href": "resumen/diseño-aprendizaje.html#using-origami-hats-to-ask-for-help",
-    "title": "4  Learning design",
-    "section": "4.9 Using origami hats to ask for help",
-    "text": "4.9 Using origami hats to ask for help\nAsking for help can feel difficult, especially when you are learning and are unsure about something. To make it easier and feel safer, we use origami hats (or stickies) to show how everyone is doing. If you need help, you put up the “help” hat (usually orange) and a helper will come to you as soon as possible. If not, you can put up a “all good” hat (usually blue) to let us know you are following along. Since we often have several helpers, you usually won’t wait long. This simple system lets you ask for help without interrupting the teacher or drawing attention, so you can keep following along while you wait. Our goal is to make getting help easier and more comfortable.",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
-    "objectID": "resumen/diseño-aprendizaje.html#being-involved-in-the-learning-process",
-    "href": "resumen/diseño-aprendizaje.html#being-involved-in-the-learning-process",
-    "title": "4  Learning design",
-    "section": "4.10 Being involved in the learning process",
-    "text": "4.10 Being involved in the learning process\nNow you know a bit more about the thoughts behind how we’ve designed this workshop to really try to support and enable your own learning! :tada: :grin:",
-    "crumbs": [
-      "Resumen",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Learning design</span>"
-    ]
-  },
-  {
     "objectID": "pre-taller/resumen.html",
     "href": "pre-taller/resumen.html",
-    "title": "5  Tareas preparatorias antes del taller",
+    "title": "4  Tareas preparatorias antes del taller",
     "section": "",
-    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con ?sec-installing-programs.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
+    "text": "Para agilizar el taller es importante que todos los participantes completen las siguientes tareas preparatórias:\n\nInstala los programas R, RStudio, Quarto, y Git en sus versiones mas actuales de acuerdo con Chapter 5.\nInstala los paquetes R necesarios.\nLee el temario (Chapter 1).\n\nCada sección contiene detalles sobre cómo completar cada tarea.\n\n\n\n\n\n\nTip\n\n\n\nPuedes pasar a la siguiente sección haciendo click en la flechita en la parte inferior de cada página ➡️:",
     "crumbs": [
       "Pre-taller",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Tareas preparatorias antes del taller</span>"
     ]
   },
   {
     "objectID": "pre-taller/instalación-programas-r.html",
     "href": "pre-taller/instalación-programas-r.html",
-    "title": "6  Instalación de los programas",
+    "title": "5  Instalación de los programas",
     "section": "",
     "text": "Para poder participar en el taller, es importante que tengas los siguientes programas instalados en tu computadora. Es posible que ya hayas instalado algunos de ellos en el pasado. En ese caso por favor verifica que tengas instalada una versión mas reciente que la indicada en las instrucciones. Si no tendrás que actualizar las instalaciones.\n\nWindowsMacOSLinux (Ubuntu)\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”.\nGit: Escoge el enlace “Click here to download”. Usaremos Git durante algunas partes del taller. Al instalar Git, te pedirá seleccionar un “Text Editor” y aunque no usaremos esa funcion en el taller es neceario proporcionar el dato para la instalación de Git, así que lo mas fácil es escoger Notepad.\n\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string. Si usas Homebrew (recomendado en general pero), la instalación de R is muy fácil. Solo hay que dar el siguente comando en el Terminal de tu computadora:\nbrew install --cask r\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”. Con Homebrew:\nbrew install --cask rstudio\nGit: Usaremos Git durante algunas partes del taller. MacOS viene con Git pre-instalado. Para instalarlo con Homebrew:\nbrew install git\n\n\n\n\nR: Cualquier versión mas reciente que 4.6.0. Si has utilizado R anteriormente, puedes verificar tu versión actual dando éste comando en la consola: R.version.string.\nsudo apt -y install r-base\nRStudio: Cualquier versión mas reciente que 2026.08.2. Si has instalado RStudio anteriormente, puedes verificar la versión actual yendo al menu “Help -&gt; About RStudio”.\nGit: Usaremos Git durante algunas partes del taller.\nsudo apt install git\n\n\n\n\nTodos estos programas son necesarios para el taller, Git incluido. Git es usado para la gestión formal de versiones de archivos. Lo usamos porque tiene mucha documentación muy buena. Puedes aprender mas en éste libro en línea Happy Git with R. Especialmente la sección “Why Git” explica bien por qué lo usamos. Usuarios de Windows a veces encuentran dificultades durante la instalación de Git. La siguiente guia ofrece pautas y ayuda Installing Git for Windows.",
     "crumbs": [
       "Pre-taller",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Instalación de los programas</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Instalación de los programas</span>"
     ]
   },
   {
-    "objectID": "pre-taller/código-de-conducta.html",
-    "href": "pre-taller/código-de-conducta.html",
-    "title": "8  Code of conduct",
+    "objectID": "pre-taller/instalación-paquetes-r.html",
+    "href": "pre-taller/instalación-paquetes-r.html",
+    "title": "6  Instalación de los paquetes R necesarios",
     "section": "",
-    "text": "8.1 Expected behavior\nLearning happens when we feel safe and supported. Since we want you to learn during this workshop, we want you to feel safe and supported. We also want all learners to have an enjoyable and fulfilling experience while participating in this workshop. So we expect all learners to show respect, kindness, and courtesy to other learners throughout the whole workshop and to help create a positive and safe learning environment.\nWhile most people and (sub-)cultures have an implicit, assumed set of practices and expectations for behaviour, we believe strongly in effective and clear communication. This includes making what is normally implicit expectations to instead be explicit expectations.\nTeachers and helpers will uphold and embody this code in all spaces and activities of the workshop, and we expect you as the learner to do the same. In fact, by participating in this workshop, you indicate that you agree to follow these explicit expectations. We have this code of conduct to communicate to you that we really value and want to nurture a space that encourages and enhances learning. Otherwise, why would we have a workshop if you can’t or aren’t able to effectively learn anything from it! :zany_face:\nWe want a welcoming, supportive, safe, and fun environment not only for ourselves as teachers and helpers, but also for all learners, regardless of background and identity. This means that we do not tolerate behaviour that is disrespectful to any of our teachers, helpers, or learners (see below for unacceptable behaviour).\nWe encourage the following kinds of behaviours in all interactions during this workshop that will foster a positive and professional learning environment:",
+    "text": "Antes de iniciar la sesión debemos instalar los paquetes R necesarios para este taller:\ninstall.packages(“tidyverse”) install.packages(“osdc”) install.packages(“purrr”) install.packages(“Epi”) install.packages(“DBI”) install.packages(“duckdb”) install.packages(“knitr”) install.packages(“rmarkdown”) install.packages(“ggplot2”)",
     "crumbs": [
       "Pre-taller",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
-    ]
-  },
-  {
-    "objectID": "pre-taller/código-de-conducta.html#expected-behavior",
-    "href": "pre-taller/código-de-conducta.html#expected-behavior",
-    "title": "8  Code of conduct",
-    "section": "",
-    "text": "Show kindness, courtesy, and respect towards other workshop members.\nAll interactions should be professional regardless of platform: either online or in-person.\nBe aware of your words by using welcoming and inclusive language. Words matter, a lot!\nBe respectful to different viewpoints and experiences.\nGracefully accept constructive criticism.\nFocus on what is best for everyone in the workshop.",
-    "crumbs": [
-      "Pre-taller",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
-    ]
-  },
-  {
-    "objectID": "pre-taller/código-de-conducta.html#unacceptable-behavior",
-    "href": "pre-taller/código-de-conducta.html#unacceptable-behavior",
-    "title": "8  Code of conduct",
-    "section": "8.2 Unacceptable behavior",
-    "text": "8.2 Unacceptable behavior\nWhile we assume you will not do these behaviours, we want to clearly communicate what unacceptable behaviour is. It is any behaviour, as actions or words, that excludes, intimidates, or causes discomfort to others. We do not tolerate discrimination or harassment based on characteristics that include, though are not limited to, gender identity and expression, sexual orientation, disability, physical appearance, body size, citizenship, nationality, ethnic or social origin, pregnancy, familial status, veteran status, genetic information, religion or belief (or lack thereof), membership of a national minority, property, age, education, socio-economic status, technical choices, and experience level. We of course also don’t tolerate verbally or physically violent behaviour towards others.\nExamples of unacceptable behavior includes:\n\nWritten or verbal comments that exclude people on the basis of membership of any specific group.\nThe display of sexual or violent images.\nUnwelcome sexual attention, advances, and/or physical contact.\nSustained disruption of workshop sessions or communications.\nInsults or put downs.\nSexist, racist, homophobic, transphobic, ableist, or exclusionary jokes.",
-    "crumbs": [
-      "Pre-taller",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
-    ]
-  },
-  {
-    "objectID": "pre-taller/código-de-conducta.html#consequences-of-unacceptable-behavior",
-    "href": "pre-taller/código-de-conducta.html#consequences-of-unacceptable-behavior",
-    "title": "8  Code of conduct",
-    "section": "8.3 Consequences of unacceptable behavior",
-    "text": "8.3 Consequences of unacceptable behavior\nLearners who are asked, either in person or online, to stop any inappropriate behavior are expected to comply immediately. If a learners engages in behaviour that violates this code of conduct, the organizers, teachers, or helpers may take any action they deem appropriate, including warning the offender or removing them from the workshop.\nIf you feel in any way unsafe or mistreated, you may contact us privately—all communication is confidential.\nThank you for helping make this a welcoming, friendly workshop for all :smile:\n\n\n\n\n\n\nNote\n\n\n\nAcknowledgements: Large portions of this code of conduct were taken and modified from other codes of conduct, specifically Software Carpentry and UofTCoders.",
-    "crumbs": [
-      "Pre-taller",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Code of conduct</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Instalación de los paquetes R necesarios</span>"
     ]
   },
   {
     "objectID": "sesiones/introducción.html",
     "href": "sesiones/introducción.html",
-    "title": "9  Introducción al taller",
+    "title": "7  Introducción al taller",
     "section": "",
-    "text": "9.1 Tema de esta presentación\nEsta presentación da una introducción general a los conceptos centrales del trabajo con registros sanitarios. Se dicta como primera sesión o como presentación pre-curso (en línea).",
+    "text": "7.1 Tema de esta presentación\nEsta presentación da una introducción general a los conceptos centrales del trabajo con registros sanitarios. Se dicta como primera sesión o como presentación pre-curso (en línea).",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al taller</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introducción al taller</span>"
     ]
   },
   {
     "objectID": "sesiones/introducción.html#tema-de-esta-presentación",
     "href": "sesiones/introducción.html#tema-de-esta-presentación",
-    "title": "9  Introducción al taller",
+    "title": "7  Introducción al taller",
     "section": "",
-    "text": "9.1.1 Objetivos de aprendizaje\nDespués de esta presentación los estudiantes tendrán los siguientes conocimientos:\n\nQué es un registro sanitario; con cuales componentes debe contar\nA qué tipo de preguntas puede responder un registro\nCuales son los tipos de usuarios de los datos de un registro sanitario\nA qué niveles existen datos / registros sanitarios y cuales son las necesidades de información a cada nivel",
+    "text": "7.1.1 Objetivos de aprendizaje\nDespués de esta presentación los estudiantes tendrán los siguientes conocimientos:\n\nQué es un registro sanitario; con cuales componentes debe contar\nA qué tipo de preguntas puede responder un registro\nCuales son los tipos de usuarios de los datos de un registro sanitario\nA qué niveles existen datos / registros sanitarios y cuales son las necesidades de información a cada nivel",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Introducción al taller</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introducción al taller</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html",
     "href": "sesiones/potencial.html",
-    "title": "10  El potencial de los registros",
+    "title": "8  El potencial de los registros",
     "section": "",
-    "text": "10.1 Objetivos de aprendizaje\nEn esta sesión repasaremos rápidamente algunas de las definiciones\nEl objetivo de esta sesión es que el estudiante conozca y pueda explicar:\nTomando el modelo nórdico como ejemplo discutiremos qué tipo de preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Discutiremos fortalezas, limitaciones y retos. Cerraremos el bloque contrastando con el contexto latinoamericano/peruano.",
+    "text": "8.1 Objetivos de aprendizaje\nEn esta sesión repasaremos rápidamente algunas de las definiciones\nEl objetivo de esta sesión es que el estudiante conozca y pueda explicar:\nTomando el modelo nórdico como ejemplo discutiremos qué tipo de preguntas de investigación se vuelven posibles con estos datos que de otro modo serían muy difíciles. Discutiremos fortalezas, limitaciones y retos. Cerraremos el bloque contrastando con el contexto latinoamericano/peruano.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/potencial.html#objetivos-de-aprendizaje",
     "href": "sesiones/potencial.html#objetivos-de-aprendizaje",
-    "title": "10  El potencial de los registros",
+    "title": "8  El potencial de los registros",
     "section": "",
     "text": "Qué son los registros sanitarios poblacionales, con enfoque en enfermedades crónicas\nCómo se construyen y mantienen\nQué los hace tan valiosos\nCual es la experiencia de los países nórdicos y de Brasil",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#todo-section",
-    "href": "sesiones/potencial.html#todo-section",
-    "title": "10  El potencial de los registros",
-    "section": "10.2 TODO: Section",
-    "text": "10.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#technologist-exercise-title",
-    "href": "sesiones/potencial.html#technologist-exercise-title",
-    "title": "10  El potencial de los registros",
-    "section": "10.3 :technologist: Exercise: Title",
-    "text": "10.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
-    "href": "sesiones/potencial.html#speech_balloon-discussion-activity-title",
-    "title": "10  El potencial de los registros",
-    "section": "10.4 :speech_balloon: Discussion activity: Title",
-    "text": "10.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#book-reading-task-title",
-    "href": "sesiones/potencial.html#book-reading-task-title",
-    "title": "10  El potencial de los registros",
-    "section": "10.5 :book: Reading task: Title",
-    "text": "10.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#summary",
-    "href": "sesiones/potencial.html#summary",
-    "title": "10  El potencial de los registros",
-    "section": "10.6 Summary",
-    "text": "10.6 Summary\n\nTODO: List of summary items",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/potencial.html#survey",
-    "href": "sesiones/potencial.html#survey",
-    "title": "10  El potencial de los registros",
-    "section": "10.7 Survey",
-    "text": "10.7 Survey\nFeedback survey! :tada:",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>El potencial de los registros</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>El potencial de los registros</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html",
     "href": "sesiones/datos-crudos.html",
-    "title": "11  Partiendo de datos crudos",
+    "title": "9  Partiendo de datos crudos",
     "section": "",
-    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.",
+    "text": "9.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html#explorando-el-paquete-osdc",
     "href": "sesiones/datos-crudos.html#explorando-el-paquete-osdc",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.2 Explorando el paquete OSDC",
-    "text": "11.2 Explorando el paquete OSDC\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.\nEl primer paso es verificar si está instalado el paquete osdc.\n\ninstall.packages(\"osdc\")\n\nInstalling package into '/home/runner/work/_temp/Library'\n(as 'lib' is unspecified)\n\n\nalso installing the dependencies 'Rcpp', 'RcppArmadillo', 'cmprsk', 'etm', 'plyr', 'numDeriv', 'data.table', 'zoo', 'utf8', 'pkgconfig', 'cpp11', 'backports', 'Epi', 'generics', 'pillar', 'tibble', 'blob', 'DBI', 'tidyr', 'collections', 'duckdb', 'timechange', 'checkmate', 'codeCollection', 'dplyr', 'dbplyr', 'duckplyr', 'fabricatr', 'lubridate', 'purrr', 'tidyselect'\n\n\nPodemos consultar la documentación del paquete osdc (en Inglés)\nPara usar un paquete en una sesión debemos comenzar cargándolo\n\nlibrary(osdc)\n\nEl paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.\nLa primera nos da la documentación del algoritmo\n\nvignette(\"algorithm\")\n\nstarting httpd help server ... done\n\n\nEl siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.\n\nvignette(\"data-sources\")",
+    "title": "9  Partiendo de datos crudos",
+    "section": "9.2 Explorando el paquete OSDC",
+    "text": "9.2 Explorando el paquete OSDC\nPara éste taller usaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller, incluyendo la instalación de paquetes.\nPodemos consultar la documentación del paquete osdc (en Inglés).\nPara usar paquetes en una sesión debemos cargarlos:\n\nlibrary(osdc)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.2.1     ✔ readr     2.2.0\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.3     ✔ tibble    3.3.1\n✔ lubridate 1.9.5     ✔ tidyr     1.3.2\n✔ purrr     1.2.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(purrr)\nlibrary(Epi)\nlibrary(DBI)\nlibrary(duckdb)\nlibrary(knitr)\nlibrary(rmarkdown)\nlibrary(ggplot2)\n\nEl paquete ‘osdc’ contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.\nLa primera nos da la documentación del algoritmo\n\nvignette(\"algorithm\")\n\nstarting httpd help server ... done\n\n\nEl siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.\n\nvignette(\"data-sources\")",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html#registros-y-variables",
     "href": "sesiones/datos-crudos.html#registros-y-variables",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.3 Registros y variables",
-    "text": "11.3 Registros y variables\nComo se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)\nLa segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.\nPodemos consultar estos datos al detalle generando una variable que contiene la lista de registros.\n\nreg_list &lt;- names(registers())\nprint(reg_list)\n\n [1] \"bef\"             \"lmdb\"            \"lpr_adm\"         \"lpr_diag\"       \n [5] \"lpr3a_kontakt\"   \"lpr3a_diagnose\"  \"lpr3f_kontakter\" \"lpr3f_diagnoser\"\n [9] \"sysi\"            \"sssy\"            \"lab_forsker\"",
+    "title": "9  Partiendo de datos crudos",
+    "section": "9.3 Registros y variables",
+    "text": "9.3 Registros y variables\nComo se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)\nLa segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.\nPodemos consultar estos datos al detalle generando una variable que contiene la lista de registros.\n\nreg_list &lt;- names(registers())\nprint(reg_list)\n\n [1] \"bef\"             \"lmdb\"            \"lpr_adm\"         \"lpr_diag\"       \n [5] \"lpr3a_kontakt\"   \"lpr3a_diagnose\"  \"lpr3f_kontakter\" \"lpr3f_diagnoser\"\n [9] \"sysi\"            \"sssy\"            \"lab_forsker\"",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html#simulación-de-datos",
     "href": "sesiones/datos-crudos.html#simulación-de-datos",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.4 Simulación de datos",
-    "text": "11.4 Simulación de datos\nComo vamos a trabajar con datos simulados, el siguiente paso es simular uno de los registros.\n\nsim_bef &lt;- simulate_registers(\"bef\", n = 1000)\nhead(sim_bef)\n\n$bef\n# A tibble: 1,000 × 3\n    koen pnr          foed_dato \n   &lt;int&gt; &lt;chr&gt;        &lt;date&gt;    \n 1     1 108684730664 1932-01-12\n 2     1 982144017357 2007-07-16\n 3     1 672580814975 1980-08-05\n 4     1 439008110445 2009-06-28\n 5     1 489714666740 2017-02-25\n 6     1 155331797020 1973-03-30\n 7     1 777951655096 1934-10-22\n 8     1 167007504860 2001-03-18\n 9     1 132473802596 1953-09-01\n10     2 876820784981 1931-08-17\n# ℹ 990 more rows",
+    "title": "9  Partiendo de datos crudos",
+    "section": "9.4 Simulación de datos",
+    "text": "9.4 Simulación de datos\nComo vamos a trabajar con datos simulados, el siguiente paso es simular el registro de la población total.\n\nsim_bef &lt;- simulate_registers(\"bef\", n = 10000)\nsim_bef &lt;- sim_bef$bef\nhead(sim_bef)\n\n# A tibble: 6 × 3\n   koen pnr          foed_dato \n  &lt;int&gt; &lt;chr&gt;        &lt;date&gt;    \n1     2 164409653234 1923-03-01\n2     1 952443913885 1933-03-21\n3     1 679714832266 1959-10-20\n4     1 447393958677 1939-10-13\n5     2 447559464315 2022-01-10\n6     2 120172052967 2016-12-07\n\n\nDespués simulamos el registro de laboratorios.\n\nsim_lab_forsker &lt;- simulate_registers(\"lab_forsker\", n = 10000)\nsim_lab_forsker &lt;- sim_lab_forsker$lab_forsker\nhead(sim_lab_forsker)\n\n# A tibble: 6 × 4\n  pnr          samplingdate analysiscode  value\n  &lt;chr&gt;        &lt;date&gt;       &lt;chr&gt;         &lt;dbl&gt;\n1 164409653234 2017-11-05   NPU15168      86.4 \n2 952443913885 2011-09-25   NPU86660       1.43\n3 679714832266 2021-10-15   NPU27300      74.9 \n4 447393958677 2022-12-06   NPU27300     111.  \n5 447559464315 2025-12-10   NPU44101      70.1 \n6 120172052967 2011-12-21   NPU60312      43.9",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/datos-crudos.html#datos-crudos",
     "href": "sesiones/datos-crudos.html#datos-crudos",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.5 Datos crudos",
-    "text": "11.5 Datos crudos\n\n11.5.1 Preparación de los datos\nEl paquete requiere que los datos estén en formato DuckDB. Esta es una base de datos de alta performancia que puede manejar volúmenes grandes de datos sin que sea necesario cargarlos todos a memoria en una sola vez.\nPara este ejemplo generaremos datos simulados del formato de registro con el comando simulate_registers() y luego los convertiremos al formato DuckDB:\n\nregister_data &lt;- registers() |&gt;\n  names() |&gt;\n  simulate_registers() |&gt;\n  purrr::map(duckplyr::as_duckdb_tibble) |&gt;\n  # Convert to a DuckDB connection, as duckplyr is still\n  # in early development, while the DBI-DuckDB connection\n  # is more stable.\n  purrr::map(duckplyr::as_tbl)\n\nduckdb keeps downloaded extensions and secrets in a temporary directory:\nℹ /tmp/RtmpJ8l33Z/duckdb\nThis is removed when the R session ends.\n• Extensions are re-downloaded each session.\n• Secrets are lost.\nℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).\nℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).\nℹ See ?duckdb_storage for details and alternatives.\n\n\nEl resultado es una lista con nombres, donde cada elemento corresponde a un registro en forma de una tabla de DuckDB. Los datos del LPR abarcan múltiples versiones (LPR2 y LPR3), que deben prepararse y unirse en una única tabla antes de utilizarse como entrada para classify_diabetes(). Lo mismo ocurre con los registros de los servicios de salud (SSSY y SYSI). osdc proporciona funciones auxiliares para realizar esta tarea.\n\nlpr &lt;- list(\n  prepare_lpr2(register_data$lpr_adm, register_data$lpr_diag),\n  prepare_lpr3f(register_data$lpr3f_kontakter, register_data$lpr3f_diagnoser),\n  prepare_lpr3a(register_data$lpr3a_kontakt, register_data$lpr3a_diagnose)\n) |&gt;\n  join_registers()\n\nhsr &lt;- list(register_data$sssy, register_data$sysi) |&gt; join_registers()\n\nThe remaining registers are extracted from the register_data list, so they are ready to be passed as arguments to classify_diabetes():\nLos registros restantes se extraen de la lista register_data, y así quedan listos para pasarlos como argumentos a classify_diabetes().\n\nbef &lt;- register_data$bef\nlmdb &lt;- register_data$lmdb\nlab_forsker &lt;- register_data$lab_forsker\n\n\n\n11.5.2 Hacer correr la función de clasificación\nAhora estamos listos para correr el algoritmo de clasificación. Pasamos todos los registros a classify_diabetes():\n\nclassified_diabetes &lt;- classify_diabetes(\n  lpr = lpr,\n  hsr = hsr,\n  lab_forsker = lab_forsker,\n  bef = bef,\n  lmdb = lmdb\n)\n\nclassified_diabetes\n\n# A query:  ?? x 5\n# Database: DuckDB 1.5.5 [unknown@Linux 6.17.0-1022-azure:R 4.6.1//tmp/RtmpJ8l33Z/duckplyr/duckplyr1acda5d9346.duckdb]\n  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   \n2 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   \n3 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   \n4 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   \n5 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   \n6 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   \n7 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   \n\n\nComo se puede ver, este proceso devuelve una tabla de DuckDB con los individuos clasificados como personas con diabetes tipo 1 (DM1) o diabetes tipo 2 (DM2), junto con la fecha de la clasificación. Cada una de las columnas de la salida se explica en la Section 11.5.3.1 más adelante.\n\n\n11.5.3 Transferencia de los datos a formato R\nPor ahora los datos están guardados en formato DuckDB, lo que quiere decir que no han sido cargados directamente a la memoria de R. Para transferir los datos a R usamos dplyr::collect():\n\nclassified_diabetes &lt;- classified_diabetes |&gt;\n  dplyr::collect()\n\nclassified_diabetes\n\n# A tibble: 7 × 5\n  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   \n2 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   \n3 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   \n4 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   \n5 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   \n6 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   \n7 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   \n\n\nAhora vemos que en los datos simulados 7 individuos han sido clasificados con un diagnóstico de diabetes.\n\n11.5.3.1 Cómo entender los datos\nEl resultado es una tabla con una fila por individuo clasificado y cinco columnas:\n\n\n\n\n\n\n\nColumna\nDescripción\n\n\n\n\npnr\nEl número identificador individual pseudonimizado.\n\n\nstable_inclusion_date\nLa fecha del segundo evento de inclusión, si cae después de stable_inclusion_start_date (valor predeterminado: 1998). NA para fechas anteriores.\n\n\nraw_inclusion_date\nLa fecha del segundo evento de inclusión sin imponer NA para fechas anteriores a stable_inclusion_start_date.\n\n\nhas_t1d\nTRUE si el individuo se clasifica como caso de diabetes tipo 1, FALSE en otros casos.\n\n\nhas_t2d\nTRUE si el individuo se clasifica como caso de diabetes tipo 2, FALSE en otros casos.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n11.5.4 Acerca de stable_inclusion_date y raw_inclusion_date\nLa raw_inclusion_date corresponde simplemente a la fecha del segundo evento que cumple los criterios de clasificación. Sin embargo, para los eventos anteriores a 1998, los datos de los registros pueden no tener una cobertura suficiente para distinguir de forma fiable entre casos nuevos (incidentes) y casos ya existentes (prevalentes). Por ello, la columna stable_inclusion_date se establece como NA para esas fechas más tempranas, con el fin de señalar esta incertidumbre.\nLa función classify_diabetes() incluye el parámetro stable_inclusion_start_date, cuyo valor predeterminado es 01-01-1998. Esto significa que es posible modificar la fecha a partir de la cual la clasificación se considera estable.\n\n\n\nVéase la sección ‘Interface’ bajo vignette(\"design\") para mayor información sobre los datos resultantes.",
+    "title": "9  Partiendo de datos crudos",
+    "section": "9.5 Datos crudos",
+    "text": "9.5 Datos crudos\n\n9.5.1 Preparación de los datos\nEl paquete requiere que los datos estén en formato DuckDB. Esta es una base de datos de alta performancia que puede manejar volúmenes grandes de datos sin que sea necesario cargarlos todos a memoria en una sola vez.\nPara este ejemplo generaremos datos simulados del formato de registro con el comando simulate_registers() y luego los convertiremos al formato DuckDB:\n\nregister_data &lt;- registers() |&gt;\n  names() |&gt;\n  simulate_registers(n=10000) |&gt;\n  purrr::map(duckplyr::as_duckdb_tibble) |&gt;\n  # Convert to a DuckDB connection, as duckplyr is still\n  # in early development, while the DBI-DuckDB connection\n  # is more stable.\n  purrr::map(duckplyr::as_tbl)\n\nduckdb keeps downloaded extensions and secrets in a temporary directory:\nℹ /tmp/RtmpHXttXR/duckdb\nThis is removed when the R session ends.\n• Extensions are re-downloaded each session.\n• Secrets are lost.\nℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).\nℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).\nℹ See ?duckdb_storage for details and alternatives.\n\n\nEl resultado es una lista con nombres, donde cada elemento corresponde a un registro en forma de una tabla de DuckDB. Los datos del LPR abarcan múltiples versiones (LPR2 y LPR3), que deben prepararse y unirse en una única tabla antes de utilizarse como entrada para classify_diabetes(). Lo mismo ocurre con los registros de los servicios de salud (SSSY y SYSI). osdc proporciona funciones auxiliares para realizar esta tarea.\n\nlpr &lt;- list(\n  prepare_lpr2(register_data$lpr_adm, register_data$lpr_diag),\n  prepare_lpr3f(register_data$lpr3f_kontakter, register_data$lpr3f_diagnoser),\n  prepare_lpr3a(register_data$lpr3a_kontakt, register_data$lpr3a_diagnose)\n) |&gt;\n  join_registers()\n\nhsr &lt;- list(register_data$sssy, register_data$sysi) |&gt; join_registers()\n\nThe remaining registers are extracted from the register_data list, so they are ready to be passed as arguments to classify_diabetes():\nLos registros restantes se extraen de la lista register_data, y así quedan listos para pasarlos como argumentos a classify_diabetes().\n\nbef &lt;- register_data$bef\nlmdb &lt;- register_data$lmdb\nlab_forsker &lt;- register_data$lab_forsker\n\n\n\n9.5.2 Hacer correr la función de clasificación\nAhora estamos listos para correr el algoritmo de clasificación. Pasamos todos los registros a classify_diabetes():\n\nclassified_diabetes &lt;- classify_diabetes(\n  lpr = lpr,\n  hsr = hsr,\n  lab_forsker = lab_forsker,\n  bef = bef,\n  lmdb = lmdb\n)\n\nclassified_diabetes\n\n# A query:  ?? x 5\n# Database: DuckDB 1.5.5 [unknown@Linux 6.17.0-1022-azure:R 4.6.1//tmp/RtmpHXttXR/duckplyr/duckplyr213d35a731ae.duckdb]\n   pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n   &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n 1 000968900938 2017-02-13            2017-02-13         FALSE   TRUE   \n 2 002118745152 2011-10-30            2011-10-30         FALSE   TRUE   \n 3 020930073909 2007-11-26            2007-11-26         FALSE   TRUE   \n 4 023901517086 2025-03-24            2025-03-24         FALSE   TRUE   \n 5 034983397970 2022-10-09            2022-10-09         FALSE   TRUE   \n 6 036188275183 2024-07-25            2024-07-25         FALSE   TRUE   \n 7 079844973894 2011-01-20            2011-01-20         FALSE   TRUE   \n 8 089028788111 2024-11-08            2024-11-08         FALSE   TRUE   \n 9 134624431203 2025-01-17            2025-01-17         FALSE   TRUE   \n10 175783911906 2025-11-19            2025-11-19         FALSE   TRUE   \n# ℹ more rows\n\n\nComo se puede ver, este proceso devuelve una tabla de DuckDB con los individuos clasificados como personas con diabetes tipo 1 (DM1) o diabetes tipo 2 (DM2), junto con la fecha de la clasificación. Cada una de las columnas de la salida se explica en la Section 9.5.3.1 más adelante.\n\n\n9.5.3 Transferencia de los datos a formato R\nPor ahora los datos están guardados en formato DuckDB, lo que quiere decir que no han sido cargados directamente a la memoria de R. Para transferir los datos a R usamos dplyr::collect():\n\nclassified_diabetes &lt;- classified_diabetes |&gt;\n  dplyr::collect()\n\nclassified_diabetes\n\n# A tibble: 954 × 5\n   pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n   &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n 1 000968900938 2017-02-13            2017-02-13         FALSE   TRUE   \n 2 002118745152 2011-10-30            2011-10-30         FALSE   TRUE   \n 3 020930073909 2007-11-26            2007-11-26         FALSE   TRUE   \n 4 023901517086 2025-03-24            2025-03-24         FALSE   TRUE   \n 5 034983397970 2022-10-09            2022-10-09         FALSE   TRUE   \n 6 036188275183 2024-07-25            2024-07-25         FALSE   TRUE   \n 7 079844973894 2011-01-20            2011-01-20         FALSE   TRUE   \n 8 089028788111 2024-11-08            2024-11-08         FALSE   TRUE   \n 9 134624431203 2025-01-17            2025-01-17         FALSE   TRUE   \n10 175783911906 2025-11-19            2025-11-19         FALSE   TRUE   \n# ℹ 944 more rows\n\n\nAhora vemos que en los datos simulados 954 individuos han sido clasificados con un diagnóstico de diabetes.\n\n9.5.3.1 Cómo entender los datos\nEl resultado es una tabla con una fila por individuo clasificado y cinco columnas:\n\n\n\n\n\n\n\nColumna\nDescripción\n\n\n\n\npnr\nEl número identificador individual pseudonimizado.\n\n\nstable_inclusion_date\nLa fecha del segundo evento de inclusión, si cae después de stable_inclusion_start_date (valor predeterminado: 1998). NA para fechas anteriores.\n\n\nraw_inclusion_date\nLa fecha del segundo evento de inclusión sin imponer NA para fechas anteriores a stable_inclusion_start_date.\n\n\nhas_t1d\nTRUE si el individuo se clasifica como caso de diabetes tipo 1, FALSE en otros casos.\n\n\nhas_t2d\nTRUE si el individuo se clasifica como caso de diabetes tipo 2, FALSE en otros casos.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n9.5.4 Acerca de stable_inclusion_date y raw_inclusion_date\nLa raw_inclusion_date corresponde simplemente a la fecha del segundo evento que cumple los criterios de clasificación. Sin embargo, para los eventos anteriores a 1998, los datos de los registros pueden no tener una cobertura suficiente para distinguir de forma fiable entre casos nuevos (incidentes) y casos ya existentes (prevalentes). Por ello, la columna stable_inclusion_date se establece como NA para esas fechas más tempranas, con el fin de señalar esta incertidumbre.\nLa función classify_diabetes() incluye el parámetro stable_inclusion_start_date, cuyo valor predeterminado es 01-01-1998. Esto significa que es posible modificar la fecha a partir de la cual la clasificación se considera estable.\n\n\n\nVéase la sección ‘Interface’ bajo vignette(\"design\") para mayor información sobre los datos resultantes.\n\n\n\n9.5.5 Borrar variables ya usadas\nAntes de continuar vamos a hacer algo de limpieza, eliminando las variables que ya no vamos a necesitar.\n\nrm(bef, hsr, lab_forsker, lmdb, lpr, register_data, reg_list)",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
-    "objectID": "sesiones/datos-crudos.html#datos-analizables",
-    "href": "sesiones/datos-crudos.html#datos-analizables",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.6 Datos analizables",
-    "text": "11.6 Datos analizables",
+    "objectID": "sesiones/datos-crudos.html#section",
+    "href": "sesiones/datos-crudos.html#section",
+    "title": "9  Partiendo de datos crudos",
+    "section": "9.6 ",
+    "text": "9.6",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
     "objectID": "sesiones/análisis-sencillo.html",
     "href": "sesiones/análisis-sencillo.html",
-    "title": "12  TODO: Lesson title here",
+    "title": "10  Análisis sencillo con datos de registro",
     "section": "",
-    "text": "12.1 Learning objectives\nThe learning objectives for this session are:",
+    "text": "10.1 Objetivos de aprendizaje\nEn esta sesión vamos a continuar explorando la base de datos que hemos generado simulando el registro de diabetes de Dinamarca",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#learning-objectives",
-    "href": "sesiones/análisis-sencillo.html#learning-objectives",
-    "title": "12  TODO: Lesson title here",
-    "section": "",
-    "text": "Objective one",
+    "objectID": "sesiones/análisis-sencillo.html#datos-analizables",
+    "href": "sesiones/análisis-sencillo.html#datos-analizables",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "10.2 Datos analizables",
+    "text": "10.2 Datos analizables\nAhora que tenemos las fechas de incidencia de diabetes en ‘classified_diabetes’ y la población total en ‘sim_bef’ (sexo y fecha de nacimiento) podemos generar una base que contenga toda la información ligando estas 2 bases. Lo hacemos de forma deterministica, con la clave del PNR.\n\nsim_diab &lt;- right_join(classified_diabetes, sim_bef, by = \"pnr\")\n\n\n10.2.1 Calculando la edad\nEl primer paso sigue siendo preparatorio; vamos a calcular la edad.\n\nsim_diab$age &lt;- as.numeric(today() - sim_diab$foed_dato)\nhead(sim_diab$age)\n\nNos damos cuenta de que la edad está expresada en días, así que tenemos que tranformarla en años\n\nsim_diab$age &lt;- sim_diab$age / 365.25\nhead(sim_diab$age)\nhist(sim_diab$age)\n\nPodemos ver claramente que estos datos son simulados porque observamos algunas edades extremas y además vemos que la distribución es casi uniforme mientras que sería mucho más probable ver una distribución que aproxime la pirámide poblacional de Dinamarca.\n\n\n10.2.2 Calculando la duración de diabetes\nDel mismo modo vamos a calcular la duración de la diabetes para casos con el diagnóstico.\n\nsim_diab$duration &lt;- as.numeric(\n  (today() - sim_diab$raw_inclusion_date) / 365.25\n)\nhead(sim_diab$duration)\nhist(sim_diab$duration)\n\n\n\n10.2.3 Calculando la edad al diagnóstico\n\nsim_diab$age_dm &lt;- as.numeric(\n  sim_diab$stable_inclusion_date - sim_diab$foed_dato\n) /\n  365.25\nhead(sim_diab$age_dm)\nhist(sim_diab$age_dm)\n\n\n\n10.2.4 Suprimiendo errores\nNos damos cuenta que hay valores negativos en la edad al diagnóstico a consecuencia del uso de datos simulados. Para poder progresar en el análisis vamos a suprimir los casos con edades al diagnóstico negativas. En casos reales también vale la pena verificar esto ya que puede haber errores administrativos o de la base de datos.\n\nsim_diab &lt;- sim_diab[-which(sim_diab$age_dm &lt;= 0), ]\n\n\n\n10.2.5 Modificando algunas variables\nYa que el modelo simulado da solo casos de diabetes tipo 2, vamos a suprimir la variable ‘has_t1d’. Además vamos a suprimir la variable ‘raw_inclusion_date’ para el ejemplo de este taller.\n\nsim_diab &lt;- sim_diab |&gt; select(!c(has_t1d, raw_inclusion_date))\n\nObservamos que por el modo en que se creo la base actual (sim_diab) juntando dos bases anteriores, la variable ‘has_t2d’ actualmente tiene valores faltantes (NA) para los que no desarrollan diabetes, mientras que debería ser FALSE. Vamos a hacer el cambio:\n\nsim_diab$has_t2d[is.na(sim_diab$has_t2d)] &lt;- FALSE\n\nFinalmente la variable a la variable sexo le falta codificación. Vamos a añadir una etiqueta:\n\nsim_diab$sex &lt;- factor(\n  sim_diab$koen,\n  levels = 1:2,\n  labels = c(\"Male\", \"Female\")\n)",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#todo-section",
-    "href": "sesiones/análisis-sencillo.html#todo-section",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.2 TODO: Section",
-    "text": "12.2 TODO: Section\n\n\n\n\n\n\nNoteReading task: ~4 minutes\n\n\n\nTODO: Reading text",
+    "objectID": "sesiones/análisis-sencillo.html#section",
+    "href": "sesiones/análisis-sencillo.html#section",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "10.3 ",
+    "text": "10.3",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#technologist-exercise-title",
-    "href": "sesiones/análisis-sencillo.html#technologist-exercise-title",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.3 :technologist: Exercise: Title",
-    "text": "12.3 :technologist: Exercise: Title\nTime: ~NUM minutes.\nText",
+    "objectID": "sesiones/análisis-sencillo.html#sec-objetivo",
+    "href": "sesiones/análisis-sencillo.html#sec-objetivo",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "10.4 Modelo mínimo de incidencia",
+    "text": "10.4 Modelo mínimo de incidencia\nVamos a continuar con un análisis de incidencia mínimo, con una sola transición. En este modelo todas las personas empiezan la vida en el estado Healthy y lo único que puede ocurrir es el paso al estado T2D. En los datos simulados no hay defunciones, de modo que no hace falta un planteamiento de riesgos competitivos. Aun así construiremos el análisis como un objeto Lexis, porque es la estructura de base del paquete Epi y va a servir para comprender el modelo de transición.\nLos tres pasos son:\n\nReestructurar los registros individuales en un objeto Lexis, introducir el estado de diabetes y dividir el seguimiento en bandas de edad.\nDibujar diagramas de Lexis para ver cómo es realmente el seguimiento.\nTabular y graficar las tasas de incidencia específicas por edad en hombres y mujeres.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#speech_balloon-discussion-activity-title",
-    "href": "sesiones/análisis-sencillo.html#speech_balloon-discussion-activity-title",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.4 :speech_balloon: Discussion activity: Title",
-    "text": "12.4 :speech_balloon: Discussion activity: Title\nTime: ~Num minutes.\nText",
+    "objectID": "sesiones/análisis-sencillo.html#sec-cutlexis",
+    "href": "sesiones/análisis-sencillo.html#sec-cutlexis",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "12.1 Introducir el estado de diabetes con cutLexis()",
+    "text": "12.1 Introducir el estado de diabetes con cutLexis()\ncutLexis() corta el seguimiento de cada persona en un punto determinado y le cambia el estado a partir de ahí. Es la forma idiomática de añadir un estado intermedio a un objeto Lexis ya construido.\n\nDx &lt;- cutLexis(\n  Lx,\n  cut = Lx$age_dm, # edad al diagnóstico; NA = sin corte\n  timescale = \"A\", # el punto de corte se da en la escala de edad\n  new.state = \"T2D\",\n  new.scale = \"tfd\", # opcional: añade la escala \"tiempo desde el dx\"\n  precursor.states = \"Healthy\" # estados que el nuevo estado sobreescribe\n)\n\nTres detalles que conviene entender:\n\ncut se toma en el orden de filas del objeto Lexis, no en el de sim_diab. Hay que escribir siempre Lx$age_dm y no sim_diab$age_dm: si Lexis() descartó alguna fila, los dos vectores dejan de estar alineados y los cortes caen sobre las personas equivocadas.\nUn NA en cut significa “no cortar a esta persona”. Los no casos conservan un único intervalo.\nnew.scale = \"tfd\" añade una escala de tiempo que vale NA antes del diagnóstico y cuenta desde 0 a partir de él. No hace falta para la incidencia, pero no cuesta nada y es la escala sobre la que se modelarían los desenlaces posteriores al diagnóstico.\n\n\nsummary(Dx)\n\ntable(table(Dx$lex.id)) # los casos tienen dos filas; los no casos, una\ntapply(Dx$lex.dur, Dx$lex.Cst, sum) # años-persona repartidos entre los dos estados\n\nLa tabla de transiciones ya muestra Healthy -&gt; T2D. El corte conserva los años-persona: parte las vidas, no las acorta, así que sum(Dx$lex.dur) sigue siendo igual que antes; lo que cambia es que ahora una parte pertenece al estado T2D.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#book-reading-task-title",
-    "href": "sesiones/análisis-sencillo.html#book-reading-task-title",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.5 :book: Reading task: Title",
-    "text": "12.5 :book: Reading task: Title\nTime: ~Num minutes.\nText",
+    "objectID": "sesiones/análisis-sencillo.html#sec-boxes",
+    "href": "sesiones/análisis-sencillo.html#sec-boxes",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "12.2 El diagrama de estados",
+    "text": "12.2 El diagrama de estados\nboxes() dibuja la estructura de estados con los años-persona, el número de transiciones y las tasas estimadas encima. Para un modelo de dos estados resulta casi trivial, pero es un buen reflejo: enseña qué modelo cree Epi que se ha especificado.\n\nboxes(Dx, boxpos = TRUE, show.BE = TRUE, scale.R = 1000, hmult = 1.2)\n\nscale.R = 1000 pone la tasa de la flecha en casos por 1000 años-persona; show.BE = TRUE añade cuántas personas empiezan y terminan en cada estado.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#summary",
-    "href": "sesiones/análisis-sencillo.html#summary",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.6 Summary",
-    "text": "12.6 Summary\n\nTODO: List of summary items",
+    "objectID": "sesiones/análisis-sencillo.html#sec-tabla",
+    "href": "sesiones/análisis-sencillo.html#sec-tabla",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "14.1 Tabulación",
+    "text": "14.1 Tabulación\nstat.table() es la herramienta de Epi para esto. ratio(D, Y, 1000) calcula la tasa por 1000 años-persona dentro de cada celda. Ahora el único índice es el sexo.\n\nstat.table(\n  index = list(Sex = koen),\n  contents = list(\n    \"Person-years\" = sum(lex.dur),\n    \"Cases\" = sum(event),\n    \"Rate per 1000\" = ratio(event, lex.dur, 1000)\n  ),\n  margins = TRUE,\n  data = Rx\n)\n\nLa columna de márgenes da la tasa global de la cohorte, que es la que se obtendría ignorando también el sexo.",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/análisis-sencillo.html#survey",
-    "href": "sesiones/análisis-sencillo.html#survey",
-    "title": "12  TODO: Lesson title here",
-    "section": "12.7 Survey",
-    "text": "12.7 Survey\nFeedback survey! :tada:",
+    "objectID": "sesiones/análisis-sencillo.html#sec-estimaciones",
+    "href": "sesiones/análisis-sencillo.html#sec-estimaciones",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "14.2 Las estimaciones de tasa",
+    "text": "14.2 Las estimaciones de tasa\nLa tasa empírica es D / Y, con un intervalo de confianza al 95 % aproximado rate * exp(±1.96 / sqrt(D)). El error estándar de una tasa en escala logarítmica depende únicamente del número de eventos, así que con miles de casos el intervalo es estrecho.\n\nrates &lt;- aggregate(cbind(event, lex.dur) ~ koen, data = Rx, FUN = sum)\n\nrates$rate &lt;- rates$event / rates$lex.dur * 1000\nrates$lo &lt;- rates$rate * exp(-1.96 / sqrt(rates$event))\nrates$hi &lt;- rates$rate * exp(1.96 / sqrt(rates$event))\n\nrates",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>TODO: Lesson title here</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "sesiones/conclusión.html",
-    "href": "sesiones/conclusión.html",
-    "title": "13  What next",
-    "section": "",
-    "text": "Slides\n\n\n\n\n\n\n\n\n\n\nNoteTeacher note\n\n\n\n\n\nThe slides contain speaking notes that you can view by pressing ‘S’ on the keyboard.",
+    "objectID": "sesiones/análisis-sencillo.html#sec-grafico",
+    "href": "sesiones/análisis-sencillo.html#sec-grafico",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "14.3 El gráfico",
+    "text": "14.3 El gráfico\nCon una sola estimación por sexo no hay ninguna curva que dibujar, así que lo apropiado es un gráfico de puntos con sus intervalos. El eje logarítmico se mantiene: las tasas de incidencia se comparan de forma multiplicativa, y en escala logarítmica la distancia vertical entre los dos puntos es el logaritmo de la razón de tasas.\n\npar(mar = c(4, 4.5, 1, 1), las = 1, bty = \"n\")\n\nxpos &lt;- seq_len(nrow(rates))\n\nplot(\n  NA,\n  xlim = c(0.5, nrow(rates) + 0.5),\n  ylim = range(rates$lo, rates$hi),\n  log = \"y\",\n  xaxt = \"n\",\n  xlab = \"\",\n  ylab = \"T2D incidence rate per 1000 PY\"\n)\n\nsegments(xpos, rates$lo, xpos, rates$hi, col = cols[rates$koen], lwd = 2)\npoints(xpos, rates$rate, pch = 16, cex = 1.8, col = cols[rates$koen])\n\naxis(1, at = xpos, labels = as.character(rates$koen))",
     "crumbs": [
       "Sesiones",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>What next</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
-    "objectID": "apendices/para-enseñantes.html",
-    "href": "apendices/para-enseñantes.html",
-    "title": "Appendix A — For teachers",
-    "section": "",
-    "text": "A more general guide to teaching or helping is found on the Guides website. This page has information relevant specifically to this workshop.\n\nFor created teams, assign one teacher or helper to each group to help them specifically during the final group project.",
+    "objectID": "sesiones/análisis-sencillo.html#sec-rr",
+    "href": "sesiones/análisis-sencillo.html#sec-rr",
+    "title": "10  Análisis sencillo con datos de registro",
+    "section": "14.4 La razón de tasas",
+    "text": "14.4 La razón de tasas\nLeer la diferencia entre los dos puntos a ojo funciona, pero el modelo de Poisson la cuantifica con su intervalo de confianza en una línea. La familia poisreg de Epi toma la respuesta como cbind(eventos, años-persona) y modela la tasa directamente, sin offset.\n\nm0 &lt;- glm(cbind(event, lex.dur) ~ koen, family = poisreg, data = Rx)\n\nci.exp(m0) * c(1000, 1)\n\nLa primera fila es la tasa del nivel de referencia de koen, multiplicada por 1000 para dejarla por 1000 años-persona; debe coincidir con la tabla anterior. La segunda es la razón de tasas del otro nivel frente al de referencia, que no lleva escala.\nEsta razón de tasas es cruda. Para ajustarla por edad basta con añadir la edad al modelo, y con eso ya se entra en Chapter 15.",
     "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>A</span>  <span class='chapter-title'>For teachers</span>"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "Appendix B — Contributing",
-    "section": "",
-    "text": "B.1 :bug: Issues and bugs\nCheck out the Contributing Guide for more details on how to contribute. For guidelines on how to be a helper or teacher, check out the For teachers page. As always, make sure to adhere to the Code of Conduct.\nThe easiest way to contribute is to report issues or bugs that you might find while using or reading the workshop material. You can do this by creating a new issue on our GitHub repository.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html#pencil2-adding-or-modifying-content",
-    "href": "CONTRIBUTING.html#pencil2-adding-or-modifying-content",
-    "title": "Appendix B — Contributing",
-    "section": "B.2 :pencil2: Adding or modifying content",
-    "text": "B.2 :pencil2: Adding or modifying content\nTo contribute to the workshop, you first need to install uv and justfile. We use uv and justfile to manage our project, such as to run checks and build the workshop website. Both the uv and justfile websites have a more detailed guide on using uv, but below are some simple instructions to get you started.\nIt’s easiest to install uv first and then install justfile using uv. Then, to install justfile, run:\nuv tool install rust-just\nWe keep all our development workflows in the justfile, so you can explore it to see what commands are available. To see a list of commands available, run:\njust\nAs you contribute, make sure your changes will pass our checks by opening a terminal so that the working directory is the root of this workshop’s parent/root folder and running:\njust run-all\nWhen committing changes, please try to follow Conventional Commits as Git messages. Using this convention allows us to be able to automatically create a release based on the commit message by using Cocogitto. If you don’t use Conventional Commits when making a commit, we will revise the pull request title to follow that format. That’s because we use squash merges when merging pull requests, so all other commits in the pull request will be squashed into one commit.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html#file_folder-support-and-infrastructure-files",
-    "href": "CONTRIBUTING.html#file_folder-support-and-infrastructure-files",
-    "title": "Appendix B — Contributing",
-    "section": "B.3 :file_folder: Support and infrastructure files",
-    "text": "B.3 :file_folder: Support and infrastructure files\n\n.copier-answers.yml: Contains the answers you gave when copying the project from the template. You should not modify this file directly.\n.gitignore: This ignore file tells Git which files to not track. Unless you know what you are doing, it’s best to not touch this file.\n_quarto.yml: Quarto configuration file for the website, including settings for the website, such as the theme, navigation, and other options.\n_metadata.yml: Quarto metadata file for the website, including information about the project, such as the titles and GitHub names.\n.pre-commit-config.yaml: Pre-commit configuration file for managing and running checks before each commit.\n.config/: Contains configuration files for various tools used in the project, such as:\n\ntypos.toml: typos spell checker configuration file.\nrumdl.toml and panache.toml: rumdl and Panache configuration file for formatting Markdown files in the project.\n\n.zenodo.json: Structured citation metadata for your project when archived on Zenodo. This is used to add the metadata to Zenodo when a GitHub release has been uploaded to Zenodo.\njustfile: just configuration file for scripting project tasks.\n.editorconfig: Editor configuration file for EditorConfig to maintain consistent coding styles across different editors and IDEs.\nCONTRIBUTING.md: Guidelines for contributing to the project.\n.github/: Contains GitHub-specific files, such as issue and pull request templates, workflows, dependabot configuration, pull request templates, and a CODEOWNERS file.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Contributing</span>"
+      "Sesiones",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Análisis sencillo con datos de registro</span>"
     ]
   },
   {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
-    "title": "Appendix C — Creative Commons Attribution 4.0 International",
+    "title": "Creative Commons Attribution 4.0 International",
     "section": "",
-    "text": "C.1 Creative Commons Attribution 4.0 International Public License\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Creative Commons Attribution 4.0 International</span>"
-    ]
+    "text": "Creative Commons Attribution 4.0 International Public License\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions."
   },
   {
     "objectID": "LICENSE.html#creative-commons-attribution-4.0-international-public-license",
     "href": "LICENSE.html#creative-commons-attribution-4.0-international-public-license",
-    "title": "Appendix C — Creative Commons Attribution 4.0 International",
+    "title": "Creative Commons Attribution 4.0 International",
     "section": "",
-    "text": "C.1.1 Section 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nC.1.2 Section 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nC.1.3 Section 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\n\n\nC.1.4 Section 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nC.1.5 Section 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nC.1.6 Section 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nC.1.7 Section 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nC.1.8 Section 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org",
-    "crumbs": [
-      "Appendices",
-      "<span class='chapter-number'>C</span>  <span class='chapter-title'>Creative Commons Attribution 4.0 International</span>"
-    ]
+    "text": "Section 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\nIf You Share Adapted Material You produce, the Adapter’s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.\n\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org"
   }
 ]
