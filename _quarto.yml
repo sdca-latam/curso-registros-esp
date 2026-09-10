@@ -40,8 +40,6 @@ book:
     center:
       - text: "Licencia: CC BY 4.0"
         href: LICENSE.md
-      - text: "Código de Conducta"
-        href: "pre-taller/código-de-conducta.qmd"
 
 format:
   html: default
