@@ -374,7 +374,18 @@
     "href": "sesiones/datos-crudos.html",
     "title": "11  Partiendo de datos crudos",
     "section": "",
-    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.",
+    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.\nEl primer paso es verificar si está instalado el paquete osdc.\nPodemos consultar la documentación del paquete osdc (en Inglés)\nPara usar un paquete en una sesión debemos comenzar cargándolo\nEl paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.\nLa primera nos da la documentación del algoritmo\nEl siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.\nComo se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)\nLa segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#objetivos-de-aprendizaje",
+    "href": "sesiones/datos-crudos.html#objetivos-de-aprendizaje",
+    "title": "11  Partiendo de datos crudos",
+    "section": "",
+    "text": "install.packages(\"osdc\")\n\n\nlibrary(osdc)\n\n\nvignette(\"algorithm\")\n\nvignette(\"data-sources\")",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"

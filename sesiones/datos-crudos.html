@@ -347,6 +347,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="11.1" class="anchored" data-anchor-id="objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</h2>
 <p>En esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.</p>
 <p>Usaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.</p>
+<p>El primer paso es verificar si está instalado el paquete osdc.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"osdc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Podemos consultar la <a href="https://steno-aarhus.github.io/osdc/index.html">documentación del paquete osdc</a> (en Inglés)</p>
+<p>Para usar un paquete en una sesión debemos comenzar cargándolo</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osdc)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>El paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.</p>
+<p>La primera nos da la documentación del algoritmo</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"algorithm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>El siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"data-sources"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Como se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)</p>
+<p>La segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.</p>
 </section>
 <section id="datos-crudos" class="level2" data-number="11.2">
 <h2 data-number="11.2" class="anchored" data-anchor-id="datos-crudos"><span class="header-section-number">11.2</span> Datos crudos</h2>
@@ -358,7 +370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="11.4" class="anchored" data-anchor-id="running-code"><span class="header-section-number">11.4</span> Running Code</h2>
 <p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2</code></pre>
 </div>
