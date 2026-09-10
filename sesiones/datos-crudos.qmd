@@ -13,6 +13,45 @@ aleatóreamente y no pertenecen a ninguna persona real.
 Usaremos el paquete "osdc" (Open Source Diabetes Classifier). Antes de
 iniciar esta sesión debes haber completado las tareas pre-taller.
 
+El primer paso es verificar si está instalado el paquete osdc.
+
+``` r
+install.packages("osdc")
+```
+
+Podemos consultar la [documentación del paquete
+osdc](https://steno-aarhus.github.io/osdc/index.html) (en Inglés)
+
+Para usar un paquete en una sesión debemos comenzar cargándolo
+
+``` r
+library(osdc)
+```
+
+El paquete contiene varias funciones, pero también documentación en
+forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.
+
+La primera nos da la documentación del algoritmo
+
+``` r
+vignette("algorithm")
+```
+
+El siguiente paso es revisar todas las fuentes de datos que son
+necesarias para crear el registro.
+
+``` r
+vignette("data-sources")
+```
+
+Como se puede ver, hay 5 registros, pero en algunos casos un solo
+registro tiene varias tablas temáticas que se acceden como bases
+separadas (Landspatientregisterets) o separadas en el tiempo
+(Sygesikringsregisteret)
+
+La segunda tabla nos muestra todas las variables de cada registro que
+son necesarias para construir el registro de diabetes.
+
 ## Datos crudos
 
 ## Datos analizables
