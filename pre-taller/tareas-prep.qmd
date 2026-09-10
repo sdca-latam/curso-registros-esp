@@ -1,7 +1,6 @@
 ---
 title: "Preparación"
 format: html
-editor: visual
 ---
 
 # Tareas preparatorias antes del taller {#sec-pre-workshop}
