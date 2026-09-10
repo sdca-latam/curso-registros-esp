@@ -25,25 +25,17 @@ book:
         - resumen/temario.qmd
         - resumen/es-para-mi.qmd
         - resumen/horario.qmd
-        - resumen/diseño-aprendizaje.qmd
     - part: "Pre-taller"
       chapters:
         - pre-taller/resumen.qmd
         - pre-taller/instalación-programas-r.qmd
         - pre-taller/instalación-paquetes-r.qmd
-        - pre-taller/código-de-conducta.qmd
     - part: "Sesiones"
       chapters:
         - sesiones/introducción.qmd
         - sesiones/potencial.qmd
         - sesiones/datos-crudos.qmd
         - sesiones/análisis-sencillo.qmd
-        - sesiones/conclusión.qmd
-  appendices:
-    - apendices/para-enseñantes.qmd
-    - apendices/referencias.qmd
-    - CONTRIBUTING.md
-    - LICENSE.md
   page-footer:
     center:
       - text: "Licencia: CC BY 4.0"

@@ -1,21 +1,5 @@
 # Introducción al taller {#sec-introducción}
 
-> [**Diapositivas de la introducción general en
-> línea**](../slides/introducción.html)
-
-::: {}
-```{=html}
-<iframe class="slide-deck" src="../slides/introducción.html"></iframe>
-```
-:::
-
-::: {.callout-note collapse="true"}
-## Nota para el profesór
-
-Las diapositivas pueden contener notas que se pueden visualizar con la
-'S' en el teclado
-:::
-
 ## Tema de esta presentación
 
 Esta presentación da una introducción general a los conceptos centrales

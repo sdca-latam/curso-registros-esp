@@ -1,4 +1,4 @@
-# ¿Este taller es para mi? {#sec-es-para-mi}
+# ¿Este taller es como para mi? {#sec-es-para-mi}
 
 El curso está diseñado como taller para investigadores jóvenes y
 estudiantes con conocimientos en análisis de datos interesados en
@@ -30,4 +30,3 @@ focused scope, which may also help you decide if this workshop is for
 you:
 
 - TODO: List of concrete tasks we will do and not do.
-

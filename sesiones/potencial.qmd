@@ -21,38 +21,3 @@ preguntas de investigación se vuelven posibles con estos datos que de
 otro modo serían muy difíciles. Discutiremos fortalezas, limitaciones y
 retos. Cerraremos el bloque contrastando con el contexto
 latinoamericano/peruano.
-
-## TODO: Section
-
-::: callout-note
-## Reading task: \~4 minutes
-
-TODO: Reading text
-:::
-
-## :technologist: Exercise: Title
-
-**Time: \~NUM minutes.**
-
-Text
-
-## :speech_balloon: Discussion activity: Title
-
-**Time: \~Num minutes.**
-
-Text
-
-## :book: Reading task: Title
-
-**Time: \~Num minutes.**
-
-Text
-
-## Summary
-
-- TODO: List of summary items
-
-## Survey
-
-{{< include /includes/_survey.qmd >}}
-
