@@ -3,7 +3,7 @@ Title: "Curso Registros"
 Type: Website
 Version: 0.1.0
 Imports: 
-    CMAverse,
+    CMAverse (>= 0.1.0),
     DBI,
     desc,
     devtools,
@@ -26,3 +26,5 @@ Imports:
     survival,
     xml2
 Depends: tidyverse
+Remotes:  
+    BS1125/CMAverse
