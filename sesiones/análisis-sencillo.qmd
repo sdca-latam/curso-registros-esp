@@ -1,22 +1,24 @@
+---
+execute:
+  eval: false
+---
+
 # Análisis sencillo con datos de registro
 
 ## Objetivos de aprendizaje
 
-En esta sesión vamos a continuar explorando la base de datos que hemos
-generado simulando el registro de diabetes de Dinamarca
+En esta sesión vamos a continuar explorando la base de datos que hemos generado
+simulando el registro de diabetes de Dinamarca
 
 ## Datos analizables
 
-Ahora que tenemos las fechas de incidencia de diabetes en
-'classified_diabetes' y la población total en 'sim_bef' (sexo y fecha de
-nacimiento) podemos generar una base que contenga toda la información
-ligando estas 2 bases. Lo hacemos de forma deterministica, con la clave
-del PNR.
+Ahora que tenemos las fechas de incidencia de diabetes en 'classified_diabetes'
+y la población total en 'sim_bef' (sexo y fecha de nacimiento) podemos generar
+una base que contenga toda la información ligando estas 2 bases. Lo hacemos de
+forma deterministica, con la clave del PNR.
 
 ```{r}
-
 sim_diab <- right_join(classified_diabetes, sim_bef, by = "pnr")
-
 ```
 
 ### Calculando la edad
@@ -24,12 +26,12 @@ sim_diab <- right_join(classified_diabetes, sim_bef, by = "pnr")
 El primer paso sigue siendo preparatorio; vamos a calcular la edad.
 
 ```{r}
-sim_diab$age <- as.numeric(today() - sim_diab$foed_dato )
+sim_diab$age <- as.numeric(today() - sim_diab$foed_dato)
 head(sim_diab$age)
 ```
 
-Nos damos cuenta de que la edad está expresada en días, así que tenemos
-que tranformarla en años
+Nos damos cuenta de que la edad está expresada en días, así que tenemos que
+tranformarla en años
 
 ```{r}
 sim_diab$age <- sim_diab$age / 365.25
@@ -37,18 +39,20 @@ head(sim_diab$age)
 hist(sim_diab$age)
 ```
 
-Podemos ver claramente que estos datos son simulados porque observamos
-algunas edades extremas y además vemos que la distribución es casi
-uniforme mientras que sería mucho más probable ver una distribución que
-aproxime la pirámide poblacional de Dinamarca.
+Podemos ver claramente que estos datos son simulados porque observamos algunas
+edades extremas y además vemos que la distribución es casi uniforme mientras que
+sería mucho más probable ver una distribución que aproxime la pirámide
+poblacional de Dinamarca.
 
 ### Calculando la duración de diabetes
 
-Del mismo modo vamos a calcular la duración de la diabetes para casos
-con el diagnóstico.
+Del mismo modo vamos a calcular la duración de la diabetes para casos con el
+diagnóstico.
 
 ```{r}
-sim_diab$duration <- as.numeric((today() - sim_diab$raw_inclusion_date)/365.25)
+sim_diab$duration <- as.numeric(
+  (today() - sim_diab$raw_inclusion_date) / 365.25
+)
 head(sim_diab$duration)
 hist(sim_diab$duration)
 ```
@@ -56,7 +60,10 @@ hist(sim_diab$duration)
 ### Calculando la edad al diagnóstico
 
 ```{r}
-sim_diab$age_dm <- as.numeric(sim_diab$stable_inclusion_date - sim_diab$foed_dato) / 365.25
+sim_diab$age_dm <- as.numeric(
+  sim_diab$stable_inclusion_date - sim_diab$foed_dato
+) /
+  365.25
 head(sim_diab$age_dm)
 hist(sim_diab$age_dm)
 ```
@@ -64,10 +71,10 @@ hist(sim_diab$age_dm)
 ### Suprimiendo errores
 
 Nos damos cuenta que hay valores negativos en la edad al diagnóstico a
-consecuencia del uso de datos simulados. Para poder progresar en el
-análisis vamos a suprimir los casos con edades al diagnóstico negativas.
-En casos reales también vale la pena verificar esto ya que puede haber
-errores administrativos o de la base de datos.
+consecuencia del uso de datos simulados. Para poder progresar en el análisis
+vamos a suprimir los casos con edades al diagnóstico negativas. En casos reales
+también vale la pena verificar esto ya que puede haber errores administrativos o
+de la base de datos.
 
 ```{r}
 sim_diab <- sim_diab[-which(sim_diab$age_dm <= 0), ]
@@ -75,155 +82,158 @@ sim_diab <- sim_diab[-which(sim_diab$age_dm <= 0), ]
 
 ### Modificando algunas variables
 
-Ya que el modelo simulado da solo casos de diabetes tipo 2, vamos a
-suprimir la variable 'has_t1d'. Además vamos a suprimir la variable
-'raw_inclusion_date' para el ejemplo de este taller.
+Ya que el modelo simulado da solo casos de diabetes tipo 2, vamos a suprimir la
+variable 'has_t1d'. Además vamos a suprimir la variable 'raw_inclusion_date'
+para el ejemplo de este taller.
 
 ```{r}
 sim_diab <- sim_diab |> select(!c(has_t1d, raw_inclusion_date))
 ```
 
-Observamos que por el modo en que se creo la base actual (sim_diab)
-juntando dos bases anteriores, la variable 'has_t2d' actualmente tiene
-valores faltantes (NA) para los que no desarrollan diabetes, mientras
-que debería ser FALSE. Vamos a hacer el cambio:
+Observamos que por el modo en que se creo la base actual (sim_diab) juntando dos
+bases anteriores, la variable 'has_t2d' actualmente tiene valores faltantes (NA)
+para los que no desarrollan diabetes, mientras que debería ser FALSE. Vamos a
+hacer el cambio:
 
 ```{r}
 sim_diab$has_t2d[is.na(sim_diab$has_t2d)] <- FALSE
 ```
 
-Finalmente la variable a la variable sexo le falta codificación. Vamos a
-añadir una etiqueta:
+Finalmente la variable a la variable sexo le falta codificación. Vamos a añadir
+una etiqueta:
 
 ```{r}
-sim_diab$sex <- factor(sim_diab$koen, levels = 1:2, labels = c("Male", "Female"))
+sim_diab$sex <- factor(
+  sim_diab$koen,
+  levels = 1:2,
+  labels = c("Male", "Female")
+)
 ```
 
-## 
+##
 
 ## Modelo mínimo de incidencia {#sec-objetivo}
 
-Vamos a continuar con un análisis de incidencia mínimo, con una sola
-transición. En este modelo todas las personas empiezan la vida en el
-estado **Healthy** y lo único que puede ocurrir es el paso al estado
-**T2D**. En los datos simulados no hay defunciones, de modo que no hace
-falta un planteamiento de riesgos competitivos. Aun así construiremos el
-análisis como un objeto `Lexis`, porque es la estructura de base del
-paquete `Epi` y va a servir para comprender el modelo de transición.
+Vamos a continuar con un análisis de incidencia mínimo, con una sola transición.
+En este modelo todas las personas empiezan la vida en el estado **Healthy** y lo
+único que puede ocurrir es el paso al estado **T2D**. En los datos simulados no
+hay defunciones, de modo que no hace falta un planteamiento de riesgos
+competitivos. Aun así construiremos el análisis como un objeto `Lexis`, porque
+es la estructura de base del paquete `Epi` y va a servir para comprender el
+modelo de transición.
 
 Los tres pasos son:
 
-1.  Reestructurar los registros individuales en un objeto `Lexis`,
-    introducir el estado de diabetes y dividir el seguimiento en bandas
-    de edad.
-2.  Dibujar diagramas de Lexis para ver cómo es realmente el
-    seguimiento.
-3.  Tabular y graficar las tasas de incidencia específicas por edad en
-    hombres y mujeres.
+1. Reestructurar los registros individuales en un objeto `Lexis`, introducir el
+   estado de diabetes y dividir el seguimiento en bandas de edad.
+2. Dibujar diagramas de Lexis para ver cómo es realmente el seguimiento.
+3. Tabular y graficar las tasas de incidencia específicas por edad en hombres y
+   mujeres.
 
 # Los datos de partida y la definición del seguimiento {#sec-datos}
 
 Partimos del data frame `sim_diab`, con una fila por persona:
 
-| Variable | Tipo | Significado |
-|------------------------|------------------------|------------------------|
-| `pnr` | entero | identificador de la persona |
-| `stable_inclusion_date` | Date | fecha del diagnóstico de T2D |
-| `has_t2d` | lógico | ¿recibió la persona un diagnóstico de T2D? |
-| `koen` | factor | sexo, ya etiquetado |
-| `foed_dato` | Date | fecha de nacimiento |
-| `age` | numérico | **edad actual** — edad al final de la observación, en años |
-| `duration` | numérico | duración de la diabetes en años |
+  | Variable                | Tipo     | Significado                                                |
+  | ----------------------- | -------- | ---------------------------------------------------------- |
+  | `pnr`                   | entero   | identificador de la persona                                |
+  | `stable_inclusion_date` | Date     | fecha del diagnóstico de T2D                               |
+  | `has_t2d`               | lógico   | ¿recibió la persona un diagnóstico de T2D?                 |
+  | `koen`                  | factor   | sexo, ya etiquetado                                        |
+  | `foed_dato`             | Date     | fecha de nacimiento                                        |
+  | `age`                   | numérico | **edad actual** — edad al final de la observación, en años |
+  | `duration`              | numérico | duración de la diabetes en años                            |
 
 ```{r}
 #| label: inspect
+
 str(sim_diab)
 ```
 
-La decisión de diseño de este tutorial es que **el seguimiento empieza
-en el nacimiento**. Cada persona entra en la cohorte a la edad 0, sana,
-y se la observa hasta su edad actual. Quien tiene `has_t2d == TRUE` pasa
-por un diagnóstico en algún punto intermedio.
+La decisión de diseño de este tutorial es que **el seguimiento empieza en el
+nacimiento**. Cada persona entra en la cohorte a la edad 0, sana, y se la
+observa hasta su edad actual. Quien tiene `has_t2d == TRUE` pasa por un
+diagnóstico en algún punto intermedio.
 
 En la escala de edad eso se ve así:
 
-```         
+```
 edad 0 ─────────── Healthy ─────────── edad al dx ─── T2D ─── edad actual
                    (en riesgo)                      (fuera de riesgo)
 ```
 
-El tiempo transcurrido después del diagnóstico **no** está en riesgo de
-diabetes incidente, así que hay que excluirlo del denominador. Conseguir
-eso de forma automática es una de las razones principales para usar
-`Lexis` en lugar de tabular a mano.
+El tiempo transcurrido después del diagnóstico **no** está en riesgo de diabetes
+incidente, así que hay que excluirlo del denominador. Conseguir eso de forma
+automática es una de las razones principales para usar `Lexis` en lugar de
+tabular a mano.
 
 ::: callout-warning
 ## Sobre el realismo del diseño
 
-Seguir datos de registro desde el nacimiento suele ser imposible: las
-personas entran en observación cuando arranca el registro o cuando
-inmigran, y fingir lo contrario genera tiempo-persona inmortal. Aquí los
-datos están simulados con cobertura completa de toda la vida, así que no
-hay problema. En una cohorte real basada en el CPR se entraría en
-`pmax(foed_dato, inicio del registro, fecha de inmigración)`, lo que
-supone un `pmax()` adicional y no cambia nada de lo que sigue.
+Seguir datos de registro desde el nacimiento suele ser imposible: las personas
+entran en observación cuando arranca el registro o cuando inmigran, y fingir lo
+contrario genera tiempo-persona inmortal. Aquí los datos están simulados con
+cobertura completa de toda la vida, así que no hay problema. En una cohorte real
+basada en el CPR se entraría en
+`pmax(foed_dato, inicio del registro, fecha de inmigración)`, lo que supone un
+`pmax()` adicional y no cambia nada de lo que sigue.
 :::
 
 # Construir el objeto `Lexis` {#sec-lexis}
 
-Un objeto `Lexis` es un data frame de *intervalos de seguimiento* en una
-o varias **escalas de tiempo**, más unas columnas de control:
+Un objeto `Lexis` es un data frame de *intervalos de seguimiento* en una o
+varias **escalas de tiempo**, más unas columnas de control:
 
-- `lex.id` — identificador de la persona
-- `lex.dur` — longitud del intervalo, en las unidades de las escalas de
-  tiempo (aquí años)
-- `lex.Cst` — estado al **inicio** del intervalo (*Current state*)
-- `lex.Xst` — estado al **final** del intervalo (*eXit state*)
+- `lex.id` --- identificador de la persona
+- `lex.dur` --- longitud del intervalo, en las unidades de las escalas de tiempo
+  (aquí años)
+- `lex.Cst` --- estado al **inicio** del intervalo (*Current state*)
+- `lex.Xst` --- estado al **final** del intervalo (*eXit state*)
 
-Todas las escalas de tiempo avanzan al mismo ritmo, de modo que se
-indica dónde *entra* cada persona en todas las escalas y dónde *sale* en
-una sola. `Epi` deduce el resto.
+Todas las escalas de tiempo avanzan al mismo ritmo, de modo que se indica dónde
+*entra* cada persona en todas las escalas y dónde *sale* en una sola. `Epi`
+deduce el resto.
 
 Usaremos dos escalas, siguiendo la convención habitual de `Epi`:
 
-- `A` — edad de entrada en el seguimiento; todas las personas entran en
-  0 en este ejemplo
-- `P` — tiempo calendario (*period*) en años decimales; `cal.yr()`
-  convierte un `Date` a esa escala, que es lo que hace conmensurables el
-  calendario y la edad
+- `A` --- edad de entrada en el seguimiento; todas las personas entran en 0 en
+  este ejemplo
+- `P` --- tiempo calendario (*period*) en años decimales; `cal.yr()` convierte
+  un `Date` a esa escala, que es lo que hace conmensurables el calendario y la
+  edad
 
-Como todo el mundo entra a la edad 0, la escala natural para especificar
-la salida es la edad: la salida ocurre a la edad actual de la persona,
-es decir, en `age`.
+Como todo el mundo entra a la edad 0, la escala natural para especificar la
+salida es la edad: la salida ocurre a la edad actual de la persona, es decir, en
+`age`.
 
 ::: callout-important
 ## Por qué las escalas se llaman `A` y `P` y no `age` y `per`
 
-Cada escala de tiempo se convierte en una columna del objeto `Lexis` con
-ese mismo nombre. Si se llama `age` a la escala mientras el data frame
-ya tiene una columna `age`, `Lexis()` se detiene con:
+Cada escala de tiempo se convierte en una columna del objeto `Lexis` con ese
+mismo nombre. Si se llama `age` a la escala mientras el data frame ya tiene una
+columna `age`, `Lexis()` se detiene con:
 
-```         
+```
 Error in Lexis(...) : Cannot merge data with duplicate names:age
 ```
 
-Hay dos salidas: renombrar la escala, o renombrar la columna de datos.
-Renombrar la escala es menos invasivo y coincide con la notación `A` /
-`P` que usan la documentación y las viñetas de `Epi`. La columna `age`
-sigue estando disponible en el objeto resultante con su significado
-original —edad al final de la observación—, mientras que la columna `A`
-guarda la edad al inicio de cada intervalo.
+Hay dos salidas: renombrar la escala, o renombrar la columna de datos. Renombrar
+la escala es menos invasivo y coincide con la notación `A` / `P` que usan la
+documentación y las viñetas de `Epi`. La columna `age` sigue estando disponible
+en el objeto resultante con su significado original ---edad al final de la
+observación---, mientras que la columna `A` guarda la edad al inicio de cada
+intervalo.
 :::
 
 ```{r}
 #| label: build-lexis
+
 Lx <- Lexis(
-  entry = list(A = 0,
-               P = cal.yr(foed_dato)),
-  exit  = list(A = age),
+  entry = list(A = 0, P = cal.yr(foed_dato)),
+  exit = list(A = age),
   entry.status = factor("Healthy", levels = c("Healthy", "T2D")),
-  exit.status  = factor("Healthy", levels = c("Healthy", "T2D")),
-  id   = pnr,
+  exit.status = factor("Healthy", levels = c("Healthy", "T2D")),
+  id = pnr,
   data = sim_diab
 )
 
@@ -231,169 +241,198 @@ summary(Lx)
 head(Lx)
 ```
 
-En este punto *nadie* tiene diabetes: cada intervalo es una vida
-completa desde 0 hasta la edad actual, con
-`lex.Cst == lex.Xst == "Healthy"`. `lex.dur` es igual a `age`, así que
-`sum(Lx$lex.dur)` son los años-persona totales de la cohorte.
+En este punto *nadie* tiene diabetes: cada intervalo es una vida completa desde
+0 hasta la edad actual, con `lex.Cst == lex.Xst == "Healthy"`. `lex.dur` es
+igual a `age`, así que `sum(Lx$lex.dur)` son los años-persona totales de la
+cohorte.
 
 ## Introducir el estado de diabetes con `cutLexis()` {#sec-cutlexis}
 
-`cutLexis()` corta el seguimiento de cada persona en un punto
-determinado y le cambia el estado a partir de ahí. Es la forma
-idiomática de añadir un estado intermedio a un objeto `Lexis` ya
-construido.
+`cutLexis()` corta el seguimiento de cada persona en un punto determinado y le
+cambia el estado a partir de ahí. Es la forma idiomática de añadir un estado
+intermedio a un objeto `Lexis` ya construido.
 
 ```{r}
 #| label: cut-lexis
+
 Dx <- cutLexis(
   Lx,
-  cut              = Lx$age_dm,   # edad al diagnóstico; NA = sin corte
-  timescale        = "A",         # el punto de corte se da en la escala de edad
-  new.state        = "T2D",
-  new.scale        = "tfd",       # opcional: añade la escala "tiempo desde el dx"
-  precursor.states = "Healthy"    # estados que el nuevo estado sobreescribe
+  cut = Lx$age_dm, # edad al diagnóstico; NA = sin corte
+  timescale = "A", # el punto de corte se da en la escala de edad
+  new.state = "T2D",
+  new.scale = "tfd", # opcional: añade la escala "tiempo desde el dx"
+  precursor.states = "Healthy" # estados que el nuevo estado sobreescribe
 )
 ```
 
 Tres detalles que conviene entender:
 
 - `cut` se toma **en el orden de filas del objeto `Lexis`**, no en el de
-  `sim_diab`. Hay que escribir siempre `Lx$age_dm` y no
-  `sim_diab$age_dm`: si `Lexis()` descartó alguna fila, los dos vectores
-  dejan de estar alineados y los cortes caen sobre las personas
-  equivocadas.
-- Un `NA` en `cut` significa "no cortar a esta persona". Los no casos
-  conservan un único intervalo.
+  `sim_diab`. Hay que escribir siempre `Lx$age_dm` y no `sim_diab$age_dm`: si
+  `Lexis()` descartó alguna fila, los dos vectores dejan de estar alineados y
+  los cortes caen sobre las personas equivocadas.
+- Un `NA` en `cut` significa "no cortar a esta persona". Los no casos conservan
+  un único intervalo.
 - `new.scale = "tfd"` añade una escala de tiempo que vale `NA` antes del
-  diagnóstico y cuenta desde 0 a partir de él. No hace falta para la
-  incidencia, pero no cuesta nada y es la escala sobre la que se
-  modelarían los desenlaces posteriores al diagnóstico.
+  diagnóstico y cuenta desde 0 a partir de él. No hace falta para la incidencia,
+  pero no cuesta nada y es la escala sobre la que se modelarían los desenlaces
+  posteriores al diagnóstico.
 
 ```{r}
 #| label: summary-cut
+
 summary(Dx)
 
-table(table(Dx$lex.id))          # los casos tienen dos filas; los no casos, una
-tapply(Dx$lex.dur, Dx$lex.Cst, sum)   # años-persona repartidos entre los dos estados
+table(table(Dx$lex.id)) # los casos tienen dos filas; los no casos, una
+tapply(Dx$lex.dur, Dx$lex.Cst, sum) # años-persona repartidos entre los dos estados
 ```
 
-La tabla de transiciones ya muestra `Healthy -> T2D`. El corte conserva
-los años-persona: parte las vidas, no las acorta, así que
-`sum(Dx$lex.dur)` sigue siendo igual que antes; lo que cambia es que
-ahora una parte pertenece al estado `T2D`.
+La tabla de transiciones ya muestra `Healthy -> T2D`. El corte conserva los
+años-persona: parte las vidas, no las acorta, así que `sum(Dx$lex.dur)` sigue
+siendo igual que antes; lo que cambia es que ahora una parte pertenece al estado
+`T2D`.
 
 ## El diagrama de estados {#sec-boxes}
 
-`boxes()` dibuja la estructura de estados con los años-persona, el
-número de transiciones y las tasas estimadas encima. Para un modelo de
-dos estados resulta casi trivial, pero es un buen reflejo: enseña qué
-modelo cree `Epi` que se ha especificado.
+`boxes()` dibuja la estructura de estados con los años-persona, el número de
+transiciones y las tasas estimadas encima. Para un modelo de dos estados resulta
+casi trivial, pero es un buen reflejo: enseña qué modelo cree `Epi` que se ha
+especificado.
 
 ```{r}
 #| label: fig-boxes
-#| fig-cap: "Diagrama de estados con años-persona, transiciones y tasa por 1000 años-persona."
+#| fig-cap: >-
+#|   Diagrama de estados con años-persona, transiciones y tasa por 1000
+#|   años-persona.
+
 boxes(Dx, boxpos = TRUE, show.BE = TRUE, scale.R = 1000, hmult = 1.2)
 ```
 
-`scale.R = 1000` pone la tasa de la flecha en casos por 1000
-años-persona; `show.BE = TRUE` añade cuántas personas empiezan y
-terminan en cada estado.
+`scale.R = 1000` pone la tasa de la flecha en casos por 1000 años-persona;
+`show.BE = TRUE` añade cuántas personas empiezan y terminan en cada estado.
 
 # Diagramas de Lexis {#sec-diagramas}
 
-Un diagrama de Lexis representa el seguimiento como segmentos en el
-plano (tiempo calendario, edad). Como todo el mundo entra a la edad 0,
-cada persona es una única línea a 45° que arranca del eje horizontal en
-su año de nacimiento. Con una cohorte de tamaño registro esto se
-convierte en una mancha sólida, así que primero conviene muestrear un
-número manejable de personas.
+Un diagrama de Lexis representa el seguimiento como segmentos en el plano
+(tiempo calendario, edad). Como todo el mundo entra a la edad 0, cada persona es
+una única línea a 45° que arranca del eje horizontal en su año de nacimiento.
+Con una cohorte de tamaño registro esto se convierte en una mancha sólida, así
+que primero conviene muestrear un número manejable de personas.
 
 ```{r}
 #| label: subset-for-plot
-ids  <- sample(unique(Dx$lex.id), 60)
+
+ids <- sample(unique(Dx$lex.id), 60)
 Dsub <- subset(Dx, lex.id %in% ids)
 ```
 
 Los colores se derivan de los niveles de `koen`, de manera que el código
-funciona sea cual sea el idioma de las etiquetas ya presentes en los
-datos:
+funciona sea cual sea el idioma de las etiquetas ya presentes en los datos:
 
 ```{r}
 #| label: colours
+
 cols <- setNames(c("#1B6CA8", "#C1462F"), levels(sim_diab$koen))
 cols
 ```
 
-`plot.Lexis()` recibe las escalas de tiempo como primer argumento. Se
-pueden dar por posición (`1:2` significa "primera escala en el eje x,
-segunda en el eje y"), pero como aquí queremos la orientación
-convencional —calendario en horizontal, edad en vertical— es más claro
-nombrarlas.
+`plot.Lexis()` recibe las escalas de tiempo como primer argumento. Se pueden dar
+por posición (`1:2` significa "primera escala en el eje x, segunda en el eje
+y"), pero como aquí queremos la orientación convencional ---calendario en
+horizontal, edad en vertical--- es más claro nombrarlas.
 
 ```{r}
 #| label: fig-lexis-state
-#| fig-cap: "Líneas de vida coloreadas por estado. Solo los tramos grises entran en el denominador."
+#| fig-cap: >-
+#|   Líneas de vida coloreadas por estado. Solo los tramos grises entran en el
+#|   denominador.
+
 par(mar = c(4, 4, 1, 1), las = 1)
 
-plot(Dsub, c("P", "A"),
-     lwd  = 1.5,
-     col  = c("Healthy" = "grey60", "T2D" = "#C1462F")[Dsub$lex.Cst],
-     grid = TRUE,
-     xlab = "Calendar year",
-     ylab = "Age (years)")
+plot(
+  Dsub,
+  c("P", "A"),
+  lwd = 1.5,
+  col = c("Healthy" = "grey60", "T2D" = "#C1462F")[Dsub$lex.Cst],
+  grid = TRUE,
+  xlab = "Calendar year",
+  ylab = "Age (years)"
+)
 
 # Punto final de cada intervalo: una cruz donde hubo diagnóstico
-points(Dsub, c("P", "A"),
-       pch = c("Healthy" = NA, "T2D" = 3)[Dsub$lex.Xst],
-       col = "#C1462F", cex = 0.9, lwd = 2)
+points(
+  Dsub,
+  c("P", "A"),
+  pch = c("Healthy" = NA, "T2D" = 3)[Dsub$lex.Xst],
+  col = "#C1462F",
+  cex = 0.9,
+  lwd = 2
+)
 
-legend("topleft", bty = "n",
-       legend = c("Seguimiento sano", "Tras el diagnóstico", "Diagnóstico de T2D"),
-       col    = c("grey60", "#C1462F", "#C1462F"),
-       lty    = c(1, 1, NA), lwd = 2, pch = c(NA, NA, 3))
+legend(
+  "topleft",
+  bty = "n",
+  legend = c("Seguimiento sano", "Tras el diagnóstico", "Diagnóstico de T2D"),
+  col = c("grey60", "#C1462F", "#C1462F"),
+  lty = c(1, 1, NA),
+  lwd = 2,
+  pch = c(NA, NA, 3)
+)
 ```
 
-Cada línea de vida es gris hasta el diagnóstico y roja después. Solo los
-tramos grises entran en el denominador de la incidencia.
+Cada línea de vida es gris hasta el diagnóstico y roja después. Solo los tramos
+grises entran en el denominador de la incidencia.
 
 Una segunda vista, coloreada por sexo en lugar de por estado:
 
 ```{r}
 #| label: fig-lexis-sex
 #| fig-cap: "Las mismas líneas de vida, coloreadas por sexo."
+
 par(mar = c(4, 4, 1, 1), las = 1)
 
-plot(Dsub, c("P", "A"), lwd = 1.5, grid = TRUE,
-     col  = cols[Dsub$koen],
-     xlab = "Calendar year", ylab = "Age (years)")
+plot(
+  Dsub,
+  c("P", "A"),
+  lwd = 1.5,
+  grid = TRUE,
+  col = cols[Dsub$koen],
+  xlab = "Calendar year",
+  ylab = "Age (years)"
+)
 
 legend("topleft", bty = "n", legend = names(cols), col = cols, lwd = 2)
 ```
 
-También existe `Lexis.diagram()` si se quiere una rejilla de Lexis vacía
-y formal para anotar a mano, pero para dibujar seguimiento real lo que
-se usa es `plot.Lexis()`.
+También existe `Lexis.diagram()` si se quiere una rejilla de Lexis vacía y
+formal para anotar a mano, pero para dibujar seguimiento real lo que se usa es
+`plot.Lexis()`.
 
 # Tasas de incidencia por sexo {#sec-tasas}
 
-Aquí vamos a calcular una sola tasa por sexo: los eventos y los
-años-persona en riesgo se suman sobre todo el rango de edad conservado y
-se dividen. Es la tasa cruda de la cohorte.
+Aquí vamos a calcular una sola tasa por sexo: los eventos y los años-persona en
+riesgo se suman sobre todo el rango de edad conservado y se dividen. Es la tasa
+cruda de la cohorte.
 
 ## Tabulación {#sec-tabla}
 
-`stat.table()` es la herramienta de `Epi` para esto. `ratio(D, Y, 1000)`
-calcula la tasa por 1000 años-persona dentro de cada celda. Ahora el
-único índice es el sexo.
+`stat.table()` es la herramienta de `Epi` para esto. `ratio(D, Y, 1000)` calcula
+la tasa por 1000 años-persona dentro de cada celda. Ahora el único índice es el
+sexo.
 
 ```{r}
 #| label: stat-table
-stat.table(index    = list(Sex = koen),
-           contents = list("Person-years"  = sum(lex.dur),
-                           "Cases"         = sum(event),
-                           "Rate per 1000" = ratio(event, lex.dur, 1000)),
-           margins  = TRUE,
-           data     = Rx)
+
+stat.table(
+  index = list(Sex = koen),
+  contents = list(
+    "Person-years" = sum(lex.dur),
+    "Cases" = sum(event),
+    "Rate per 1000" = ratio(event, lex.dur, 1000)
+  ),
+  margins = TRUE,
+  data = Rx
+)
 ```
 
 La columna de márgenes da la tasa global de la cohorte, que es la que se
@@ -401,44 +440,50 @@ obtendría ignorando también el sexo.
 
 ## Las estimaciones de tasa {#sec-estimaciones}
 
-La tasa empírica es D / Y, con un intervalo de confianza al 95 %
-aproximado `rate * exp(±1.96 / sqrt(D))`. El error estándar de una tasa
-en escala logarítmica depende únicamente del número de eventos, así que
-con miles de casos el intervalo es estrecho.
+La tasa empírica es D / Y, con un intervalo de confianza al 95 % aproximado
+`rate * exp(±1.96 / sqrt(D))`. El error estándar de una tasa en escala
+logarítmica depende únicamente del número de eventos, así que con miles de casos
+el intervalo es estrecho.
 
 ```{r}
 #| label: rates
+
 rates <- aggregate(cbind(event, lex.dur) ~ koen, data = Rx, FUN = sum)
 
 rates$rate <- rates$event / rates$lex.dur * 1000
-rates$lo   <- rates$rate * exp(-1.96 / sqrt(rates$event))
-rates$hi   <- rates$rate * exp( 1.96 / sqrt(rates$event))
+rates$lo <- rates$rate * exp(-1.96 / sqrt(rates$event))
+rates$hi <- rates$rate * exp(1.96 / sqrt(rates$event))
 
 rates
 ```
 
 ## El gráfico {#sec-grafico}
 
-Con una sola estimación por sexo no hay ninguna curva que dibujar, así
-que lo apropiado es un gráfico de puntos con sus intervalos. El eje
-logarítmico se mantiene: las tasas de incidencia se comparan de forma
-multiplicativa, y en escala logarítmica la distancia vertical entre los
-dos puntos *es* el logaritmo de la razón de tasas.
+Con una sola estimación por sexo no hay ninguna curva que dibujar, así que lo
+apropiado es un gráfico de puntos con sus intervalos. El eje logarítmico se
+mantiene: las tasas de incidencia se comparan de forma multiplicativa, y en
+escala logarítmica la distancia vertical entre los dos puntos *es* el logaritmo
+de la razón de tasas.
 
 ```{r}
 #| label: fig-rates-sex
-#| fig-cap: "Tasa cruda de incidencia de T2D por sexo, con intervalos de confianza al 95 %."
+#| fig-cap: >-
+#|   Tasa cruda de incidencia de T2D por sexo, con intervalos de confianza al 95
+#|   %.
+
 par(mar = c(4, 4.5, 1, 1), las = 1, bty = "n")
 
 xpos <- seq_len(nrow(rates))
 
-plot(NA,
-     xlim = c(0.5, nrow(rates) + 0.5),
-     ylim = range(rates$lo, rates$hi),
-     log  = "y",
-     xaxt = "n",
-     xlab = "",
-     ylab = "T2D incidence rate per 1000 PY")
+plot(
+  NA,
+  xlim = c(0.5, nrow(rates) + 0.5),
+  ylim = range(rates$lo, rates$hi),
+  log = "y",
+  xaxt = "n",
+  xlab = "",
+  ylab = "T2D incidence rate per 1000 PY"
+)
 
 segments(xpos, rates$lo, xpos, rates$hi, col = cols[rates$koen], lwd = 2)
 points(xpos, rates$rate, pch = 16, cex = 1.8, col = cols[rates$koen])
@@ -448,76 +493,74 @@ axis(1, at = xpos, labels = as.character(rates$koen))
 
 ## La razón de tasas {#sec-rr}
 
-Leer la diferencia entre los dos puntos a ojo funciona, pero el modelo
-de Poisson la cuantifica con su intervalo de confianza en una línea. La
-familia `poisreg` de `Epi` toma la respuesta como
-`cbind(eventos, años-persona)` y modela la tasa directamente, sin
-*offset*.
+Leer la diferencia entre los dos puntos a ojo funciona, pero el modelo de
+Poisson la cuantifica con su intervalo de confianza en una línea. La familia
+`poisreg` de `Epi` toma la respuesta como `cbind(eventos, años-persona)` y
+modela la tasa directamente, sin *offset*.
 
 ```{r}
 #| label: rate-ratio
+
 m0 <- glm(cbind(event, lex.dur) ~ koen, family = poisreg, data = Rx)
 
 ci.exp(m0) * c(1000, 1)
 ```
 
-La primera fila es la tasa del nivel de referencia de `koen`,
-multiplicada por 1000 para dejarla por 1000 años-persona; debe coincidir
-con la tabla anterior. La segunda es la razón de tasas del otro nivel
-frente al de referencia, que no lleva escala.
+La primera fila es la tasa del nivel de referencia de `koen`, multiplicada por
+1000 para dejarla por 1000 años-persona; debe coincidir con la tabla anterior.
+La segunda es la razón de tasas del otro nivel frente al de referencia, que no
+lleva escala.
 
-Esta razón de tasas es cruda. Para ajustarla por edad basta con añadir
-la edad al modelo, y con eso ya se entra en @sec-suave.
+Esta razón de tasas es cruda. Para ajustarla por edad basta con añadir la edad
+al modelo, y con eso ya se entra en @sec-generalizacion.
 
 # Hacia dónde se generaliza esto {#sec-generalizacion}
 
-Pasar por `Lexis` en lugar de tabular bandas de edad a mano compensa en
-cuanto el modelo crece:
+Pasar por `Lexis` en lugar de tabular bandas de edad a mano compensa en cuanto
+el modelo crece:
 
-- **Añadir la mortalidad** consiste en un segundo `cutLexis()` (o un
-  tercer estado en `exit.status`). La muerte pasa entonces a competir
-  con el diagnóstico, y `summary()`/`boxes()` informan de ambas
-  transiciones sin ningún cambio en el código anterior.
+- **Añadir la mortalidad** consiste en un segundo `cutLexis()` (o un tercer
+  estado en `exit.status`). La muerte pasa entonces a competir con el
+  diagnóstico, y `summary()`/`boxes()` informan de ambas transiciones sin ningún
+  cambio en el código anterior.
 - **Los efectos de periodo y cohorte** salen de dividir también en `P` y
   añadirlo al modelo; `apc.fit()` acepta directamente un objeto `Lexis`
   dividido.
 - **Los desenlaces posdiagnóstico** se modelan en la escala `tfd` que
   `cutLexis()` ya creó: complicaciones, mortalidad, intensificación del
   tratamiento.
-- **La prevalencia y la esperanza de vida** se obtienen del mismo objeto
-  con `simLexis()`.
-- **La entrada retardada** —la versión realista de esta cohorte— es un
-  solo cambio en la lista `entry`; la división, el corte, la tabulación
-  y el modelado no se tocan.
+- **La prevalencia y la esperanza de vida** se obtienen del mismo objeto con
+  `simLexis()`.
+- **La entrada retardada** ---la versión realista de esta cohorte--- es un solo
+  cambio en la lista `entry`; la división, el corte, la tabulación y el modelado
+  no se tocan.
 
 # Errores frecuentes {#sec-errores}
 
-- Dar a una escala de tiempo el nombre de una columna que ya existe. De
-  ahí sale `Cannot merge data with duplicate names:age`. Renombrar la
-  escala (`A`, `P`) o la columna.
-- Dejar el tiempo-persona posdiagnóstico en el denominador. Hay que
-  filtrar por `lex.Cst == "Healthy"` **después** de dividir, no antes de
-  cortar.
+- Dar a una escala de tiempo el nombre de una columna que ya existe. De ahí sale
+  `Cannot merge data with duplicate names:age`. Renombrar la escala (`A`, `P`) o
+  la columna.
+- Dejar el tiempo-persona posdiagnóstico en el denominador. Hay que filtrar por
+  `lex.Cst == "Healthy"` **después** de dividir, no antes de cortar.
 - Pasar `sim_diab$age_dm` en lugar de `Lx$age_dm` a `cutLexis()`. Si al
-  construir el objeto `Lexis` se descartó alguna fila, los cortes caen
-  en silencio sobre las personas equivocadas.
-- Cortar en un punto que cae fuera del seguimiento. `cutLexis()` no
-  protesta: si el corte está en la entrada o antes, la persona empieza
-  en el nuevo estado y su transición desaparece. Comparar el número de
-  casos con el de transiciones es la forma más rápida de detectarlo.
+  construir el objeto `Lexis` se descartó alguna fila, los cortes caen en
+  silencio sobre las personas equivocadas.
+- Cortar en un punto que cae fuera del seguimiento. `cutLexis()` no protesta: si
+  el corte está en la entrada o antes, la persona empieza en el nuevo estado y
+  su transición desaparece. Comparar el número de casos con el de transiciones
+  es la forma más rápida de detectarlo.
 - Derivar la edad al diagnóstico de `duration` en lugar de
-  `stable_inclusion_date`. Solo coinciden si ambas variables comparten
-  el mismo momento de referencia.
-- Usar solo `lex.Xst == "T2D"` como indicador de evento. La forma segura
-  es siempre `lex.Cst == "Healthy" & lex.Xst == "T2D"`.
-- Mezclar unidades. Si la edad va en años y el calendario en días,
-  `lex.dur` no significa nada. `cal.yr()` existe precisamente para
-  evitarlo, y todo lo demás se mantiene en años de principio a fin.
-- Olvidar que seguir desde el nacimiento es una comodidad de la
-  simulación. En datos de registro reales fabrica tiempo-persona
-  inmortal en las edades jóvenes.
-- Graficar las tasas en un eje y lineal y concluir que los sexos
-  divergen con la edad, cuando la razón de tasas es en realidad
-  constante.
+  `stable_inclusion_date`. Solo coinciden si ambas variables comparten el mismo
+  momento de referencia.
+- Usar solo `lex.Xst == "T2D"` como indicador de evento. La forma segura es
+  siempre `lex.Cst == "Healthy" & lex.Xst == "T2D"`.
+- Mezclar unidades. Si la edad va en años y el calendario en días, `lex.dur` no
+  significa nada. `cal.yr()` existe precisamente para evitarlo, y todo lo demás
+  se mantiene en años de principio a fin.
+- Olvidar que seguir desde el nacimiento es una comodidad de la simulación. En
+  datos de registro reales fabrica tiempo-persona inmortal en las edades
+  jóvenes.
+- Graficar las tasas en un eje y lineal y concluir que los sexos divergen con la
+  edad, cuando la razón de tasas es en realidad constante.
 
-#  {#sec-session}
+# {#sec-session}

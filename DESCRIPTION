@@ -1,11 +1,28 @@
 Package: curso-registros-esp
-Title: "TODO: Fill in"
+Title: "Curso Registros"
 Type: Website
 Version: 0.1.0
 Imports: 
+    CMAverse,
+    DBI,
     desc,
+    devtools,
+    DiagrammeR,
     downlit,
+    dplyr,
+    Epi,
+    furrr,
+    ggdag,
+    ggplot2,
     here,
     knitr,
+    mediation,
+    NetCoupler,
+    osdc,
+    pak,
+    purrr,
     rmarkdown,
-    stringr
+    stringr,
+    survival,
+    xml2
+Depends: tidyverse
