@@ -315,9 +315,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link active" data-scroll-target="#objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</a></li>
-  <li><a href="#datos-crudos" id="toc-datos-crudos" class="nav-link" data-scroll-target="#datos-crudos"><span class="header-section-number">11.2</span> Datos crudos</a></li>
-  <li><a href="#datos-analizables" id="toc-datos-analizables" class="nav-link" data-scroll-target="#datos-analizables"><span class="header-section-number">11.3</span> Datos analizables</a></li>
-  <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code"><span class="header-section-number">11.4</span> Running Code</a></li>
+  <li><a href="#explorando-el-paquete-osdc" id="toc-explorando-el-paquete-osdc" class="nav-link" data-scroll-target="#explorando-el-paquete-osdc"><span class="header-section-number">11.2</span> Explorando el paquete OSDC</a></li>
+  <li><a href="#registros-y-variables" id="toc-registros-y-variables" class="nav-link" data-scroll-target="#registros-y-variables"><span class="header-section-number">11.3</span> Registros y variables</a></li>
+  <li><a href="#simulación-de-datos" id="toc-simulación-de-datos" class="nav-link" data-scroll-target="#simulación-de-datos"><span class="header-section-number">11.4</span> Simulación de datos</a></li>
+  <li><a href="#datos-crudos" id="toc-datos-crudos" class="nav-link" data-scroll-target="#datos-crudos"><span class="header-section-number">11.5</span> Datos crudos</a>
+  <ul class="collapse">
+  <li><a href="#preparación-de-los-datos" id="toc-preparación-de-los-datos" class="nav-link" data-scroll-target="#preparación-de-los-datos"><span class="header-section-number">11.5.1</span> Preparación de los datos</a></li>
+  <li><a href="#hacer-correr-la-función-de-clasificación" id="toc-hacer-correr-la-función-de-clasificación" class="nav-link" data-scroll-target="#hacer-correr-la-función-de-clasificación"><span class="header-section-number">11.5.2</span> Hacer correr la función de clasificación</a></li>
+  <li><a href="#transferencia-de-los-datos-a-formato-r" id="toc-transferencia-de-los-datos-a-formato-r" class="nav-link" data-scroll-target="#transferencia-de-los-datos-a-formato-r"><span class="header-section-number">11.5.3</span> Transferencia de los datos a formato R</a></li>
+  </ul></li>
+  <li><a href="#datos-analizables" id="toc-datos-analizables" class="nav-link" data-scroll-target="#datos-analizables"><span class="header-section-number">11.6</span> Datos analizables</a></li>
   </ul>
 </nav>
     </div>
@@ -346,42 +353,235 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="objetivos-de-aprendizaje" class="level2" data-number="11.1">
 <h2 data-number="11.1" class="anchored" data-anchor-id="objetivos-de-aprendizaje"><span class="header-section-number">11.1</span> Objetivos de aprendizaje</h2>
 <p>En esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.</p>
+</section>
+<section id="explorando-el-paquete-osdc" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="explorando-el-paquete-osdc"><span class="header-section-number">11.2</span> Explorando el paquete OSDC</h2>
 <p>Usaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.</p>
 <p>El primer paso es verificar si está instalado el paquete osdc.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"osdc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"osdc"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Installing package into '/home/runner/work/_temp/Library'
+(as 'lib' is unspecified)</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>also installing the dependencies 'Rcpp', 'RcppArmadillo', 'cmprsk', 'etm', 'plyr', 'numDeriv', 'data.table', 'zoo', 'utf8', 'pkgconfig', 'cpp11', 'backports', 'Epi', 'generics', 'pillar', 'tibble', 'blob', 'DBI', 'tidyr', 'collections', 'duckdb', 'timechange', 'checkmate', 'codeCollection', 'dplyr', 'dbplyr', 'duckplyr', 'fabricatr', 'lubridate', 'purrr', 'tidyselect'</code></pre>
+</div>
+</div>
 <p>Podemos consultar la <a href="https://steno-aarhus.github.io/osdc/index.html">documentación del paquete osdc</a> (en Inglés)</p>
 <p>Para usar un paquete en una sesión debemos comenzar cargándolo</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osdc)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(osdc)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 <p>El paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.</p>
 <p>La primera nos da la documentación del algoritmo</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"algorithm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"algorithm"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>starting httpd help server ... done</code></pre>
+</div>
+</div>
 <p>El siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"data-sources"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="st">"data-sources"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="registros-y-variables" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="registros-y-variables"><span class="header-section-number">11.3</span> Registros y variables</h2>
 <p>Como se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)</p>
 <p>La segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.</p>
-</section>
-<section id="datos-crudos" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="datos-crudos"><span class="header-section-number">11.2</span> Datos crudos</h2>
-</section>
-<section id="datos-analizables" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="datos-analizables"><span class="header-section-number">11.3</span> Datos analizables</h2>
-</section>
-<section id="running-code" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="running-code"><span class="header-section-number">11.4</span> Running Code</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<p>Podemos consultar estos datos al detalle generando una variable que contiene la lista de registros.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>reg_list <span class="ot">&lt;-</span> <span class="fu">names</span>(<span class="fu">registers</span>())</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(reg_list)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<pre><code> [1] "bef"             "lmdb"            "lpr_adm"         "lpr_diag"       
+ [5] "lpr3a_kontakt"   "lpr3a_diagnose"  "lpr3f_kontakter" "lpr3f_diagnoser"
+ [9] "sysi"            "sssy"            "lab_forsker"    </code></pre>
 </div>
 </div>
-<p>You can add options to executable code like this</p>
+</section>
+<section id="simulación-de-datos" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="simulación-de-datos"><span class="header-section-number">11.4</span> Simulación de datos</h2>
+<p>Como vamos a trabajar con datos simulados, el siguiente paso es simular uno de los registros.</p>
 <div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>sim_bef <span class="ot">&lt;-</span> <span class="fu">simulate_registers</span>(<span class="st">"bef"</span>, <span class="at">n =</span> <span class="dv">1000</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(sim_bef)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
+<pre><code>$bef
+# A tibble: 1,000 × 3
+    koen pnr          foed_dato 
+   &lt;int&gt; &lt;chr&gt;        &lt;date&gt;    
+ 1     1 108684730664 1932-01-12
+ 2     1 982144017357 2007-07-16
+ 3     1 672580814975 1980-08-05
+ 4     1 439008110445 2009-06-28
+ 5     1 489714666740 2017-02-25
+ 6     1 155331797020 1973-03-30
+ 7     1 777951655096 1934-10-22
+ 8     1 167007504860 2001-03-18
+ 9     1 132473802596 1953-09-01
+10     2 876820784981 1931-08-17
+# ℹ 990 more rows</code></pre>
 </div>
 </div>
-<p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+</section>
+<section id="datos-crudos" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="datos-crudos"><span class="header-section-number">11.5</span> Datos crudos</h2>
+<section id="preparación-de-los-datos" class="level3" data-number="11.5.1">
+<h3 data-number="11.5.1" class="anchored" data-anchor-id="preparación-de-los-datos"><span class="header-section-number">11.5.1</span> Preparación de los datos</h3>
+<p>El paquete requiere que los datos estén en formato <a href="https://duckdb.org/">DuckDB</a>. Esta es una base de datos de alta performancia que puede manejar volúmenes grandes de datos sin que sea necesario cargarlos todos a memoria en una sola vez.</p>
+<p>Para este ejemplo generaremos datos simulados del formato de registro con el comando <code>simulate_registers()</code> y luego los convertiremos al formato DuckDB:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>register_data <span class="ot">&lt;-</span> <span class="fu">registers</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">names</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">simulate_registers</span>() <span class="sc">|&gt;</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">map</span>(duckplyr<span class="sc">::</span>as_duckdb_tibble) <span class="sc">|&gt;</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Convert to a DuckDB connection, as duckplyr is still</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># in early development, while the DBI-DuckDB connection</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># is more stable.</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  purrr<span class="sc">::</span><span class="fu">map</span>(duckplyr<span class="sc">::</span>as_tbl)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>duckdb keeps downloaded extensions and secrets in a temporary directory:
+ℹ /tmp/RtmpJ8l33Z/duckdb
+This is removed when the R session ends.
+• Extensions are re-downloaded each session.
+• Secrets are lost.
+ℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).
+ℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).
+ℹ See ?duckdb_storage for details and alternatives.</code></pre>
+</div>
+</div>
+<p>El resultado es una lista con nombres, donde cada elemento corresponde a un registro en forma de una tabla de DuckDB. Los datos del LPR abarcan múltiples versiones (LPR2 y LPR3), que deben prepararse y unirse en una única tabla antes de utilizarse como entrada para <code>classify_diabetes()</code>. Lo mismo ocurre con los registros de los servicios de salud (SSSY y SYSI). <strong>osdc</strong> proporciona funciones auxiliares para realizar esta tarea.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>lpr <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prepare_lpr2</span>(register_data<span class="sc">$</span>lpr_adm, register_data<span class="sc">$</span>lpr_diag),</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prepare_lpr3f</span>(register_data<span class="sc">$</span>lpr3f_kontakter, register_data<span class="sc">$</span>lpr3f_diagnoser),</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prepare_lpr3a</span>(register_data<span class="sc">$</span>lpr3a_kontakt, register_data<span class="sc">$</span>lpr3a_diagnose)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">join_registers</span>()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>hsr <span class="ot">&lt;-</span> <span class="fu">list</span>(register_data<span class="sc">$</span>sssy, register_data<span class="sc">$</span>sysi) <span class="sc">|&gt;</span> <span class="fu">join_registers</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The remaining registers are extracted from the <code>register_data</code> list, so they are ready to be passed as arguments to <code>classify_diabetes()</code>:</p>
+<p>Los registros restantes se extraen de la lista <code>register_data</code>, y así quedan listos para pasarlos como argumentos a <code>classify_diabetes()</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>bef <span class="ot">&lt;-</span> register_data<span class="sc">$</span>bef</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>lmdb <span class="ot">&lt;-</span> register_data<span class="sc">$</span>lmdb</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>lab_forsker <span class="ot">&lt;-</span> register_data<span class="sc">$</span>lab_forsker</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="hacer-correr-la-función-de-clasificación" class="level3" data-number="11.5.2">
+<h3 data-number="11.5.2" class="anchored" data-anchor-id="hacer-correr-la-función-de-clasificación"><span class="header-section-number">11.5.2</span> Hacer correr la función de clasificación</h3>
+<p>Ahora estamos listos para correr el algoritmo de clasificación. Pasamos todos los registros a <code>classify_diabetes()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>classified_diabetes <span class="ot">&lt;-</span> <span class="fu">classify_diabetes</span>(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">lpr =</span> lpr,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">hsr =</span> hsr,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">lab_forsker =</span> lab_forsker,</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">bef =</span> bef,</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">lmdb =</span> lmdb</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>classified_diabetes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A query:  ?? x 5
+# Database: DuckDB 1.5.5 [unknown@Linux 6.17.0-1022-azure:R 4.6.1//tmp/RtmpJ8l33Z/duckplyr/duckplyr1acda5d9346.duckdb]
+  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d
+  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  
+1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   
+2 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   
+3 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   
+4 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   
+5 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   
+6 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   
+7 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   </code></pre>
+</div>
+</div>
+<p>Como se puede ver, este proceso devuelve una tabla de DuckDB con los individuos clasificados como personas con diabetes tipo 1 (DM1) o diabetes tipo 2 (DM2), junto con la fecha de la clasificación. Cada una de las columnas de la salida se explica en la <a href="#sec-entendiendo-el-resultado" class="quarto-xref"><span>Section 11.5.3.1</span></a> más adelante.</p>
+</section>
+<section id="transferencia-de-los-datos-a-formato-r" class="level3" data-number="11.5.3">
+<h3 data-number="11.5.3" class="anchored" data-anchor-id="transferencia-de-los-datos-a-formato-r"><span class="header-section-number">11.5.3</span> Transferencia de los datos a formato R</h3>
+<p>Por ahora los datos están guardados en formato DuckDB, lo que quiere decir que no han sido cargados directamente a la memoria de R. Para transferir los datos a R usamos <code>dplyr::collect()</code>:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>classified_diabetes <span class="ot">&lt;-</span> classified_diabetes <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">collect</span>()</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>classified_diabetes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 5
+  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d
+  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  
+1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   
+2 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   
+3 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   
+4 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   
+5 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   
+6 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   
+7 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   </code></pre>
+</div>
+</div>
+<p>Ahora vemos que en los datos simulados 7 individuos han sido clasificados con un diagnóstico de diabetes.</p>
+<section id="sec-entendiendo-el-resultado" class="level4" data-number="11.5.3.1">
+<h4 data-number="11.5.3.1" class="anchored"><span class="header-section-number">11.5.3.1</span> Cómo entender los datos</h4>
+<p>El resultado es una tabla con una fila por individuo clasificado y cinco columnas:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Columna</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>pnr</code></td>
+<td>El número identificador individual pseudonimizado.</td>
+</tr>
+<tr class="even">
+<td><code>stable_inclusion_date</code></td>
+<td>La fecha del segundo evento de inclusión, si cae después de <code>stable_inclusion_start_date</code> (valor predeterminado: 1998). <code>NA</code> para fechas anteriores.</td>
+</tr>
+<tr class="odd">
+<td><code>raw_inclusion_date</code></td>
+<td>La fecha del segundo evento de inclusión sin imponer <code>NA</code> para fechas anteriores a <code>stable_inclusion_start_date</code>.</td>
+</tr>
+<tr class="even">
+<td><code>has_t1d</code></td>
+<td><code>TRUE</code> si el individuo se clasifica como caso de diabetes tipo 1, <code>FALSE</code> en otros casos.</td>
+</tr>
+<tr class="odd">
+<td><code>has_t2d</code></td>
+<td><code>TRUE</code> si el individuo se clasifica como caso de diabetes tipo 2, <code>FALSE</code> en otros casos.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<h3 id="acerca-de-stable_inclusion_date-y-raw_inclusion_date" data-number="11.5.4" class="anchored" data-anchor-id="sec-entendiendo-el-resultado"><span class="header-section-number">11.5.4</span> Acerca de <code>stable_inclusion_date</code> y <code>raw_inclusion_date</code></h3>
+<p>La <code>raw_inclusion_date</code> corresponde simplemente a la fecha del segundo evento que cumple los criterios de clasificación. Sin embargo, para los eventos anteriores a 1998, los datos de los registros pueden no tener una cobertura suficiente para distinguir de forma fiable entre casos nuevos (incidentes) y casos ya existentes (prevalentes). Por ello, la columna <code>stable_inclusion_date</code> se establece como <code>NA</code> para esas fechas más tempranas, con el fin de señalar esta incertidumbre.</p>
+<p>La función <code>classify_diabetes()</code> incluye el parámetro <code>stable_inclusion_start_date</code>, cuyo valor predeterminado es <code>01-01-1998</code>. Esto significa que es posible modificar la fecha a partir de la cual la clasificación se considera estable.</p>
+</blockquote>
+</div>
+</div>
+<p>Véase la sección ‘Interface’ bajo <code>vignette("design")</code> para mayor información sobre los datos resultantes.</p>
+</section>
+</section>
+</section>
+<section id="datos-analizables" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="datos-analizables"><span class="header-section-number">11.6</span> Datos analizables</h2>
 
 
 </section>

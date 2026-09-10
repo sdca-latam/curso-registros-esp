@@ -374,18 +374,40 @@
     "href": "sesiones/datos-crudos.html",
     "title": "11  Partiendo de datos crudos",
     "section": "",
-    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.\nEl primer paso es verificar si está instalado el paquete osdc.\nPodemos consultar la documentación del paquete osdc (en Inglés)\nPara usar un paquete en una sesión debemos comenzar cargándolo\nEl paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.\nLa primera nos da la documentación del algoritmo\nEl siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.\nComo se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)\nLa segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.",
+    "text": "11.1 Objetivos de aprendizaje\nEn esta sesión vamos a investigar la estructura de las bases de datos del registro de diabetes de Dinamarca, basándonos en datos simulados. Esto quiere decir que todos los datos que veremos son generados aleatóreamente y no pertenecen a ninguna persona real.",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
     ]
   },
   {
-    "objectID": "sesiones/datos-crudos.html#objetivos-de-aprendizaje",
-    "href": "sesiones/datos-crudos.html#objetivos-de-aprendizaje",
+    "objectID": "sesiones/datos-crudos.html#explorando-el-paquete-osdc",
+    "href": "sesiones/datos-crudos.html#explorando-el-paquete-osdc",
     "title": "11  Partiendo de datos crudos",
-    "section": "",
-    "text": "install.packages(\"osdc\")\n\n\nlibrary(osdc)\n\n\nvignette(\"algorithm\")\n\nvignette(\"data-sources\")",
+    "section": "11.2 Explorando el paquete OSDC",
+    "text": "11.2 Explorando el paquete OSDC\nUsaremos el paquete “osdc” (Open Source Diabetes Classifier). Antes de iniciar esta sesión debes haber completado las tareas pre-taller.\nEl primer paso es verificar si está instalado el paquete osdc.\n\ninstall.packages(\"osdc\")\n\nInstalling package into '/home/runner/work/_temp/Library'\n(as 'lib' is unspecified)\n\n\nalso installing the dependencies 'Rcpp', 'RcppArmadillo', 'cmprsk', 'etm', 'plyr', 'numDeriv', 'data.table', 'zoo', 'utf8', 'pkgconfig', 'cpp11', 'backports', 'Epi', 'generics', 'pillar', 'tibble', 'blob', 'DBI', 'tidyr', 'collections', 'duckdb', 'timechange', 'checkmate', 'codeCollection', 'dplyr', 'dbplyr', 'duckplyr', 'fabricatr', 'lubridate', 'purrr', 'tidyselect'\n\n\nPodemos consultar la documentación del paquete osdc (en Inglés)\nPara usar un paquete en una sesión debemos comenzar cargándolo\n\nlibrary(osdc)\n\nEl paquete contiene varias funciones, pero también documentación en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.\nLa primera nos da la documentación del algoritmo\n\nvignette(\"algorithm\")\n\nstarting httpd help server ... done\n\n\nEl siguiente paso es revisar todas las fuentes de datos que son necesarias para crear el registro.\n\nvignette(\"data-sources\")",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#registros-y-variables",
+    "href": "sesiones/datos-crudos.html#registros-y-variables",
+    "title": "11  Partiendo de datos crudos",
+    "section": "11.3 Registros y variables",
+    "text": "11.3 Registros y variables\nComo se puede ver, hay 5 registros, pero en algunos casos un solo registro tiene varias tablas temáticas que se acceden como bases separadas (Landspatientregisterets) o separadas en el tiempo (Sygesikringsregisteret)\nLa segunda tabla nos muestra todas las variables de cada registro que son necesarias para construir el registro de diabetes.\nPodemos consultar estos datos al detalle generando una variable que contiene la lista de registros.\n\nreg_list &lt;- names(registers())\nprint(reg_list)\n\n [1] \"bef\"             \"lmdb\"            \"lpr_adm\"         \"lpr_diag\"       \n [5] \"lpr3a_kontakt\"   \"lpr3a_diagnose\"  \"lpr3f_kontakter\" \"lpr3f_diagnoser\"\n [9] \"sysi\"            \"sssy\"            \"lab_forsker\"",
+    "crumbs": [
+      "Sesiones",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
+    ]
+  },
+  {
+    "objectID": "sesiones/datos-crudos.html#simulación-de-datos",
+    "href": "sesiones/datos-crudos.html#simulación-de-datos",
+    "title": "11  Partiendo de datos crudos",
+    "section": "11.4 Simulación de datos",
+    "text": "11.4 Simulación de datos\nComo vamos a trabajar con datos simulados, el siguiente paso es simular uno de los registros.\n\nsim_bef &lt;- simulate_registers(\"bef\", n = 1000)\nhead(sim_bef)\n\n$bef\n# A tibble: 1,000 × 3\n    koen pnr          foed_dato \n   &lt;int&gt; &lt;chr&gt;        &lt;date&gt;    \n 1     1 108684730664 1932-01-12\n 2     1 982144017357 2007-07-16\n 3     1 672580814975 1980-08-05\n 4     1 439008110445 2009-06-28\n 5     1 489714666740 2017-02-25\n 6     1 155331797020 1973-03-30\n 7     1 777951655096 1934-10-22\n 8     1 167007504860 2001-03-18\n 9     1 132473802596 1953-09-01\n10     2 876820784981 1931-08-17\n# ℹ 990 more rows",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
@@ -395,8 +417,8 @@
     "objectID": "sesiones/datos-crudos.html#datos-crudos",
     "href": "sesiones/datos-crudos.html#datos-crudos",
     "title": "11  Partiendo de datos crudos",
-    "section": "11.2 Datos crudos",
-    "text": "11.2 Datos crudos",
+    "section": "11.5 Datos crudos",
+    "text": "11.5 Datos crudos\n\n11.5.1 Preparación de los datos\nEl paquete requiere que los datos estén en formato DuckDB. Esta es una base de datos de alta performancia que puede manejar volúmenes grandes de datos sin que sea necesario cargarlos todos a memoria en una sola vez.\nPara este ejemplo generaremos datos simulados del formato de registro con el comando simulate_registers() y luego los convertiremos al formato DuckDB:\n\nregister_data &lt;- registers() |&gt;\n  names() |&gt;\n  simulate_registers() |&gt;\n  purrr::map(duckplyr::as_duckdb_tibble) |&gt;\n  # Convert to a DuckDB connection, as duckplyr is still\n  # in early development, while the DBI-DuckDB connection\n  # is more stable.\n  purrr::map(duckplyr::as_tbl)\n\nduckdb keeps downloaded extensions and secrets in a temporary directory:\nℹ /tmp/RtmpJ8l33Z/duckdb\nThis is removed when the R session ends.\n• Extensions are re-downloaded each session.\n• Secrets are lost.\nℹ Run duckdb(shared_home = TRUE) (or create ~/.duckdb) to keep them (suitable for most users).\nℹ Run duckdb(shared_home = FALSE) to accept the temporary directory (and silence this message).\nℹ See ?duckdb_storage for details and alternatives.\n\n\nEl resultado es una lista con nombres, donde cada elemento corresponde a un registro en forma de una tabla de DuckDB. Los datos del LPR abarcan múltiples versiones (LPR2 y LPR3), que deben prepararse y unirse en una única tabla antes de utilizarse como entrada para classify_diabetes(). Lo mismo ocurre con los registros de los servicios de salud (SSSY y SYSI). osdc proporciona funciones auxiliares para realizar esta tarea.\n\nlpr &lt;- list(\n  prepare_lpr2(register_data$lpr_adm, register_data$lpr_diag),\n  prepare_lpr3f(register_data$lpr3f_kontakter, register_data$lpr3f_diagnoser),\n  prepare_lpr3a(register_data$lpr3a_kontakt, register_data$lpr3a_diagnose)\n) |&gt;\n  join_registers()\n\nhsr &lt;- list(register_data$sssy, register_data$sysi) |&gt; join_registers()\n\nThe remaining registers are extracted from the register_data list, so they are ready to be passed as arguments to classify_diabetes():\nLos registros restantes se extraen de la lista register_data, y así quedan listos para pasarlos como argumentos a classify_diabetes().\n\nbef &lt;- register_data$bef\nlmdb &lt;- register_data$lmdb\nlab_forsker &lt;- register_data$lab_forsker\n\n\n\n11.5.2 Hacer correr la función de clasificación\nAhora estamos listos para correr el algoritmo de clasificación. Pasamos todos los registros a classify_diabetes():\n\nclassified_diabetes &lt;- classify_diabetes(\n  lpr = lpr,\n  hsr = hsr,\n  lab_forsker = lab_forsker,\n  bef = bef,\n  lmdb = lmdb\n)\n\nclassified_diabetes\n\n# A query:  ?? x 5\n# Database: DuckDB 1.5.5 [unknown@Linux 6.17.0-1022-azure:R 4.6.1//tmp/RtmpJ8l33Z/duckplyr/duckplyr1acda5d9346.duckdb]\n  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   \n2 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   \n3 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   \n4 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   \n5 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   \n6 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   \n7 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   \n\n\nComo se puede ver, este proceso devuelve una tabla de DuckDB con los individuos clasificados como personas con diabetes tipo 1 (DM1) o diabetes tipo 2 (DM2), junto con la fecha de la clasificación. Cada una de las columnas de la salida se explica en la Section 11.5.3.1 más adelante.\n\n\n11.5.3 Transferencia de los datos a formato R\nPor ahora los datos están guardados en formato DuckDB, lo que quiere decir que no han sido cargados directamente a la memoria de R. Para transferir los datos a R usamos dplyr::collect():\n\nclassified_diabetes &lt;- classified_diabetes |&gt;\n  dplyr::collect()\n\nclassified_diabetes\n\n# A tibble: 7 × 5\n  pnr          stable_inclusion_date raw_inclusion_date has_t1d has_t2d\n  &lt;chr&gt;        &lt;date&gt;                &lt;date&gt;             &lt;lgl&gt;   &lt;lgl&gt;  \n1 706974528463 2016-11-21            2016-11-21         FALSE   TRUE   \n2 961790930832 2026-04-30            2026-04-30         FALSE   TRUE   \n3 298944792608 2023-01-23            2023-01-23         FALSE   TRUE   \n4 498989088479 2012-02-13            2012-02-13         FALSE   TRUE   \n5 732715981647 2016-12-19            2016-12-19         FALSE   TRUE   \n6 409442575549 2021-03-22            2021-03-22         FALSE   TRUE   \n7 240771768588 2015-11-09            2015-11-09         FALSE   TRUE   \n\n\nAhora vemos que en los datos simulados 7 individuos han sido clasificados con un diagnóstico de diabetes.\n\n11.5.3.1 Cómo entender los datos\nEl resultado es una tabla con una fila por individuo clasificado y cinco columnas:\n\n\n\n\n\n\n\nColumna\nDescripción\n\n\n\n\npnr\nEl número identificador individual pseudonimizado.\n\n\nstable_inclusion_date\nLa fecha del segundo evento de inclusión, si cae después de stable_inclusion_start_date (valor predeterminado: 1998). NA para fechas anteriores.\n\n\nraw_inclusion_date\nLa fecha del segundo evento de inclusión sin imponer NA para fechas anteriores a stable_inclusion_start_date.\n\n\nhas_t1d\nTRUE si el individuo se clasifica como caso de diabetes tipo 1, FALSE en otros casos.\n\n\nhas_t2d\nTRUE si el individuo se clasifica como caso de diabetes tipo 2, FALSE en otros casos.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\n11.5.4 Acerca de stable_inclusion_date y raw_inclusion_date\nLa raw_inclusion_date corresponde simplemente a la fecha del segundo evento que cumple los criterios de clasificación. Sin embargo, para los eventos anteriores a 1998, los datos de los registros pueden no tener una cobertura suficiente para distinguir de forma fiable entre casos nuevos (incidentes) y casos ya existentes (prevalentes). Por ello, la columna stable_inclusion_date se establece como NA para esas fechas más tempranas, con el fin de señalar esta incertidumbre.\nLa función classify_diabetes() incluye el parámetro stable_inclusion_start_date, cuyo valor predeterminado es 01-01-1998. Esto significa que es posible modificar la fecha a partir de la cual la clasificación se considera estable.\n\n\n\nVéase la sección ‘Interface’ bajo vignette(\"design\") para mayor información sobre los datos resultantes.",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
@@ -406,19 +428,8 @@
     "objectID": "sesiones/datos-crudos.html#datos-analizables",
     "href": "sesiones/datos-crudos.html#datos-analizables",
     "title": "11  Partiendo de datos crudos",
-    "section": "11.3 Datos analizables",
-    "text": "11.3 Datos analizables",
-    "crumbs": [
-      "Sesiones",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
-    ]
-  },
-  {
-    "objectID": "sesiones/datos-crudos.html#running-code",
-    "href": "sesiones/datos-crudos.html#running-code",
-    "title": "11  Partiendo de datos crudos",
-    "section": "11.4 Running Code",
-    "text": "11.4 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "section": "11.6 Datos analizables",
+    "text": "11.6 Datos analizables",
     "crumbs": [
       "Sesiones",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Partiendo de datos crudos</span>"
