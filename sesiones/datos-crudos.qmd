@@ -10,12 +10,14 @@ del registro de diabetes de Dinamarca, basándonos en datos simulados.
 Esto quiere decir que todos los datos que veremos son generados
 aleatóreamente y no pertenecen a ninguna persona real.
 
+## Explorando el paquete OSDC
+
 Usaremos el paquete "osdc" (Open Source Diabetes Classifier). Antes de
 iniciar esta sesión debes haber completado las tareas pre-taller.
 
 El primer paso es verificar si está instalado el paquete osdc.
 
-``` r
+```{r}
 install.packages("osdc")
 ```
 
@@ -24,7 +26,7 @@ osdc](https://steno-aarhus.github.io/osdc/index.html) (en Inglés)
 
 Para usar un paquete en una sesión debemos comenzar cargándolo
 
-``` r
+```{r}
 library(osdc)
 ```
 
@@ -33,16 +35,18 @@ forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.
 
 La primera nos da la documentación del algoritmo
 
-``` r
+```{r}
 vignette("algorithm")
 ```
 
 El siguiente paso es revisar todas las fuentes de datos que son
 necesarias para crear el registro.
 
-``` r
+```{r}
 vignette("data-sources")
 ```
+
+## Registros y variables
 
 Como se puede ver, hay 5 registros, pero en algunos casos un solo
 registro tiene varias tablas temáticas que se acceden como bases
@@ -52,26 +56,149 @@ separadas (Landspatientregisterets) o separadas en el tiempo
 La segunda tabla nos muestra todas las variables de cada registro que
 son necesarias para construir el registro de diabetes.
 
+Podemos consultar estos datos al detalle generando una variable que
+contiene la lista de registros.
+
+```{r}
+reg_list <- names(registers())
+print(reg_list)
+```
+
+## Simulación de datos
+
+Como vamos a trabajar con datos simulados, el siguiente paso es simular
+uno de los registros.
+
+```{r}
+sim_bef <- simulate_registers("bef", n = 1000)
+head(sim_bef)
+```
+
 ## Datos crudos
 
+### Preparación de los datos
+
+El paquete requiere que los datos estén en formato
+[DuckDB](https://duckdb.org/). Esta es una base de datos de alta
+performancia que puede manejar volúmenes grandes de datos sin que sea
+necesario cargarlos todos a memoria en una sola vez.
+
+Para este ejemplo generaremos datos simulados del formato de registro
+con el comando `simulate_registers()` y luego los convertiremos al
+formato DuckDB:
+
+```{r}
+register_data <- registers() |>
+  names() |>
+  simulate_registers() |>
+  purrr::map(duckplyr::as_duckdb_tibble) |>
+  # Convert to a DuckDB connection, as duckplyr is still
+  # in early development, while the DBI-DuckDB connection
+  # is more stable.
+  purrr::map(duckplyr::as_tbl)
+```
+
+El resultado es una lista con nombres, donde cada elemento corresponde a
+un registro en forma de una tabla de DuckDB. Los datos del LPR abarcan
+múltiples versiones (LPR2 y LPR3), que deben prepararse y unirse en una
+única tabla antes de utilizarse como entrada para `classify_diabetes()`.
+Lo mismo ocurre con los registros de los servicios de salud (SSSY y
+SYSI). **osdc** proporciona funciones auxiliares para realizar esta
+tarea.
+
+```{r}
+lpr <- list(
+  prepare_lpr2(register_data$lpr_adm, register_data$lpr_diag),
+  prepare_lpr3f(register_data$lpr3f_kontakter, register_data$lpr3f_diagnoser),
+  prepare_lpr3a(register_data$lpr3a_kontakt, register_data$lpr3a_diagnose)
+) |>
+  join_registers()
+
+hsr <- list(register_data$sssy, register_data$sysi) |> join_registers()
+```
+
+The remaining registers are extracted from the `register_data` list, so
+they are ready to be passed as arguments to `classify_diabetes()`:
+
+Los registros restantes se extraen de la lista `register_data`, y así
+quedan listos para pasarlos como argumentos a `classify_diabetes()`.
+
+```{r}
+bef <- register_data$bef
+lmdb <- register_data$lmdb
+lab_forsker <- register_data$lab_forsker
+```
+
+### Hacer correr la función de clasificación
+
+Ahora estamos listos para correr el algoritmo de clasificación. Pasamos
+todos los registros a `classify_diabetes()`:
+
+```{r}
+classified_diabetes <- classify_diabetes(
+  lpr = lpr,
+  hsr = hsr,
+  lab_forsker = lab_forsker,
+  bef = bef,
+  lmdb = lmdb
+)
+
+classified_diabetes
+```
+
+Como se puede ver, este proceso devuelve una tabla de DuckDB con los
+individuos clasificados como personas con diabetes tipo 1 (DM1) o
+diabetes tipo 2 (DM2), junto con la fecha de la clasificación. Cada una
+de las columnas de la salida se explica en la
+@sec-entendiendo-el-resultado más adelante.
+
+### Transferencia de los datos a formato R
+
+Por ahora los datos están guardados en formato DuckDB, lo que quiere
+decir que no han sido cargados directamente a la memoria de R. Para
+transferir los datos a R usamos `dplyr::collect()`:
+
+```{r}
+classified_diabetes <- classified_diabetes |>
+  dplyr::collect()
+
+classified_diabetes
+```
+
+Ahora vemos que en los datos simulados `r nrow(classified_diabetes)`
+individuos han sido clasificados con un diagnóstico de diabetes.
+
+#### Cómo entender los datos {#sec-entendiendo-el-resultado}
+
+El resultado es una tabla con una fila por individuo clasificado y cinco
+columnas:
+
+| Columna | Descripción |
+|------------------------------------|------------------------------------|
+| `pnr` | El número identificador individual pseudonimizado. |
+| `stable_inclusion_date` | La fecha del segundo evento de inclusión, si cae después de `stable_inclusion_start_date` (valor predeterminado: 1998). `NA` para fechas anteriores. |
+| `raw_inclusion_date` | La fecha del segundo evento de inclusión sin imponer `NA` para fechas anteriores a `stable_inclusion_start_date`. |
+| `has_t1d` | `TRUE` si el individuo se clasifica como caso de diabetes tipo 1, `FALSE` en otros casos. |
+| `has_t2d` | `TRUE` si el individuo se clasifica como caso de diabetes tipo 2, `FALSE` en otros casos. |
+
+::: callout-note
+> ### Acerca de `stable_inclusion_date` y `raw_inclusion_date`
+>
+> La `raw_inclusion_date` corresponde simplemente a la fecha del segundo
+> evento que cumple los criterios de clasificación. Sin embargo, para
+> los eventos anteriores a 1998, los datos de los registros pueden no
+> tener una cobertura suficiente para distinguir de forma fiable entre
+> casos nuevos (incidentes) y casos ya existentes (prevalentes). Por
+> ello, la columna `stable_inclusion_date` se establece como `NA` para
+> esas fechas más tempranas, con el fin de señalar esta incertidumbre.
+>
+> La función `classify_diabetes()` incluye el parámetro
+> `stable_inclusion_start_date`, cuyo valor predeterminado es
+> `01-01-1998`. Esto significa que es posible modificar la fecha a
+> partir de la cual la clasificación se considera estable.
+:::
+
+Véase la sección 'Interface' bajo `vignette("design")` para mayor
+información sobre los datos resultantes.
+
 ## Datos analizables
-
-## Running Code
-
-When you click the **Render** button a document will be generated that
-includes both content and the output of embedded code. You can embed
-code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is
-displayed).
