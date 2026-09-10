@@ -1,43 +1,20 @@
-# TODO: Lesson title here
+# Análisi sencillo con datos de registro
 
-<!-- TODO: Add an introduction here -->
+## Objetivos de aprendizaje
 
-## Learning objectives
+En esta sesión vamos a continuar explorando la base de datos que hemos
+generado simulando el registro de diabetes de Dinamarca
 
-The learning objectives for this session are:
+## Datos analizables
 
-{{< include /includes/objectives/_session.qmd >}}
+Ahora que tenemos las fechas de incidencia de diabetes en
+'classified_diabetes' y la población total en 'sim_bef' (sexo y fecha de
+nacimiento) podemos generar una base que contenga toda la información
+ligando estas 2 bases. Lo hacemos de forma deterministica, con la clave
+del PNR.
 
-## TODO: Section
+```{r}
 
-::: callout-note
-## Reading task: \~4 minutes
+joined <- right_join(classified_diabetes, sim_bef, by = "pnr")
 
-TODO: Reading text
-:::
-
-## :technologist: Exercise: Title
-
-**Time: \~NUM minutes.**
-
-Text
-
-## :speech_balloon: Discussion activity: Title
-
-**Time: \~Num minutes.**
-
-Text
-
-## :book: Reading task: Title
-
-**Time: \~Num minutes.**
-
-Text
-
-## Summary
-
-- TODO: List of summary items
-
-## Survey
-
-{{< include /includes/_survey.qmd >}}
+```

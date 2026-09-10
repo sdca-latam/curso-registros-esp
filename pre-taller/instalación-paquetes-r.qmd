@@ -1,3 +1,18 @@
 <!-- NOTE: This comes from `template-workshop` template. -->
 
 # Instalación de los paquetes R necesarios {#sec-instalación-paquetes-r}
+
+Antes de iniciar la sesión debemos instalar los paquetes R necesarios
+para este taller:
+
+```{r}
+install.packages("pak")
+pak::pkg_install("tidyverse")
+pak::pkg_install("osdc")
+pak::pkg_install("purrr")
+pak::pkg_install("DBI")
+pak::pkg_install("duckdb")
+pak::pkg_install("knitr") pak::pkg_install("rmarkdown")
+pak::pkg_install("ggplot2")
+```
+

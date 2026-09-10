@@ -12,26 +12,28 @@ aleatóreamente y no pertenecen a ninguna persona real.
 
 ## Explorando el paquete OSDC
 
-Usaremos el paquete "osdc" (Open Source Diabetes Classifier). Antes de
-iniciar esta sesión debes haber completado las tareas pre-taller.
-
-El primer paso es verificar si está instalado el paquete osdc.
-
-```{r}
-install.packages("osdc")
-```
+Para éste taller usaremos el paquete "osdc" (Open Source Diabetes
+Classifier). Antes de iniciar esta sesión debes haber completado las
+tareas pre-taller, incluyendo la instalación de paquetes.
 
 Podemos consultar la [documentación del paquete
-osdc](https://steno-aarhus.github.io/osdc/index.html) (en Inglés)
+osdc](https://steno-aarhus.github.io/osdc/index.html) (en Inglés).
 
-Para usar un paquete en una sesión debemos comenzar cargándolo
+Para usar paquetes en una sesión debemos cargarlos:
 
 ```{r}
 library(osdc)
+library(tidyverse)
+library(purrr)
+library(DBI)
+library(duckdb)
+library(knitr)
+library(rmarkdown)
+library(ggplot2)
 ```
 
-El paquete contiene varias funciones, pero también documentación en
-forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.
+El paquete 'osdc' contiene varias funciones, pero también documentación
+en forma de guías o viñetas. Podemos revisarlas dentro del ambiente R.
 
 La primera nos da la documentación del algoritmo
 
@@ -70,7 +72,8 @@ Como vamos a trabajar con datos simulados, el siguiente paso es simular
 uno de los registros.
 
 ```{r}
-sim_bef <- simulate_registers("bef", n = 1000)
+sim_bef <- simulate_registers("bef", n = 10000)
+sim_bef <- sim_bef$bef
 head(sim_bef)
 ```
 
@@ -90,7 +93,7 @@ formato DuckDB:
 ```{r}
 register_data <- registers() |>
   names() |>
-  simulate_registers() |>
+  simulate_registers(n=10000) |>
   purrr::map(duckplyr::as_duckdb_tibble) |>
   # Convert to a DuckDB connection, as duckplyr is still
   # in early development, while the DBI-DuckDB connection
@@ -201,4 +204,13 @@ columnas:
 Véase la sección 'Interface' bajo `vignette("design")` para mayor
 información sobre los datos resultantes.
 
-## Datos analizables
+### Borrar variables ya usadas
+
+Antes de continuar vamos a hacer algo de limpieza, eliminando las
+variables que ya no vamos a necesitar.
+
+```{r}
+rm(bef, hsr, lab_forsker, lmdb, lpr, register_data, reg_list)
+```
+
+## 
