@@ -7,13 +7,13 @@ para este taller:
 
 ```{r}
 install.packages("pak")
-pak::pkg_install("tidyverse")
-pak::pkg_install("osdc")
-pak::pkg_install("purrr")
-pak::pkg_install("Epi")
-pak::pkg_install("DBI")
-pak::pkg_install("duckdb")
-pak::pkg_install("knitr")
-pak::pkg_install("rmarkdown")
-pak::pkg_install("ggplot2")
+install.packages("tidyverse")
+install.packages("osdc")
+install.packages("purrr")
+install.packages("Epi")
+install.packages("DBI")
+install.packages("duckdb")
+install.packages("knitr")
+install.packages("rmarkdown")
+install.packages("ggplot2")
 ```

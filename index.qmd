@@ -70,7 +70,7 @@ Pages para crear y alojar la página web.
 <!-- TODO: Unhide after having contributors -->
 
 ::: content-hidden
-### Contributors
+### Contribuidores
 :::
 
 ## 
