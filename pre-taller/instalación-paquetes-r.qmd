@@ -10,9 +10,10 @@ install.packages("pak")
 pak::pkg_install("tidyverse")
 pak::pkg_install("osdc")
 pak::pkg_install("purrr")
+pak::pkg_install("Epi")
 pak::pkg_install("DBI")
 pak::pkg_install("duckdb")
-pak::pkg_install("knitr") pak::pkg_install("rmarkdown")
+pak::pkg_install("knitr")
+pak::pkg_install("rmarkdown")
 pak::pkg_install("ggplot2")
 ```
-

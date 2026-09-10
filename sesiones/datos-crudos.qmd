@@ -25,6 +25,7 @@ Para usar paquetes en una sesión debemos cargarlos:
 library(osdc)
 library(tidyverse)
 library(purrr)
+library(Epi)
 library(DBI)
 library(duckdb)
 library(knitr)
@@ -69,12 +70,20 @@ print(reg_list)
 ## Simulación de datos
 
 Como vamos a trabajar con datos simulados, el siguiente paso es simular
-uno de los registros.
+el registro de la población total.
 
 ```{r}
 sim_bef <- simulate_registers("bef", n = 10000)
 sim_bef <- sim_bef$bef
 head(sim_bef)
+```
+
+Después simulamos el registro de laboratorios.
+
+```{r}
+sim_lab_forsker <- simulate_registers("lab_forsker", n = 10000)
+sim_lab_forsker <- sim_lab_forsker$lab_forsker
+head(sim_lab_forsker)
 ```
 
 ## Datos crudos
@@ -177,7 +186,7 @@ El resultado es una tabla con una fila por individuo clasificado y cinco
 columnas:
 
 | Columna | Descripción |
-|------------------------------------|------------------------------------|
+|----|----|
 | `pnr` | El número identificador individual pseudonimizado. |
 | `stable_inclusion_date` | La fecha del segundo evento de inclusión, si cae después de `stable_inclusion_start_date` (valor predeterminado: 1998). `NA` para fechas anteriores. |
 | `raw_inclusion_date` | La fecha del segundo evento de inclusión sin imponer `NA` para fechas anteriores a `stable_inclusion_start_date`. |
